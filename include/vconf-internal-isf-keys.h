@@ -47,6 +47,17 @@
 #define VCONFKEY_ISF_INPUT_LANGUAGE 	"db/isf/input_language"
 
 /**
+ * @brief Input Panel(virtual keypad) status
+ */
+#define VCONFKEY_ISF_INPUT_PANEL_STATE	"memory/isf/input_panel_state"
+enum {
+	VCONFKEY_ISF_INPUT_PANEL_STATE_HIDE = 0,    /* after hiding Input Panel */
+	VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_HIDE,   /* prior to hiding Input Panel */
+	VCONFKEY_ISF_INPUT_PANEL_STATE_SHOW,        /* after showing Input Panel */
+	VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_SHOW    /* prior to showing Input Panel */
+};
+
+/**
  * @}
  */
 #endif	/* __VCONF_INTERNAL_ISF_KEYS_H__ */
