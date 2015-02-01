@@ -1,8 +1,7 @@
 Name:       vconf-internal-keys
 Summary:    Internal shared keys for vconf
-Version:    0.0.129
+Version:    0.0.150
 Release:    0
-VCS:        magnolia/framework/appfw/vconf-internal-keys#submit/master/20130926.071905-51-g7e6f1653b9d078ddee6e6685f740f1e9b26d7e2b
 Group:      Development/Headers
 License:    Apache License, Version 2.0
 Source0:    %{name}-%{version}.tar.gz
@@ -22,11 +21,7 @@ Vconf internal key header files (devel)
 %setup -q -n %{name}-%{version}
 
 %build
-%if %{_repository} == "wearable"
-cmake -D DEVICE_PROFILE=wearable . -DCMAKE_INSTALL_PREFIX=%{_prefix}
-%else
-cmake -D DEVICE_PROFILE=mobile . -DCMAKE_INSTALL_PREFIX=%{_prefix}
-%endif
+cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
 
 make %{?jobs:-j%jobs}
 
@@ -42,3 +37,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_includedir}/vconf/*
 %{_libdir}/pkgconfig/*.pc
+

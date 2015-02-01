@@ -1,3 +1,19 @@
+vconf-internal-keys (0.0.136) unstable; urgency=low
+
+  * 1. add key for fus on ode status
+  * Git: magnolia/framework/appfw/vconf-internal-keys
+  * Tag: vconf-internal-keys_0.0.136
+
+ -- Sunbong Ha <sunbong.ha@samsung.com>  Mon, 09 Dec 2013 09:32:58 +0900
+
+vconf-internal-keys (0.0.129) unstable; urgency=low
+
+  * 1. adding oma-ds state key
+  * Git: magnolia/framework/appfw/vconf-internal-keys
+  * Tag: vconf-internal-keys_0.0.129
+
+ -- sanghyukko <sanghyuk.ko@samsung.com>  Thu, 31 Oct 2013 18:43:18 +0900
+
 vconf-internal-keys (0.0.128) unstable; urgency=low
 
   * adding FMM-lock state key
