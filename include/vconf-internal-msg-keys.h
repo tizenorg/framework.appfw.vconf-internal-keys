@@ -35,6 +35,7 @@
 
 /* ========================== Message Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_msg_key
  * @{
  * @brief Message Keys & Values\n
@@ -104,6 +105,23 @@ enum {
         VCONFKEY_MESSAGE_SOS_INVOKED = 0x01,
         VCONFKEY_MESSAGE_SOS_STANDBY = 0x02
 };
+
+/**
+ * @brief  Indicates the selected emergency buzzer of safety assistance setting
+ *
+ * 0 : Emergency buzzer is set to siren1 \n
+ * 1 : Emergency buzzer is set to siren2 \n
+ */
+#define VCONFKEY_MESSAGE_EMG_BUZZER_TYPE		VCONFKEY_MSG_DB_PREFIX"/emg_buzzer_type"
+
+/**
+ * @brief  Indicates the status of the popup display
+ *
+ * 0 : Popup display is OFF \n
+ * 1 : Popup display is ON \n
+ */
+
+#define VCONFKEY_MESSAGE_POPUP_DISPLAY_ENABLE		VCONFKEY_MSG_DB_PREFIX"/popup_display_enable"
 
 /**
  * @}

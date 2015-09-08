@@ -35,6 +35,7 @@
 
 /* ========================== lockscreen Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_lockscreen_key
  * @{
  * @brief lockscreen Keys & Values\n
@@ -49,25 +50,18 @@
 #define VCONFKEY_LOCKSCREEN_PHONE_LOCK_VERIFICATION	"memory/lockscreen/phone_lock_verification"
 
 /**
- * @brief whether shorcut is displayed or not
- *
- * type : bool
-*/
-#define VCONFKEY_LOCKSCREEN_SHORTCUT_DISPLAY	"db/lockscreen/shortcut_display"
-
-/**
- * @brief whether event notification is displayed or not
- *
- * type : bool
-*/
-#define VCONFKEY_LOCKSCREEN_EVENT_NOTIFICATION_DISPLAY	"db/lockscreen/event_notification_display"
-
-/**
  * @brief whether context aware notification is displayed or not
  *
  * type : bool
 */
 #define VCONFKEY_LOCKSCREEN_CONTEXT_AWARE_NOTIFICATION_DISPLAY	"db/lockscreen/context_aware_notification_display"
+
+/**
+ * @brief whether camera quick access is operated or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_CAMERA_QUICK_ACCESS	"db/lockscreen/camera_quick_access"
 
 /**
  * @brief whether clock is displayed or not
@@ -77,11 +71,25 @@
 #define VCONFKEY_LOCKSCREEN_CLOCK_DISPLAY	"db/lockscreen/clock_display"
 
 /**
- * @brief whether weather is displayed or not
+ * @brief whether dual clock is displayed or not
  *
  * type : bool
 */
-#define VCONFKEY_LOCKSCREEN_WEATHER_DISPLAY	"db/lockscreen/weather_display"
+#define VCONFKEY_LOCKSCREEN_DUAL_CLOCK_DISPLAY	"db/lockscreen/dual_clock_display"
+
+/**
+ * @brief dual clock timezone id
+ *
+ * type : string
+*/
+#define VCONFKEY_LOCKSCREEN_DUAL_CLOCK_TIMEZONE_ID	"db/lockscreen/dual_clock_timezone_id"
+
+/**
+ * @brief dual clock timezone offset
+ *
+ * type : string
+*/
+#define VCONFKEY_LOCKSCREEN_DUAL_CLOCK_TIMEZONE		"db/lockscreen/dual_clock_timezone"
 
 /**
  * @brief whether help text is displayed or not
@@ -89,6 +97,220 @@
  * type : bool
 */
 #define VCONFKEY_LOCKSCREEN_HELP_TEXT_DISPLAY	"db/lockscreen/help_text_display"
+
+/**
+ * @brief whether title is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_TITLE_DISPLAY	"db/lockscreen/title_display"
+
+/**
+ * @brief whether total briefings are displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_BRIEFING_DISPLAY	"db/lockscreen/briefing_display"
+
+/**
+ * @brief whether music controller is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_MUSIC_CONTROLLER_DISPLAY	"db/lockscreen/music_controller_display"
+
+/**
+ * @brief whether event notification is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_EVENT_NOTIFICATION_DISPLAY	"db/lockscreen/event_notification_display"
+
+/**
+ * @brief whether additional information is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_ADDITIONAL_INFO_DISPLAY	"db/lockscreen/additional_info_display"
+
+/**
+ * @brief whether weather is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_WEATHER_DISPLAY	"db/lockscreen/weather_display"
+
+/**
+ * @brief whether pedometer is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_PEDOMETER_DISPLAY	"db/lockscreen/pedometer_display"
+
+/**
+ * @brief whether news is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_NEWS_DISPLAY	"db/lockscreen/news_display"
+
+/**
+ * @brief whether SNS is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_SNS_DISPLAY	"db/lockscreen/sns_display"
+
+/**
+ * @brief whether schedule is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_SCHEDULE_DISPLAY	"db/lockscreen/schedule_display"
+
+/**
+ * @brief whether shorcut is displayed or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_LOCKSCREEN_SHORTCUT_DISPLAY	"db/lockscreen/shortcut_display"
+
+/**
+ * @brief unlocking effect of swipe unlock type
+ *
+ * 0 : effect 0 \n
+ * 1 : effect 1 \n
+ * 2 : effect 2 \n
+ * 3 : effect 3 \n
+ * 4 : effect 4 \n
+ * ...
+ */
+#define VCONFKEY_LOCKSCREEN_EFFECT	"db/lockscreen/effect"
+/* lockscreen unlock effect */
+enum {
+		LOCKSCREEN_EFFECT_0 = 0,
+		LOCKSCREEN_EFFECT_1,
+		LOCKSCREEN_EFFECT_2,
+		LOCKSCREEN_EFFECT_3,
+		LOCKSCREEN_EFFECT_4,
+		LOCKSCREEN_EFFECT_MAX
+};
+
+/**
+ * @brief theme style displayed in lockscreen
+ *
+ * 0 : Default style \n
+ * 1 : Style 1 \n
+ * 2 : Style 2 \n
+ * 3 : Style 3 \n
+ * 4 : Style 4 \n
+ * 5 : Style 5 \n
+ * 6 : Style 6 \n
+ * 7 : Style 7 \n
+ * ...
+ */
+#define VCONFKEY_LOCKSCREEN_STYLE	"db/lockscreen/style"
+/* lockscreen style */
+enum {
+		LOCKSCREEN_STYLE_DEFAULT = 0,
+		LOCKSCREEN_STYLE_1,
+		LOCKSCREEN_STYLE_2,
+		LOCKSCREEN_STYLE_3,
+		LOCKSCREEN_STYLE_4,
+		LOCKSCREEN_STYLE_5,
+		LOCKSCREEN_STYLE_6,
+		LOCKSCREEN_STYLE_7,
+		LOCKSCREEN_STYLE_MAX
+};
+
+/**
+ * @brief Lockscreen wallpaper type
+ *
+ * 0 : Default wallpaper \n
+ * 1 : Gallery wallpaper \n
+ * 2 : Multiple wallpaper \n
+ * 3 : CP wallpaper \n
+ * 4 : Festival wallpaper \n
+ * ...
+ */
+#define VCONFKEY_LOCKSCREEN_WALLPAPER_TYPE	"db/lockscreen/wallpaper_type"
+/* lockscreen style */
+enum {
+		LOCKSCREEN_WALLPAPER_TYPE_DEFAULT = 0,
+		LOCKSCREEN_WALLPAPER_TYPE_GALLERY,
+		LOCKSCREEN_WALLPAPER_TYPE_MULTIPLE,
+		LOCKSCREEN_WALLPAPER_TYPE_CP,
+		LOCKSCREEN_WALLPAPER_TYPE_FESTIVAL,
+		LOCKSCREEN_WALLPAPER_TYPE_MAX
+};
+
+/**
+ * @brief 1st style color value.
+ *
+ * type : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_1_COLOR	"db/lockscreen/style_1_color"
+
+/**
+ * @brief 2nd style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_2_COLOR	"db/lockscreen/style_2_color"
+
+/**
+ * @brief 3rd style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_3_COLOR	"db/lockscreen/style_3_color"
+
+/**
+ * @brief 4th style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_4_COLOR	"db/lockscreen/style_4_color"
+
+/**
+ * @brief 5th style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_5_COLOR	"db/lockscreen/style_5_color"
+
+/**
+ * @brief 6th style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_6_COLOR	"db/lockscreen/style_6_color"
+
+/**
+ * @brief 7th style color value.
+ *
+ * tyle : integer
+*/
+#define VCONFKEY_LOCKSCREEN_STYLE_7_COLOR	"db/lockscreen/style_7_color"
+
+/**
+ * @brief lockscreen Enter password after swiping
+ *
+ * type : bool
+ * 0 : Enter password without swiping
+ * 1 : Enter password after swiping
+*/
+#define VCONFKEY_LOCKSCREEN_ENTER_PASSWORD_AFTER_SWIFING		"db/lockscreen/enter_password_after_swifing"
+
+/**
+ * @brief Festival wallpaper
+ *
+ * type : bool
+ * 0 : Festival wallpaper disabled
+ * 1 : Festival wallpaper enabled
+*/
+#define VCONFKEY_LOCKSCREEN_FESTIVAL_WALLPAPER		"db/lockscreen/festivalwallpaper"
+
 
 /**
  * @brief first package name displayed  in shortcut
@@ -117,5 +339,39 @@
  * type : string
 */
 #define VCONFKEY_LOCKSCREEN_SHORTCUT4	"file/lockscreen/shortcut4"
+
+/**
+ * @brief title string displayed in lockscreen
+ *
+ * type : string
+*/
+#define VCONFKEY_LOCKSCREEN_TITLE	"file/lockscreen/title"
+
+/**
+ * @brief lockscreen display status
+ *
+ * type : bool
+ * 0 : not displayed  state
+ * 1 : displayed state
+*/
+#define VCONFKEY_LOCKSCREEN_STATE	"memory/lockscreen/display_state"
+
+/**
+ * @brief lockscreen s view lock status
+ *
+ * type : bool
+ * 0 : s view lock is not running
+ * 1 : s view lock is running
+*/
+#define VCONFKEY_LOCKSCREEN_SVIEW_STATE		"memory/lockscreen/sview_state"
+
+/**
+ * @brief lockscreen security auto lock
+ *
+ * type : int
+ * 0 : security auto lock is off
+ * 1 : security auto lock is on
+*/
+#define VCONFKEY_LOCKSCREEN_SECURITY_AUTO_LOCK "memory/lockscreen/security_auto_lock"
 
 #endif	/* __VCONF_INTERNAL_LOCKSCREEN_KEYS_H__ */

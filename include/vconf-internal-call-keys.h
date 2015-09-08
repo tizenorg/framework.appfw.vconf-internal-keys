@@ -35,6 +35,7 @@
 
 /* ========================== Call Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_call_key
  * @{
  * @brief Call Keys & Values\n
@@ -71,6 +72,39 @@ enum {
  * Call volume leve : 1~6 \n
  */
 #define VCONFKEY_CALL_VOLUME_LEVEL     "db/call/vol_level"
+
+/**
+ * @brief Noise reduction state
+ *
+ * False : Off
+ * True : On
+ */
+#define VCONFKEY_CALL_NOISE_REDUCTION_STATE_BOOL		"memory/call/noise_reduction_state"
+
+/**
+ * @brief Extra volume state
+ *
+ * False : Off
+ * True : On
+ */
+#define VCONFKEY_CALL_EXTRA_VOLUME_STATE_BOOL		"memory/call/extra_volume_state"
+
+/**
+ * @brief Wide band AMR state
+ *
+ * False : Off
+ * True : On
+ */
+#define VCONFKEY_CALL_WBAMR_STATE_BOOL		"memory/call/wbamr_state"
+
+/**
+ * @brief ota test state
+ *
+ * False : Off
+ * True : On
+ */
+#define VCONFKEY_CALL_OTA_TEST      "db/call/ota_test"
+
 
 
 /**

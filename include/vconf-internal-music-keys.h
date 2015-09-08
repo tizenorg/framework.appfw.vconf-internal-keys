@@ -35,6 +35,7 @@
 
 /* ========================== Music Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_music_key
  * @{
  * @brief Music Keys & Values\n

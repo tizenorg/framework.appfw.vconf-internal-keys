@@ -35,6 +35,7 @@
 
 /* ========================== Calendar Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_calendar_key
  * @{
  * @brief Calendar Keys & Values\n
@@ -54,10 +55,6 @@
  * @brief timezone path
  */
 #define VCONFKEY_CALENDAR_TIMEZONE_PATH VCONFKEY_CALENDAR_PREFIX"/timezone_path"
-
-/**
- * @}
- */
 
 #endif	/* __VCONF_INTERNAL_CALENDAR_KEYS_H__ */
 

@@ -35,6 +35,7 @@
 
 /* ========================== Testmode Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_testmode_key
  * @{
  * @brief Testmode Keys & Values\n
@@ -69,6 +70,26 @@ enum {
 };
 
 /**
+ * @brief Fast Dormancy Setting
+ *
+ * type : bool
+ * VCONFKEY_TESTMODE_FAST_DORMANCY_OFF: FAST Dormancy off \n
+ * VCONFKEY_TESTMODE_FAST_DORMANCY_ON: FAST Dormancy on \n
+ */
+#define VCONFKEY_TESTMODE_FAST_DORMANCY             "memory/testmode/fast_dormancy"
+enum {
+	VCONFKEY_TESTMODE_FAST_DORMANCY_OFF = 0,
+	VCONFKEY_TESTMODE_FAST_DORMANCY_ON
+};
+
+/**
+ * @brief Fast Dormancy Setting of SIM2
+ *
+ * Enum values of this key are equal to VCONFKEY_TESTMODE_FAST_DORMANCY
+ */
+#define VCONFKEY_TESTMODE_FAST_DORMANCY2             "memory/testmode/fast_dormancy2"
+
+/**
  * @brief Power off popup Setting
  *
  * type : bool
@@ -78,7 +99,8 @@ enum {
 #define VCONFKEY_TESTMODE_POWER_OFF_POPUP            VCONFKEY_TESTMODE_PREFIX"/pwr_off_popup"
 enum {
 	VCONFKEY_TESTMODE_POWER_OFF_POPUP_ENABLE = 0,
-	VCONFKEY_TESTMODE_POWER_OFF_POPUP_DISABLE
+	VCONFKEY_TESTMODE_POWER_OFF_POPUP_DISABLE,
+	VCONFKEY_TESTMODE_POWER_OFF_POPUP_AND_POWER_OFF_DISABLE
 };
 
 /**
@@ -94,10 +116,97 @@ enum {
 	VCONFKEY_TESTMODE_LOW_BATT_POPUP_DISABLE
 };
 
+/**
+ * @brief Screen lock Setting
+ *
+ * type : int
+ * VCONFKEY_TESTMODE_SCREEN_LOCK_ENABLE: Enable to lock screen
+ * VCONFKEY_TESTMODE_SCREEN_LOCK_DISABLE: Disable to lock screen
+ */
+#define VCONFKEY_TESTMODE_SCREEN_LOCK            VCONFKEY_TESTMODE_PREFIX"/screen_lock"
+enum {
+	VCONFKEY_TESTMODE_SCREEN_LOCK_ENABLE = 0,
+	VCONFKEY_TESTMODE_SCREEN_LOCK_DISABLE
+};
+
+/**
+ * @brief Temperature alert popup Setting
+ *
+ * type : bool
+ * VCONFKEY_TESTMODE_TEMP_ALERT_POPUP_ENABLE: Enable to temp alert popup
+ * VCONFKEY_TESTMODE_TEMP_ALERT_POPUP_DISABLE: Disable to temp alert popup
+ */
+#define VCONFKEY_TESTMODE_TEMP_ALERT_POPUP            VCONFKEY_TESTMODE_PREFIX"/temp_alert_popup"
+enum {
+	VCONFKEY_TESTMODE_TEMP_ALERT_POPUP_ENABLE = 0,
+	VCONFKEY_TESTMODE_TEMP_ALERT_POPUP_DISABLE
+};
+
+
+/**
+ * @brief it stands for keystring need to be blocked or not
+ *
+ * 0 off \n
+ * 1 on \n
+ */
+#define VCONFKEY_TESTMODE_FACTORY_KSTRINGB      VCONFKEY_TESTMODE_PREFIX"/bKeyStringBlock"
+enum {
+	VCONFKEY_TESTMODE_FACTORY_KSTRINGB_OFF = 0x00,
+	VCONFKEY_TESTMODE_FACTORY_KSTRINGB_ON = 0x01
+};
+/**
+ * @}
+ */
+
+/**
+ * @brief uart path setting
+ *
+ * 0 AP \n
+ * 1 CP through Qualcomm diag app \n
+ */
+#define VCONFKEY_TESTMODE_UART_PATH      VCONFKEY_TESTMODE_PREFIX"/buartpath"
+enum {
+	VCONFKEY_TESTMODE_UART_PATH_AP = 0x00,
+	VCONFKEY_TESTMODE_UART_PATH_CP = 0x01
+};
+/**
+ * @}
+ */
+
+/**
+ * @brief factory mode
+ *
+ * 0 normal \n
+ * 1 factory \n
+ */
+#define VCONFKEY_TESTMODE_FACTORYMODE      "memory/testmode/factorymode"	/* int 0:normal, 1:factory */
+	enum {
+		VCONFKEY_TESTMODE_FACTORYMODE_OFF = 0x00,
+		VCONFKEY_TESTMODE_FACTORYMODE_ON = 0x01
+	};
 
 /**
  * @}
  */
+
+/**
+ * @brief ##MSL# edited status
+ *
+ * 0 not edited \n
+ * 1 edited \n
+ */
+#define VCONFKEY_TESTMODE_MSL_EDITEDMODE      "memory/testmode/msleditedmode"	/* int 0:not edited, 1:edited */
+	enum {
+		VCONFKEY_TESTMODE_MSLEDITEDMODE_OFF = 0x00,
+		VCONFKEY_TESTMODE_MSLEDITEDMODE_ON = 0x01
+	};
+
+/**
+ * @brief ##MSL#, Edited values for MDN and MSID
+ */
+#define VCONFKEY_TESTMODE_MSL_EDITEDMDN      "memory/testmode/msleditedmdn"
+#define VCONFKEY_TESTMODE_MSL_EDITEDMSID      "memory/testmode/msleditedmsid"
+#define VCONFKEY_TESTMODE_MSL_EDITEDAKEY      "memory/testmode/msleditedakey"
 
 #endif	/* __VCONF_INTERNAL_TESTMODE_KEYS_H__ */
 

@@ -35,6 +35,7 @@
 
 /* ========================== VoiceRecorder Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_voicerecorder_key
  * @{
  * @brief VoiceRecorder Keys & Values\n

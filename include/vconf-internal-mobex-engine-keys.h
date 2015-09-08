@@ -35,6 +35,7 @@
 
 /* ========================== Mobex Engine Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_mobex_engine_key
  * @{
  * @brief Mobex Engine Keys & Values\n
@@ -86,6 +87,21 @@ enum {
  /** Connected to WiFi */
  VCONFKEY_MOBEX_ENGIN_WIFI
 };
+
+/**
+ * @brief connected method status with Kies(Samsung PC Studio)
+ *
+ * VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_UNSET : Unset fus ode status \n
+ * VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_SET : Set fus ode status \n
+ */
+#define VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_INT VCONFKEY_MOBEX_ENGINE_PREFIX"/fus_ode_status"
+enum {
+ /** Unset fus ode status */
+ VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_UNSET = 0,
+ /** Set fus ode status */
+ VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_SET
+};
+
 /**
  * @}
  */

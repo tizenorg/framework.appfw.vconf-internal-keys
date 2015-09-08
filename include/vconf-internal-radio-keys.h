@@ -35,6 +35,7 @@
 
 /* ========================== Radio Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_radio_key
  * @{
  * @brief Radio Keys & Values\n

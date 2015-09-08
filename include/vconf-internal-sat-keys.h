@@ -35,6 +35,7 @@
 
 /* ========================== Sim Application Toolkit Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_sat_key
  * @{
  * @brief Sim Application Toolkit Keys & Values\n
@@ -49,6 +50,14 @@
  * Value : Idle text from SIM.
  */
 #define VCONFKEY_SAT_IDLE_TEXT    VCONFKEY_SAT_PREFIX"/idle_text"
+
+/**
+ * @brief Normal priority available status
+ *
+ * 0 : Not available \n
+ * 1 : Available \n
+ */
+#define VCONFKEY_SAT_NORMAL_PRIORITY_AVAILABLE_BOOL		VCONFKEY_SAT_PREFIX"/normal_priority_available"
 
 /**
  * @}

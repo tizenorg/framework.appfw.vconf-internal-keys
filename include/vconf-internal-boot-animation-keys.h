@@ -35,6 +35,7 @@
 
 /* ========================== boot_animation Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_boot_animation_key
  * @{
  * @brief boot_animation Keys & Values\n

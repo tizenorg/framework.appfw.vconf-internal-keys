@@ -35,6 +35,7 @@
 
 /* ========================== Contacts Service Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_contacts_svc_key
  * @{
  * @brief Contacts Service Keys & Values\n
@@ -65,6 +66,10 @@ enum {
 	VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_LASTFIRST = 1
 };
 
+/**
+ * @brief Phonenumber minimum match digit
+ */
+#define VCONFKEY_CONTACTS_SVC_PHONENUMBER_MIN_MATCH_DIGIT            "db/contacts-svc/phonenumber_min_match_digit"
 
 /**
  * @}

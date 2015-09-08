@@ -35,6 +35,7 @@
 
 /* ========================== Data Router Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_dr_key
  * @{
  * @brief Data Router Keys & Values\n
@@ -47,6 +48,21 @@
  * @brief The hash value for Kies authentication
  */
 #define VCONFKEY_DR_AUTH_STATUS_CHECK_INT	VCONF_DATAROUTER_PREFIX"/auth_status"
+enum
+{
+	VCONFKEY_DR_AUTH_STATUS_NOT_AUTHORIZED = 0,
+	VCONFKEY_DR_AUTH_STATUS_AUTHORIZED = 1
+};
+
+/**
+ * @brief The status of serial connection with osp
+ */
+#define VCONFKEY_DR_OSP_SERIAL_OPEN_INT	VCONF_DATAROUTER_PREFIX"/osp_serial_open"
+enum
+{
+	VCONFKEY_DR_OSP_SERIAL_CLOSE = 0,
+	VCONFKEY_DR_OSP_SERIAL_OPEN = 1
+};
 
 /**
  * @}

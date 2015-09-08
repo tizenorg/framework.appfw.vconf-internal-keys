@@ -35,6 +35,7 @@
 
 /* ========================== FileManager Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_filemanager_key
  * @{
  * @brief FileManager Keys & Values\n

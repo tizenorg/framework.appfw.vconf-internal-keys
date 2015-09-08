@@ -35,6 +35,7 @@
 
 /* ========================== Pm Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_pm_key
  * @{
  * @brief Power manager Keys & Values\n
@@ -55,6 +56,18 @@ enum {
 	VCONFKEY_PM_STATE_LCDDIM,
 	VCONFKEY_PM_STATE_LCDOFF,
 	VCONFKEY_PM_STATE_SLEEP
+};
+
+/**
+ * @brief custom brightness
+ *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_PM_CUSTOM_BRIGHTNESS_STATUS               "memory/pm/custom_brightness_status"
+enum {
+	VCONFKEY_PM_CUSTOM_BRIGHTNESS_OFF = 0,
+	VCONFKEY_PM_CUSTOM_BRIGHTNESS_ON
 };
 
 /**
@@ -94,6 +107,66 @@ enum {
  * seconds
  */
 #define VCONFKEY_PM_BATTERY_TIMETOFULL                "memory/pm/battery_timetofull"
+
+/**
+* @brief brightness changed in low battery
+*
+* 0 : false
+* 1 : true
+*/
+#define VCONFKEY_PM_BRIGHTNESS_CHANGED_IN_LPM         "memory/pm/brt_changed_lpm"
+
+/**
+ * @brief lcd off source
+ *
+ * 1 : by power key \n
+ * 2 : by timeout \n
+ */
+#define VCONFKEY_PM_LCDOFF_SOURCE                     "memory/pm/lcdoff_source"
+enum {
+	VCONFKEY_PM_LCDOFF_BY_POWERKEY = 1,
+	VCONFKEY_PM_LCDOFF_BY_TIMEOUT
+};
+
+/**
+ * @brief key ignore setting
+ *
+ * 1 : key ignore true \n
+ * 0 : key ignore false\n
+ *
+ * bit position
+ * 1 : lock \n
+ * 2 : starter \n
+ * 4 : extra1 \n
+ * 8 : extra2 \n
+ */
+#define VCONFKEY_PM_KEY_IGNORE                        "memory/pm/key_ignore"
+enum {
+	VCONFKEY_PM_KEY_LOCK = 0x01,
+	VCONFKEY_PM_KEY_STARTER = 0x02,
+	VCONFKEY_PM_KEY_EXTRA1 = 0x04,
+	VCONFKEY_PM_KEY_EXTRA2 = 0x08
+};
+
+/**
+* @brief brightness value
+*
+* brightness level : 1~100
+*
+*/
+#define VCONFKEY_PM_CURRENT_BRIGHTNESS                "memory/pm/current_brt"
+
+/**
+ * @brief SIP(virtual keypad) status
+ *
+ * 0 : sip off
+ * 1 : sip on
+ */
+#define VCONFKEY_PM_SIP_STATUS                        "memory/pm/sip_status"
+enum {
+	VCONFKEY_PM_SIP_OFF = 0,
+	VCONFKEY_PM_SIP_ON
+};
 
 /**
  * @}

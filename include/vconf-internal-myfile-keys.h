@@ -33,6 +33,24 @@
  * @brief       This file has the definitions of shared keys for myfile \n
  */
 
+#define VCONFKEY_MFAPP_PREFIX                                 "db/myfile"
+
+/**
+ * @brief the folder of browser
+ *
+ */
+
+#define VCONFKEY_MFAPP_CURRENT_FOLDER_STR            VCONFKEY_MFAPP_PREFIX"/current_folder"
+
+/**
+ * @brief support touch sounds option
+ *
+ * 0 : copy deny \n
+ * 1 : copy access \n
+ */
+
+#define VCONFKEY_MFAPP_PERMISSION_COPY_BOOL            VCONFKEY_MFAPP_PREFIX"/permission_copy"
+
 
 #endif	/* __VCONF_INTERNAL_MYFILE_KEYS_H__ */
 

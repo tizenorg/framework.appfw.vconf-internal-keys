@@ -35,6 +35,7 @@
 
 /* ========================== Bluetooth Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_bt_key
  * @{
  * @brief Bluetooth Keys & Values\n
@@ -61,6 +62,76 @@ enum {
  * string : name of the connected headset
 */
 #define VCONFKEY_BT_HEADSET_NAME "memory/bluetooth/sco_headset_name"
+
+/**
+ * @brief Bluetooth file sending status
+ *
+ * 0x00 : sending none \n
+ * 0x01 : sending started \n
+*/
+#define VCONFKEY_BT_SENDING_STATUS "memory/bluetooth/sending"
+enum {
+	/** Sending none */
+	VCONFKEY_BT_SENDING_NONE = 0x00,
+	/** Sending */
+	VCONFKEY_BT_SENDING = 0x01
+};
+
+/**
+ * @brief Bluetooth file receiving status
+ *
+ * 0x00 : receiving none \n
+ * 0x01 : receiving started \n
+*/
+#define VCONFKEY_BT_RECEIVING_STATUS "memory/bluetooth/receiving"
+enum {
+	/** Receiving none */
+	VCONFKEY_BT_RECEIVING_NONE = 0x00,
+	/** Receiving */
+	VCONFKEY_BT_RECEIVING = 0x01
+};
+
+/** \
+ * @brief Bluetooth LE status
+ *
+ * 0x0000 : Bluetooth LE OFF \n
+ * 0x0001 : Bluetooth LE ON \n
+*/
+#define VCONFKEY_BT_LE_STATUS    "db/bluetooth/lestatus"
+enum {
+	/** Bluetooth LE OFF */
+	VCONFKEY_BT_LE_STATUS_OFF = 0x0000,
+	/** Bluetooth LE ON */
+	VCONFKEY_BT_LE_STATUS_ON = 0x0001
+};
+
+/**
+ * @brief Bluetooth DUT mode
+ *
+ * 0x00 : DUT mode Off \n
+ * 0x01 : DUT mode On \n
+*/
+#define VCONFKEY_BT_DUT_MODE "memory/bluetooth/dutmode"
+enum {
+	/** DUT mode is off */
+	VCONFKEY_BT_DUT_MODE_OFF = 0x00,
+	/** DUT mode is ON */
+	VCONFKEY_BT_DUT_MODE_ON = 0x01
+};
+
+/**
+ * @brief Bluetooth Gear only connected status
+ *
+ * 0x00 : Gear only connected False \n
+ * 0x01 : Gear only connected True \n
+*/
+#define VCONFKEY_BT_GEAR_ONLY "memory/bluetooth/gearonly"
+enum {
+	/** Only Gear device connected FALSE */
+	VCONFKEY_BT_GEAR_ONLY_FALSE = 0x00,
+	/** Only Gear device connected TRUE */
+	VCONFKEY_BT_GEAR_ONLY_TRUE = 0x01
+};
 
 /**
  * @}

@@ -35,6 +35,7 @@
 
 /* ========================== pwlock Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_pwlock_key
  * @{
  * @brief pwlock Keys & Values\n

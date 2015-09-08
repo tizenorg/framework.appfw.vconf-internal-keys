@@ -33,6 +33,7 @@
 
 /* ========================== Memo Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_memo_key
  * @{
  * @brief Memo Keys & Values\n

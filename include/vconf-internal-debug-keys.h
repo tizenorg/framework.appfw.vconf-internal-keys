@@ -35,6 +35,7 @@
 
 /* ========================== Debug Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_debug_key
  * @{
  * @brief Debug Keys & Values\n

@@ -35,6 +35,7 @@
 
 /* ========================== Menu-screen Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_menuscreen_key
  * @{
  * @brief Menu-screen Keys & Values\n
@@ -48,7 +49,7 @@
  * format : "state:package_name"
  *          State means create | update | delete.
  */
-#define VCONFKEY_MENUSCREEN_DESKTOP "memory/menuscreen/desktop"
+#define VCONFKEY_MENUSCREEN_DESKTOP "db/menuscreen/desktop"
 
 
 /**

@@ -35,13 +35,14 @@
 
 /* ========================== CISS UI Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_ciss_key
  * @{
  * @brief CISS UI Keys & Values\n
  *        Maintainer : js49.lee@samsung.com
  */
 
-#define VCONFKEY_CISSAPPL_PREFIX                         "db/ciss/"
+#define VCONFKEY_CISSAPPL_PREFIX                         "db/ciss"
 
 /**
  * @brief Show my number status
@@ -58,6 +59,17 @@
  * 0 : Off \n
  * 1 : On \n
  */
+#define VCONFKEY_CISSAPPL_AUTO_REJECT_INT               VCONFKEY_CISSAPPL_PREFIX"/auto_reject"
+
+/**
+ * @brief Incoming call auto rejection status
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+/*
+ * to prevent build error.
+*/
 #define VCONFKEY_CISSAPPL_AUTO_REJECT_BOOL               VCONFKEY_CISSAPPL_PREFIX"/auto_reject"
 
 /**
@@ -69,12 +81,22 @@
 #define VCONFKEY_CISSAPPL_AUTO_REJECT_UNKNOWN_BOOL       VCONFKEY_CISSAPPL_PREFIX"/auto_reject_unknown"
 
 /**
+ * @brief add numbers to messages using call reject list
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_AUTO_REJECT_ADD_NUMBERS_TO_MESSAGES       VCONFKEY_CISSAPPL_PREFIX"/auto_reject_add_numbers_to_messages"
+
+/**
  * @brief Prefix dial status
  *
  * 0 : Off \n
  * 1 : On \n
  */
 #define VCONFKEY_CISSAPPL_PREFIX_DIAL_BOOL               VCONFKEY_CISSAPPL_PREFIX"/prefix_dial"
+#define VCONFKEY_CISSAPPL_SIM1_PREFIX_DIAL_BOOL          VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_sim1"
+#define VCONFKEY_CISSAPPL_SIM2_PREFIX_DIAL_BOOL          VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_sim2"
 
 /**
  * @brief The total number of the prefix dial numbers
@@ -83,6 +105,8 @@
 
 /** @brief Prefix dial number 1 */
 #define VCONFKEY_CISSAPPL_PREFIX_DIAL_NUM1_STR           VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_num1"
+#define VCONFKEY_CISSAPPL_SIM1_PREFIX_DIAL_NUM1_STR      VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_num1_sim1"
+#define VCONFKEY_CISSAPPL_SIM2_PREFIX_DIAL_NUM1_STR      VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_num1_sim2"
 
 /** @brief Prefix dial number 2 */
 #define VCONFKEY_CISSAPPL_PREFIX_DIAL_NUM2_STR           VCONFKEY_CISSAPPL_PREFIX"/prefix_dial_num2"
@@ -224,6 +248,14 @@
 #define VCONFKEY_CISSAPPL_OUTGOING_CALL_TYPE_INT          VCONFKEY_CISSAPPL_PREFIX"/outgoing_call_type"
 
 /**
+ * @brief The status of device selected for receiving incoming calls
+ *
+ * 0 : BT Headset \n
+ * 1 : Receiver \n
+ */
+#define VCONFKEY_CISSAPPL_ACCEPT_CALL_IN_DEVICE_SELECT_INT          VCONFKEY_CISSAPPL_PREFIX"/accept_call_in_device"
+
+/**
  * @brief Eye contact status
  *
  * 0 : Off \n
@@ -259,6 +291,22 @@
 #define VCONFKEY_CISSAPPL_EXTRA_VOL_BOOL          VCONFKEY_CISSAPPL_PREFIX"/extra_vol"
 
 /**
+ * @brief The status of voice control
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_VOICE_CONTROL_ENABLED_BOOL             VCONFKEY_CISSAPPL_PREFIX"/voice_control_key"
+
+/**
+ * @brief The status of voice control_check
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_VOICE_CONTROL_CHECK_ENABLED_BOOL             VCONFKEY_CISSAPPL_PREFIX"/voice_control_check_state_key"
+
+/**
  * @brief increase ringtone status
  *
  * 0 : Off \n
@@ -268,10 +316,209 @@
 
 /**
  * @brief It saves 24 charaters.
- * First 12 characters are eq value for left ear. 
+ * First 12 characters are eq value for left ear.
  * Last 12 characters are eq values for right ears.
  */
 #define VCONFKEY_CISSAPPL_PERSONALISED_EQ_STR	VCONFKEY_CISSAPPL_PREFIX"/personalised_eq"
+
+/**
+ * @brief The status of frequently used side for my sound
+ *
+ * -1 : Unset
+ * 0 : Left
+ * 1 : Right
+ */
+#define VCONFKEY_CISSAPPL_FREQUENT_SIDE_INT	VCONFKEY_CISSAPPL_PREFIX"/frequent_side"
+
+/**
+ * @brief The status of music sound *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_CISSAPPL_MUSIC_SOUND_BOOL	VCONFKEY_CISSAPPL_PREFIX"/music_sound"
+
+/**
+ * @brief The status of call sound *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_CISSAPPL_CALL_SOUND_BOOL	VCONFKEY_CISSAPPL_PREFIX"/call_sound"
+
+/**
+ * @brief The status (phone number locator) *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_CISSAPPL_CHINA_PNL_BOOL			VCONFKEY_CISSAPPL_PREFIX"/china_numloc"
+
+/**
+ * @brief update frequency (phone number locator) *
+ * 0 : no update
+ * 1 : every 1 month
+ * 2 : every 3 month
+ * 3 : every 6 month
+ */
+#define VCONFKEY_CISSAPPL_CHINA_PNL_UPDATE_FREQ_INT				VCONFKEY_CISSAPPL_PREFIX"/china_numloc_autoupdate_freq"
+
+/**
+ * @brief to shorten auto update frequency for verification team (phone number locator) *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_CISSAPPL_CHINA_PNL_TESTMODE_BOOL					VCONFKEY_CISSAPPL_PREFIX"/china_numloc_test_mode"
+
+/**
+ * @brief update date (phone number locator) *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_CISSAPPL_CHINA_PNL_UPDATE_DATE_STR				VCONFKEY_CISSAPPL_PREFIX"/china_numloc_update_date"
+
+/**
+ * @brief update accepted or not (phone number locator) *
+ * 0 : reject
+ * 1 : accept
+ */
+#define VCONFKEY_CISSAPPL_CHINA_PNL_ACCEPT_BOOL						VCONFKEY_CISSAPPL_PREFIX"/china_numloc_accept_update"
+
+/**
+ * @brief selected index (ipcall) *
+ * 0 ~ 5 : each selected item
+ */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_SELECTED_IDX_INT		VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_selected_index"
+
+/**
+ * @brief number of ipcall (ipcall) *
+ * 0 ~ 5 : number of ipcall
+ */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_CNT_IDX_INT				VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_cnt"
+
+/** @brief Predefined ipcall list 1 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST1_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list1"
+/** @brief Predefined ipcall list 2 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST2_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list2"
+/** @brief Predefined ipcall list 3 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST3_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list3"
+/** @brief Predefined ipcall list 4 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST4_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list4"
+/** @brief Predefined ipcall list 5 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST5_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list5"
+/** @brief Predefined ipcall list 6 */
+#define VCONFKEY_CISSAPPL_CHINA_IPCALL_LIST6_STR           VCONFKEY_CISSAPPL_PREFIX"/china_ipcall_list6"
+
+/**
+ * @brief The status of international dial automatic conversion *
+ * False : off
+ * True : on
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_INTL_DIAL_AUTO_CONVERSION_BOOL		VCONFKEY_CISSAPPL_PREFIX"/intl_dial_auto_conversion"
+
+/** @brief International dial assist - country name */
+#define VCONFKEY_CISSAPPL_DOCOMO_INTL_DIAL_COUNTRY_NAME_STR		VCONFKEY_CISSAPPL_PREFIX"/intl_dial_country_name"
+
+/** @brief International dial assist - prefix */
+#define VCONFKEY_CISSAPPL_DOCOMO_INTL_DIAL_COUNTRY_PREFIX_STR	VCONFKEY_CISSAPPL_PREFIX"/intl_dial_country_prefix"
+
+/** @brief International prefix - name */
+#define VCONFKEY_CISSAPPL_DOCOMO_INTL_PREFIX_NAME_STR		VCONFKEY_CISSAPPL_PREFIX"/intl_prefix_name"
+
+/** @brief International prefix - code */
+#define VCONFKEY_CISSAPPL_DOCOMO_INTL_PREFIX_CODE_STR		VCONFKEY_CISSAPPL_PREFIX"/intl_prefix_code"
+
+/**
+ * @brief The status of message notification sound *
+ * False : off
+ * True : on
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_MSG_NOTI_SOUND_BOOL		VCONFKEY_CISSAPPL_PREFIX"/msg_noti_sound"
+
+/**
+ * @brief message notification vibration *
+ * 0 : never
+ * 1 : always
+ * 2 : onli in silent mode
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_MSG_NOTI_VIB_INT			VCONFKEY_CISSAPPL_PREFIX"/msg_noti_vib"
+
+/**
+ * @brief answering memo *
+ * 0 : on
+ * 1 : on during vibration/silent
+ * 2 : off
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_ANS_MEMO_INT			VCONFKEY_CISSAPPL_PREFIX"/ans_memo"
+
+/**
+ * @brief answering memo sound language*
+ * 0 : japanese
+ * 1 : english
+ * 2 : korean
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_ANS_MEMO_SND_LANG_INT			VCONFKEY_CISSAPPL_PREFIX"/ans_memo_snd_lang"
+
+/**
+ * @brief answering memo ring duration *
+ * 00 ~ 120 , Ring duration after which answering memo starts
+ */
+#define VCONFKEY_CISSAPPL_DOCOMO_ANS_MEMO_RING_DUR_INT			VCONFKEY_CISSAPPL_PREFIX"/ans_memo_ring_dur"
+
+/**
+ * @brief Call alerts - Answer Vibration
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_CALL_ANSWER_VIBRATION_BOOL         VCONFKEY_CISSAPPL_PREFIX"/call_answer_vibrate"
+
+/**
+ * @brief call-related popup - Call noti
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_CALL_NOTI_POPUP_BOOL         VCONFKEY_CISSAPPL_PREFIX"/call_noti_popup_bool"
+
+/**
+ * @brief call-related popup - In call status
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_INCALL_STATUS_POPUP_BOOL         VCONFKEY_CISSAPPL_PREFIX"/in-call_status_pupup_bool"
+
+/**
+ * @brief Call alerts - Call end Vibration
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_CALL_END_VIBRATION_BOOL			VCONFKEY_CISSAPPL_PREFIX"/call_callend_vibrate"
+
+/**
+ * @brief Use Call fail option
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_USE_CALL_FAIL_BOOL			VCONFKEY_CISSAPPL_PREFIX"/use_call_fail"
+
+/**
+ * @brief Play tone when keypad is pressed
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_KEYPAD_TONES_BOOL					VCONFKEY_CISSAPPL_PREFIX"/keypad_tone"
+
+/**
+ * @brief Enable auto redial if call cannot be connected or has been cut off
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_CISSAPPL_AUTO_REDIAL_BOOL 	VCONFKEY_CISSAPPL_PREFIX"/auto_redial"
+#define VCONFKEY_CISSAPPL_SIM1_AUTO_REDIAL_BOOL  	VCONFKEY_CISSAPPL_PREFIX"/auto_redial_sim1"
+#define VCONFKEY_CISSAPPL_SIM2_AUTO_REDIAL_BOOL 	VCONFKEY_CISSAPPL_PREFIX"/auto_redial_sim2"
 
 /**
  * @}

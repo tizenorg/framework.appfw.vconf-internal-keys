@@ -35,6 +35,7 @@
 
 /* ========================== Admin Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_admin_key
  * @{
  * @brief Admin Keys & Values\n

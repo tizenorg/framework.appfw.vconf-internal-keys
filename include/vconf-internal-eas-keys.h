@@ -35,6 +35,7 @@
 
 /* ========================== Exchange ActiveSync Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_sync_key
  * @{
  * @brief Exchange ActiveSync Keys & Values\n
@@ -47,7 +48,7 @@
  * 0 : Not synchronizing \n
  * 1 : Synchronizing \n
  */
-#define VCONFKEY_SYNC_STATE "db/sync/state"
+#define VCONFKEY_EAS_SYNC_STATE "db/sync/exchange"
 
 /**
  * @brief eas recovery mode
@@ -55,6 +56,13 @@
  * 1 : Recovery mode
  */
 #define VCONFKEY_EAS_RECOVERY_MODE "db/eas/recovery_mode"
+
+/**
+ * @brief max inactivity time policy enabled/disabled
+ * 0 : disabled
+ * 1 : enabled
+ */
+#define VCONFKEY_EAS_MAX_INACTIVITY_TIME_POLICY "db/eas/max_inactivity_time_policy"
 
 /**
  * @}

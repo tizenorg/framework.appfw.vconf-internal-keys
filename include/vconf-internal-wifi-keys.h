@@ -35,6 +35,7 @@
 
 /* ========================== Wifi Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_wifi_key
  * @{
  * @brief Wifi Keys & Values\n
@@ -54,7 +55,26 @@ enum {
 	VCONFKEY_WIFI_UNCONNECTED,
 	VCONFKEY_WIFI_CONNECTED,
 	VCONFKEY_WIFI_TRANSFER,
+	VCONFKEY_WIFI_TRANSFER_TX,
+	VCONFKEY_WIFI_TRANSFER_RX,
 	VCONFKEY_WIFI_STATE_MAX
+};
+
+/**
+ * @brief Wi-Fi transfer state
+ *
+ * 0: no transfer
+ * 1: tx only
+ * 2: rx only
+ * 3: tx/rx
+ */
+#define VCONFKEY_WIFI_TRANSFER_STATE		"memory/wifi/transfer_state"
+enum {
+	VCONFKEY_WIFI_TRANSFER_STATE_NONE = 0x00,
+	VCONFKEY_WIFI_TRANSFER_STATE_TX,
+	VCONFKEY_WIFI_TRANSFER_STATE_RX,
+	VCONFKEY_WIFI_TRANSFER_STATE_TXRX,
+	VCONFKEY_WIFI_TRANSFER_STATE_MAX
 };
 
 /**
@@ -130,6 +150,7 @@ enum {
 
 /* ========================== Wifi Direct Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_wifi_key
  * @{
  * @brief Wifi Direct Keys & Values\n
@@ -151,6 +172,79 @@ enum {
  VCONFKEY_WIFI_DIRECT_TRANSFER_FAIL,
  /** File transfer is finished */
  VCONFKEY_WIFI_DIRECT_TRANSFER_FINISH
+};
+
+/**
+ * @brief WIFI DIRECT DATA TRANSFER STATE OF SENDER FOR INDICATOR ANIMATED ICON
+ *
+ * 0: file sending status is idle
+ * 1: File sending in progress
+*/
+#define VCONFKEY_WIFI_DIRECT_SENDING_STATE    "memory/wifi_direct/share/sending_state"
+enum {
+ /** File sending status is idle */
+ VCONFKEY_WIFI_DIRECT_SENDING_IDLE = 0,
+ /** File sending is in progress */
+ VCONFKEY_WIFI_DIRECT_SENDING_IN_PROGRESS
+};
+
+/**
+ * @brief WIFI DIRECT DATA TRANSFER STATE OF RECEIVER FOR INDICATOR ANIMATED ICON
+ *
+ * 0: file receiving status is idle
+ * 1: File receiving in progress
+*/
+#define VCONFKEY_WIFI_DIRECT_RECEIVING_STATE    "memory/wifi_direct/share/receiving_state"
+enum {
+ /** File receiving status is idle */
+ VCONFKEY_WIFI_DIRECT_RECEIVING_IDLE = 0,
+ /** File receiving is in progress */
+ VCONFKEY_WIFI_DIRECT_RECEIVING_IN_PROGRESS
+};
+
+
+/**
+ * @}
+ */
+
+/* ========================== Allshare cast Keys & Values ============================ */
+/**
+ * @internal
+ * @addtogroup vconf_internal_allshare_cast_key
+ * @{
+ * @brief Wifi Direct Keys & Values\n
+ *        Maintainer : dwmax.lee@samsung.com, sunmi.roh@samsung.com
+ */
+
+/**
+ * @brief ALLSHARECAST CONNECTION STATE VALUE FOR QUICK PANEL ICON
+ *
+ * 0: Device has not connected with dongle
+ * 1: Device has connected with dongle
+*/
+#define VCONFKEY_ALLSHARE_CAST_STATE    "memory/allshare_cast/state"
+enum {
+ /** not connected with dongle */
+ VCONFKEY_ALLSHARECAST_NOT_CONNECTED = 0,
+ /** connected with dongle */
+ VCONFKEY_ALLSHARECAST_CONNECTED
+};
+
+/**
+ * @brief SCREEN MIRRORING STATE VALUE FOR QUICK PANEL BUTTON
+ *
+ * 0: Screen Mirroring has turned off
+ * 1: Screen Mirroring has turned on
+ * 2: Device has connected with dongle
+*/
+#define VCONFKEY_SCREEN_MIRRORING_STATE    "memory/screen_mirroring/status"
+enum {
+ /* Deactivated */
+ VCONFKEY_SCREEN_MIRRORING_DEACTIVATED = 0,
+ /* Activated */
+ VCONFKEY_SCREEN_MIRRORING_ACTIVATED,
+ /* Connected with dongle */
+ VCONFKEY_SCREEN_MIRRORING_CONNECTED
 };
 
 /**

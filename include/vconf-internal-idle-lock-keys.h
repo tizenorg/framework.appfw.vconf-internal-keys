@@ -35,6 +35,7 @@
 
 /* ========================== idle_lock Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_idle_lock_key
  * @{
  * @brief idle_lock Keys & Values\n

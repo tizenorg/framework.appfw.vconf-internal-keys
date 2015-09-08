@@ -35,6 +35,7 @@
 
 /* ========================== System Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_system_key
  * @{
  * @brief System Keys & Values\n
@@ -42,11 +43,11 @@
  */
 
 /**
- * @brief time difference value between current and prev value when time is changed
- *
- * value : time difference
- */
-#define VCONFKEY_SYSTEM_TIMEDIFF "memory/system/timediff"
+* @brief current time value when time is changed
+*
+* value : current time
+*/
+#define VCONFKEY_SYSTEM_TIME_CHANGED "memory/system/timechanged"
 
 /**
  * @brief new time when time is changed
@@ -54,6 +55,13 @@
  * value : new time
  */
 #define VCONFKEY_SYSTEM_TIMECHANGE "db/system/timechange"
+
+/**
+ * @brief time diff when time is changed externally
+ *
+ * value : new time
+ */
+#define VCONFKEY_SYSTEM_TIMECHANGE_EXTERNAL "db/system/timechange_external"
 
 /**
  * @}

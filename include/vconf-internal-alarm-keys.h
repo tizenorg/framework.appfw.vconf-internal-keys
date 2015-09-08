@@ -35,6 +35,7 @@
 
 /* ========================== Alarm Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_alarm_key
  * @{
  * @brief Alarm Keys & Values\n
@@ -46,6 +47,23 @@
  *
  */
 #define VCONFKEY_ALARM_STATE	"db/alarm/state"
+
+/**
+ * @brief Alarm ringing status
+ *
+ * TRUE : Alarm is ringing \n
+ * FALSE : Alarm is not ringing \n
+ */
+#define VCONFKEY_ALARM_RINGING	"memory/alarm/ringing"
+
+/**
+ * @brief Alarm volume popup display in alarm setting menu
+ *
+ * TRUE : Display alarm sound type volume popup \n
+ * FALSE : Do not display alarm sound type volume popup \n
+ */
+#define VCONFKEY_ALARM_VOLUME_POPUP_ENABLE 	"memory/alarm/volume_popup_enable"
+
 /**
  * @}
  */

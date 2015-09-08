@@ -35,6 +35,7 @@
 
 /* ========================== Allshare Setting Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_allshare_key
  * @{
  * @brief Allshare Setting Keys & Values\n
@@ -150,7 +151,62 @@ enum
 };
 
 /**
+* @brief Allshare mark for allowed/denied list selected .(int)
+*    When user deleted allowed/denied list in allshare setting ug, \n
+*    this vconf is set to tell allshare-dms process to call corresponded ASF APIs. \n
+*    Bit is used to identify the contents selected, total is 32 bits in "int" type.\n
+*
+*    Bit:                   31  30  29   28  27              7    6    5    4    3    2    1    0   \n
+*                             |    |    |    |   |    ... ...     |    |    |    |    |    |    |    |  \n
+*
+*    Bit 0:         Differentiate allowed or denied list to be processed, 0 is denied list, 1 is allowed list.\n
+*    Bit 1--30:  Selected list index. if the first and third item is selected by user, then Bit 1 and Bit 3 are both 1.\n
+*    Bit 31:       Sign bit backup, always be 0.\n
+*    For example: if user selected  the first and third item in allowed list to delete, this vconf value is 0x0b.
+*
+*/
+
+#define VCONFKEY_ALLSHARE_LIST_MARK "memory/allshare/list_mark"
+
+/**
+ * @brief AllShare uploading percent
+ *   Tell the notification popup to show the uploading percentage, the value is from 0--100
+ */
+#define	VCONFKEY_ALLSHARE_UPLOADING_PERCENT "memory/allshare/uploading_percent"
+
+/**
+ * @brief AllShare popup event for user's choise
+ * Tell allshare-dms process to which action user do after popup such as deny or allow access device
+ * allow device access = 0 \n
+ * deny device access = 1 \n
+ * allow file upload = 2 \n
+ * deny file upload = 3 \n
+ * upload cancel = 4 or more
+ */
+#define	VCONFKEY_ALLSHARE_POPUP_EVENT "memory/allshare/popup_event"
+enum {
+	VCONFKEY_ALLSHARE_POPUP_ACCESS_ALLOW = 0,
+	VCONFKEY_ALLSHARE_POPUP_ACCESS_DENY = 1,
+	VCONFKEY_ALLSHARE_POPUP_UPLOAD_ACCEPT = 2,
+	VCONFKEY_ALLSHARE_POPUP_UPLOAD_DENY = 3,
+	VCONFKEY_ALLSHARE_POPUP_UPLOAD_CANCEL = 4
+};
+
+/**
+ * @brief AllShare cp change notify
+ * Weather control point access is changed in UG allow/deny list or by user selected in popup through allshare-dms process, it should be
+ * control point access change in UG  = 0 \n
+ * control point access change in allshare dms process  = 1
+ */
+#define	VCONFKEY_ALLSHARE_CP_CHANGE "memory/allshare/cp_change"
+enum {
+	VCONFKEY_ALLSHARE_CP_CHANGE_BY_UG = 0,
+	VCONFKEY_ALLSHARE_CP_CHANGE_BY_PROCESS = 1
+};
+
+/**
  * @}
  */
+
 
 #endif	/* __VCONF_INTERNAL_ALLSHARE_KEYS_H__ */

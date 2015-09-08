@@ -35,6 +35,7 @@
 
 /* ========================== Data network Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_dnet_key
  * @{
  * @brief Data network Keys & Values\n
@@ -48,6 +49,8 @@
  * 0: Idle
  * 1: Cellular connected
  * 2: Wi-Fi connected
+ * 3: Ethernet connected
+ * 4: Bluetooth connected
  */
 #define VCONFKEY_NETWORK_STATUS                     "memory/dnet/status"
 enum {
@@ -56,7 +59,11 @@ enum {
 	/** Cellular connected */
 	VCONFKEY_NETWORK_CELLULAR,
 	/** Wi-Fi connected */
-	VCONFKEY_NETWORK_WIFI
+	VCONFKEY_NETWORK_WIFI,
+	/** Ethernet connected */
+	VCONFKEY_NETWORK_ETHERNET,
+	/** Bluetooth connected */
+	VCONFKEY_NETWORK_BLUETOOTH
 };
 
 /**
@@ -105,6 +112,7 @@ enum {
  * 2: Roaming off
  * 3: Flight mode enabled
  * 4: No service
+ * 5: restricted service
  */
 #define VCONFKEY_NETWORK_CELLULAR_STATE             "memory/dnet/cellular"
 enum {
@@ -117,7 +125,9 @@ enum {
 	/** Flight mode enabled */
 	VCONFKEY_NETWORK_CELLULAR_FLIGHT_MODE,
 	/** No service */
-	VCONFKEY_NETWORK_CELLULAR_NO_SERVICE
+	VCONFKEY_NETWORK_CELLULAR_NO_SERVICE,
+	/** Restricted service */
+	VCONFKEY_NETWORK_CELLULAR_RESTRICTED_SERVICE
 };
 
 /**
@@ -136,17 +146,78 @@ enum {
 	VCONFKEY_DNET_NORMAL_CONNECTED,
 	/** secure connected */
 	VCONFKEY_DNET_SECURE_CONNECTED,
-	/** patcket connected */
+	/** patcket transmitted */
 	VCONFKEY_DNET_TRANSFER,
 	VCONFKEY_DNET_STATE_MAX
 };
 
+/**
+ * @brief Data indication of Cellular network of SIM2
+ *
+ * Enum values of this key are equal to VCONFKEY_DNET_STATE
+ */
+#define VCONFKEY_DNET_STATE2 "memory/dnet/state2"
+
+/**
+ * @brief Data indication of Cellular network of SIM3
+ *
+ * Enum values of this key are equal to VCONFKEY_DNET_STATE
+ */
+#define VCONFKEY_DNET_STATE3 "memory/dnet/state3"
+
+/**
+ * @brief packet indication of Cellular network
+ *
+ * 0: NO Packet
+ * 1: RX Packet only
+ * 2: TX Packet only
+ * 3: RXTX Packet only
+ */
+#define VCONFKEY_PACKET_STATE                         "memory/dnet/packet_state"
+enum {
+	/** NO Packet */
+	VCONFKEY_PACKET_NORMAL = 0x00,
+	/** RX Packet only */
+	VCONFKEY_PACKET_RX,
+	/** TX Packet only */
+	VCONFKEY_PACKET_TX,
+	/** RXTX Packet only */
+	VCONFKEY_PACKET_RXTX,
+	VCONFKEY_PACKET_MAX
+};
+
+/**
+ * @brief Packet service modem dormant state
+ *
+ * 0: In dormant state (data inactive)
+ * 1: Not in dormant state (active)
+ */
+#define VCONFKEY_DNET_PS_DORMANT_STATE				"memory/dnet/dormant_state"
+enum {
+	VCONFKEY_DNET_PS_DORMANT_STATE_ACTIVE = 0x00, /* Idle     */
+	VCONFKEY_DNET_PS_DORMANT_STATE_INACTIVE       /* Not idle */
+
+};
 /**
  * @brief Total bytes received by Cellular device
  *
  * Value : Integer of bytes
  */
 #define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_RCV     "db/dnet/statistics/cellular/totalrcv"
+
+/**
+ * @brief Total bytes received by Cellular device of SIM2
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_RCV2 "db/dnet/statistics/cellular/totalrcv2"
+
+/**
+ * @brief Total bytes received by Cellular device of SIM3
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_RCV3 "db/dnet/statistics/cellular/totalrcv3"
 
 /**
  * @brief Total bytes sent by Cellular device
@@ -156,6 +227,20 @@ enum {
 #define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_SNT     "db/dnet/statistics/cellular/totalsnt"
 
 /**
+ * @brief Total bytes sent by Cellular device of SIM2
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_SNT2 "db/dnet/statistics/cellular/totalsnt2"
+
+/**
+ * @brief Total bytes sent by Cellular device of SIM3
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_SNT3 "db/dnet/statistics/cellular/totalsnt3"
+
+/**
  * @brief Total bytes last received by Cellular device
  *
  * Value : Integer of bytes
@@ -163,11 +248,39 @@ enum {
 #define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_RCV      "db/dnet/statistics/cellular/lastrcv"
 
 /**
+ * @brief Total bytes last received by Cellular device of SIM2
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_RCV2 "db/dnet/statistics/cellular/lastrcv2"
+
+/**
+ * @brief Total bytes last received by Cellular device of SIM3
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_RCV3 "db/dnet/statistics/cellular/lastrcv3"
+
+/**
  * @brief Total bytes last sent by Cellular device
  *
  * Value : Integer of bytes
  */
 #define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_SNT      "db/dnet/statistics/cellular/lastsnt"
+
+/**
+ * @brief Total bytes last sent by Cellular device of SIM2
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_SNT2 "db/dnet/statistics/cellular/lastsnt2"
+
+/**
+ * @brief Total bytes last sent by Cellular device of SIM3
+ *
+ * Value : Integer of bytes
+ */
+#define VCONFKEY_NETWORK_CELLULAR_PKT_LAST_SNT3 "db/dnet/statistics/cellular/lastsnt3"
 
 /**
  * @brief Total bytes received by Wi-Fi device

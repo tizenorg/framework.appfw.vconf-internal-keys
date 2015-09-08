@@ -35,6 +35,7 @@
 
 /* ========================== SyncML engine & UI Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_syncml_key
  * @{
  * @brief Syncml vconf Keys & Values for oma-dm, oma-ds engine & ui \n

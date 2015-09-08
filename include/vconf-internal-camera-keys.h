@@ -35,6 +35,7 @@
 
 /* ========================== Camera Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_camera_key
  * @{
  * @brief Camera Keys & Values\n
@@ -69,6 +70,22 @@ enum {
 enum {
         VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_OFF,
         VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_ON
+};
+
+/**
+ * @brief Recorder state(int)
+ *
+ * 0 : Not created
+ * 1 : Created
+ * 2 : Now recording
+ * 3 : Paused while recording
+ */
+#define VCONFKEY_RECORDER_STATE "memory/recorder/state"
+enum {
+        VCONFKEY_RECORDER_STATE_NULL,
+        VCONFKEY_RECORDER_STATE_CREATED,
+        VCONFKEY_RECORDER_STATE_RECORDING,
+        VCONFKEY_RECORDER_STATE_RECORDING_PAUSE
 };
 
 /**

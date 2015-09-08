@@ -35,11 +35,12 @@
 
 /* ========================== Mobile-hotspot Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_mobile_hotspot_key
  * @{
  * @brief Mobile-hotspot Keys & Values\n
  *        Maintainer : injun.yang@samsung.com, sy39.ju@samsung.com
- *        Used module : wifi-efl-ug, wifi-quick-app, setting, ug-kies-via-wifi, usb-setting-app, data-router, libmtp-0
+ *        Used module : wifi-efl-ug, wifi-quick-app, setting, ug-kies-via-wifi, usb-setting-app, data-router
  */
 
 /**
@@ -49,6 +50,7 @@
  * 0x01 : WiFi \n
  * 0x02 : USB \n
  * 0x04 : Bluetooth \n
+ * 0x08 : WiFi AP \n
  */
 #define VCONFKEY_MOBILE_HOTSPOT_MODE "memory/mobile_hotspot/mode"
 enum {
@@ -59,13 +61,10 @@ enum {
 	/** USB */
 	VCONFKEY_MOBILE_HOTSPOT_MODE_USB = 0x02,
 	/** Bluetooth */
-	VCONFKEY_MOBILE_HOTSPOT_MODE_BT = 0x04
+	VCONFKEY_MOBILE_HOTSPOT_MODE_BT = 0x04,
+	/** WiFi AP */
+	VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI_AP = 0x08
 };
-
-/**
- * @brief Security code for Wi-Fi tethering
- */
-#define VCONFKEY_MOBILE_HOTSPOT_WIFI_KEY "db/mobile_hotspot/wifi_key"
 
 /**
  * @brief The number of connected device
@@ -75,7 +74,7 @@ enum {
 #define VCONFKEY_MOBILE_HOTSPOT_CONNECTED_DEVICE "memory/mobile_hotspot/connected_device"
 
 /**
- * @brief The status of Security mode for Wi-Fi tethering
+ * @brief The status of Security mode for Wi-Fi tethering / AP
  *
  * 0 : Disabled \n
  * 1 : Enabled \n
@@ -89,7 +88,7 @@ enum {
 };
 
 /**
- * @brief The status of hide mode for Wi-Fi tethering
+ * @brief The status of hide mode for Wi-Fi tethering / AP
  *
  * 0 : Disabled \n
  * 1 : Enabled \n

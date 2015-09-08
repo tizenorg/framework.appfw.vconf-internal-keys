@@ -35,6 +35,7 @@
 
 /* ========================== Mobex Connector Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_mobex_connector_key
  * @{
  * @brief Mobex Connector Keys & Values\n

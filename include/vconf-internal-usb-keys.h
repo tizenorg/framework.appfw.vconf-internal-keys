@@ -35,6 +35,7 @@
 
 /* ========================== USB Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_usb_key
  * @{
  * @brief USB Keys & Values\n
@@ -59,17 +60,17 @@ enum {
 };
 
 /**
- * @brief status of setting USB debug mode for developers
+ * @brief status of setting USB ethernet mode for developers
  *
- * 0 : unset keeping USB debug mode when reconnecting USB cable \n
- * 1 : set keeping USB debug mode when reconnecting USB cable \n
+ * 0 : unset keeping USB ethernet mode when reconnecting USB cable \n
+ * 1 : set keeping USB ethernet mode when reconnecting USB cable \n
  */
-#define VCONFKEY_USB_KEEP_DEBUG "db/usb/keep_debug"
+#define VCONFKEY_USB_KEEP_ETHERNET "db/usb/keep_ethernet"
 enum {
-	/** unset keeping USB debug mode when reconnecting USB cable */
-	VCONFKEY_USB_KEEP_DEBUG_UNSET = 0x00,
-	/** set keeping USB debug mode when reconnecting USB cable */
-	VCONFKEY_USB_KEEP_DEBUG_SET
+	/** unset keeping USB ethernet mode when reconnecting USB cable */
+	VCONFKEY_USB_KEEP_ETHERNET_UNSET = 0x00,
+	/** set keeping USB ethernet mode when reconnecting USB cable */
+	VCONFKEY_USB_KEEP_ETHERNET_SET
 };
 
 /**
@@ -85,6 +86,68 @@ enum {
 	/** usb accessory is connected */
 	VCONFKEY_USB_ACCESSORY_STATUS_CONNECTED
 };
+
+/**
+ * @brief Current USB connection mode
+ *
+ *  0: USB none mode
+ *  1: Default mode (MTP only mode)
+ *  2: SDB mode (with MTP)
+ *  3: SDB, DIAG mode (with MTP)
+ *  4: RNDIS mode for tethering
+ *  5: RNDIS mode for ethernet
+ *  6: RNDIS, SDB mode
+ *  7: DIAG, SDB mode
+ *  8: RNDIS, DIAG mode
+ *  9: USB accessory mode
+ */
+#define VCONFKEY_USB_CUR_MODE "memory/usb/cur_mode"
+enum old_usb_mode {
+	/** Default mode (MTP only mode) */
+	SET_USB_MTP = 1,
+	/** SDB mode (with MTP) */
+	SET_USB_MTP_SDB = 2,
+	/** SDB, DIAG mode (with MTP) */
+	SET_USB_MTP_SDB_DIAG = 3
+};
+
+enum usb_mode {
+	/** USB none mode */
+	SET_USB_NONE = 0,
+	/** Default mode */
+	SET_USB_DEFAULT = 1,
+	/** SDB mode */
+	SET_USB_SDB = 2,
+	/** SDB, DIAG mode */
+	SET_USB_SDB_DIAG = 3,
+	/** RNDIS mode for tethering */
+	SET_USB_RNDIS_TETHERING = 4,
+	/** RNDIS mode for ethernet */
+	SET_USB_RNDIS = 5,
+	/** RNDIS, SDB mode */
+	SET_USB_RNDIS_SDB = 6,
+	/** DIAG, SDB mode */
+	SET_USB_DIAG_SDB = 7,
+	/** RNDIS, DIAG mode */
+	SET_USB_RNDIS_DIAG = 8,
+	/** USB accessory mode */
+	SET_USB_ACCESSORY = 9
+};
+
+/**
+ * @brief Selected USB connection mode by user
+ *
+ *  1: Default mode (MTP only mode)
+ *  2: SDB mode (with MTP)
+ *  3: SDB, DIAG mode (with MTP)
+ *  4: RNDIS mode for tethering
+ *  5: RNDIS mode for ethernet
+ *  6: RNDIS, SDB mode
+ *  7: DIAG, SDB mode
+ *  8: RNDIS, DIAG mode
+ *  9: USB accessory mode
+ */
+#define VCONFKEY_USB_SEL_MODE "db/usb/sel_mode"
 
 
 

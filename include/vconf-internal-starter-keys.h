@@ -35,6 +35,7 @@
 
 /* ========================== starter Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_starter_key
  * @{
  * @brief starter Keys & Values\n
@@ -47,5 +48,26 @@
  * type : int
 */
 #define VCONFKEY_STARTER_SEQUENCE	"memory/starter/sequence"
+
+/**
+ * @brief usage of volume key.
+ *
+ * type : int
+*/
+#define VCONFKEY_STARTER_USE_VOLUME_KEY	"memory/starter/use_volume_key"
+
+/**
+ * @brief count of missed calls.
+ *
+ * type : int
+*/
+#define VCONFKEY_STARTER_MISSED_CALL	"db/starter/missed_call"
+
+/**
+ * @brief count of unread messages.
+ *
+ * type : int
+*/
+#define VCONFKEY_STARTER_UNREAD_MESSAGE	"db/starter/unread_message"
 
 #endif	/* __VCONF_INTERNAL_STARTER_KEYS_H__ */

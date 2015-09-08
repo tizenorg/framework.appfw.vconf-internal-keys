@@ -35,6 +35,7 @@
 
 /* ========================== browser Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_browser_key
  * @{
  * @brief browser Keys & Values\n

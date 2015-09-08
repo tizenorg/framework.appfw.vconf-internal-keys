@@ -35,6 +35,7 @@
 
 /* ========================== Setting UI Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_setting_key
  * @{
  * @brief Setting UI Keys & Values\n
@@ -43,6 +44,25 @@
 #define VCONFKEY_SETAPPL_PREFIX                                 "db/setting"
 #define VCONFKEY_SETAPPL_MEM_PREFIX                             "memory/setting"
 
+
+/** @brief vibration pattern file path of current incoming call */
+#define VCONFKEY_SETAPPL_CALL_VIBRATION_PATTERN_STR            VCONFKEY_SETAPPL_PREFIX"/sound/call/vibration_pattern_path"
+
+/**
+ * @brief support touch sounds option
+ *
+ * 0 : off \n
+ * 1 : on \n
+ */
+#define VCONFKEY_SETAPPL_TOUCH_SOUNDS_BOOL             VCONFKEY_SETAPPL_PREFIX"/sound/touch_sounds"
+
+/**
+ * @brief support button sounds option
+ *
+ * 0 : off \n
+ * 1 : on \n
+ */
+#define VCONFKEY_SETAPPL_BUTTON_SOUNDS_BOOL             VCONFKEY_SETAPPL_PREFIX"/sound/button_sounds"
 
 /**
  * @brief status of screen lock sound
@@ -86,6 +106,30 @@ enum {
 };
 
 /**
+ * @brief level of brightness for emergency mode
+ */
+#define VCONFKEY_SETAPPL_EMERGENCY_LCD_BRIGHTNESS_INT		VCONFKEY_SETAPPL_PREFIX"/lcd_brightness_emergency"
+
+/**
+ * @brief timeout of lcd for emergency mode
+ */
+#define VCONFKEY_SETAPPL_EMERGENCY_LCD_TIMEOUT_INT		VCONFKEY_SETAPPL_PREFIX"/lcd_timeout_emergency"
+
+/**
+ * @brief level of automatic brightness
+ *
+ * Min : 1 \n
+ * Max : 100 \n
+ */
+#define VCONFKEY_SETAPPL_LCD_AUTOMATIC_BRIGHTNESS                         VCONFKEY_SETAPPL_PREFIX"/automatic_brightness_level"
+
+/**
+ * @brief level of automatic display adjustment
+ *
+ */
+#define VCONFKEY_SETAPPL_LCD_AUTO_DISPLAY_ADJUSTMENT                         VCONFKEY_SETAPPL_PREFIX"/auto_display_adjustment"
+
+/**
  * @brief screen mode
  *
  * 0 : dynamic \n
@@ -126,6 +170,23 @@ enum {
 
 /** @brief current incoming call ringtone file path */
 #define VCONFKEY_SETAPPL_CALL_RINGTONE_PATH_STR				    VCONFKEY_SETAPPL_PREFIX"/sound/call/ringtone_path"
+
+/** @brief current incoming call ringtone file path with recommendation time
+ *
+ * ex) "/aaa/bbb.mp3; 30msec"
+ */
+#define VCONFKEY_SETAPPL_CALL_RINGTONE_PATH_WITH_RECOMMENDATION_TIME_STR       VCONFKEY_SETAPPL_PREFIX"/sound/call/ringtone_path_with_time"
+
+/** @brief default incoming call ringtone file path */
+#define VCONFKEY_SETAPPL_CALL_RINGTONE_DEFAULT_PATH_STR                             VCONFKEY_SETAPPL_PREFIX"/sound/call/ringtone_default_path"
+
+/**
+ * @brief vibration level of call
+ *
+ * Min : 0 \n
+ * Max : 5 \n
+ */
+#define VCONFKEY_SETAPPL_CALL_VIBRATION_LEVEL_INT                           VCONFKEY_SETAPPL_PREFIX"/sound/call/vibration_level"
 
 /**
  * @brief vibration type of incoming call
@@ -177,6 +238,18 @@ enum {
 
 /** @brief current message ringtone file path */
 #define VCONFKEY_SETAPPL_NOTI_MSG_RINGTONE_PATH_STR			    VCONFKEY_SETAPPL_PREFIX"/sound/noti/msg_ringtone_path"
+
+/** @brief default noti ringtone file path */
+#define VCONFKEY_SETAPPL_NOTI_RINGTONE_DEFAULT_PATH_STR                         VCONFKEY_SETAPPL_PREFIX"/sound/noti/ringtone_default_path"
+
+/** @brief current noti ringtone file path */
+#define VCONFKEY_SETAPPL_NOTI_RINGTONE_PATH_STR 				VCONFKEY_SETAPPL_NOTI_MSG_RINGTONE_PATH_STR
+
+/** @brief default alarm tone file path */
+#define VCONFKEY_SETAPPL_ALARM_TONE_DEFAULT_PATH_STR                         VCONFKEY_SETAPPL_PREFIX"/clock/alarm_default_path"
+
+/** @brief default timer tone file path */
+#define VCONFKEY_SETAPPL_TIMER_TONE_DEFAULT_PATH_STR                         VCONFKEY_SETAPPL_PREFIX"/clock/timer_default_path"
 
 /**
  * @brief type of email alert repitition
@@ -260,37 +333,60 @@ enum {
  * @brief current USB mode
  *
  * SETTING_USB_NONE_MODE : None \n
- * SETTING_USB_SAMSUNG_KIES : kies \n
- * SETTING_USB_MASS_STORAGE : Mass storage \n
+ * SETTING_USB_DEFAULT_MODE : Default \n
+ * SETTING_USB_SAMSUNG_KIES : Kies \n
  * SETTING_USB_DEBUG_MODE : Debug \n
- * SETTING_USB_MOBILE_HOTSPOT : USB tethering \n
+ * SETTING_USB_ETHERNET_MODE : Ethernet \n
+ * SETTING_USB_TETHERING_MODE : USB tethering \n
+ * SETTING_USB_ACCESSORY_MODE : USB accessory \n
  */
 #define VCONFKEY_SETAPPL_USB_MODE_INT                           VCONFKEY_SETAPPL_MEM_PREFIX"/usb_mode"
 enum {
 	/** None */
 	SETTING_USB_NONE_MODE = -1,
+	/** Default */
+	SETTING_USB_DEFAULT_MODE = 0,
 	/** KIES */
 	SETTING_USB_SAMSUNG_KIES = 0,
-	/** Mass storage */
-	SETTING_USB_MASS_STORAGE,
-	/* SETTING_USB_INTERNET_SHARING, */
-	/** KIES INSTALLER */
-	SETTING_USB_KIES_INSTALLER,
 	/** DEBUG */
-	SETTING_USB_DEBUG_MODE,
+	SETTING_USB_DEBUG_MODE = 3,
+	/** ETHERNET */
+	SETTING_USB_ETHERNET_MODE = 3,
 	/** USB tethering */
-	SETTING_USB_MOBILE_HOTSPOT
+	SETTING_USB_TETHERING_MODE = 4,
+	/** USB accessory */
+	SETTING_USB_ACCESSORY_MODE = 5
 };	/* connectivity - usb connection */
 
 /**
  * @brief USB mode that user selected
  *
- * 0 : kies \n
- * 1 : Mass storage \n
- * 3 : Debug \n
+ * 0 : Kies, Default \n
+ * 3 : Debug, Ethernet \n
  * 4 : USB tethering \n
+ * 5 : USB accessory \n
  */
 #define VCONFKEY_SETAPPL_USB_SEL_MODE_INT                       VCONFKEY_SETAPPL_MEM_PREFIX"/usb_sel_mode"
+
+/**
+ * @brief status of debug mode
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_USB_DEBUG_MODE_BOOL		        VCONFKEY_SETAPPL_PREFIX"/debug_mode"
+
+/**
+ * @brief USB PC connection mode
+ *
+ * SETTING_USB_CONNECTION_MODE_CHARGING_ONLY : charging only \n
+ * SETTING_USB_CONNECTION_MODE_USB_DEBUGGING : USB debugging \n
+ */
+#define VCONFKEY_SETAPPL_USB_CONNECTION_MODE_INT		VCONFKEY_SETAPPL_PREFIX"/usb_connection_mode"
+enum {
+	SETTING_USB_CONNECTION_MODE_CHARGING_ONLY = 0,
+	SETTING_USB_CONNECTION_MODE_USB_DEBUGGING
+};
 
 /**
  * @brief status of select network
@@ -368,6 +464,13 @@ enum {
  */
 #define VCONFKEY_SETAPPL_STATE_SIMPLE_PASSWORD_BOOL		        VCONFKEY_SETAPPL_PREFIX"/simple_password"
 
+/**
+ * @brief status of Make password visible
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_STATE_MAKE_PASSWORD_VISIBLE_BOOL		        VCONFKEY_SETAPPL_PREFIX"/make_password_visible"
 
 /**
  * @brief screen lock type
@@ -381,13 +484,39 @@ enum {
 #define VCONFKEY_SETAPPL_SCREEN_LOCK_TYPE_INT		        VCONFKEY_SETAPPL_PREFIX"/screen_lock_type"
 /* security - screen lock type */
 enum {
-       SETTING_SCREEN_LOCK_TYPE_SWIPE = 0,
+       SETTING_SCREEN_LOCK_TYPE_NONE = 0,
+       SETTING_SCREEN_LOCK_TYPE_SWIPE,
        SETTING_SCREEN_LOCK_TYPE_MOTION,
+       SETTING_SCREEN_LOCK_TYPE_FINGERPRINT,
        SETTING_SCREEN_LOCK_TYPE_FACE_AND_VOICE,
        SETTING_SCREEN_LOCK_TYPE_SIMPLE_PASSWORD,
        SETTING_SCREEN_LOCK_TYPE_PASSWORD,
+       SETTING_SCREEN_LOCK_TYPE_AUTO_LOCK,
+       SETTING_SCREEN_LOCK_TYPE_OTHER,
        SETTING_SCREEN_LOCK_TYPE_MAX
 };
+
+/**
+ * @brief status of Auto lock menu
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_AUTO_LOCK_BOOL		        VCONFKEY_SETAPPL_PREFIX"/auto_lock"
+
+/**
+ * @brief status of Auto lock device
+ *
+ * 0 : Disconnected \n
+ * 1 : Connected \n
+ */
+#define VCONFKEY_SETAPPL_AUTO_LOCK_DEVICE_STATUS_BOOL		        VCONFKEY_SETAPPL_MEM_PREFIX"/auto_lock_device_status"
+
+/** @brief the name of auto lock device */
+#define VCONFKEY_SETAPPL_AUTO_LOCK_DEVICE_NAME_STR            VCONFKEY_SETAPPL_PREFIX"/auto_lock_device_name"
+
+/** @brief 3rd party screen lock package name */
+#define VCONFKEY_SETAPPL_3RD_LOCK_PKG_NAME_STR            VCONFKEY_SETAPPL_PREFIX"/3rd_lock_pkg_name"
 
 
 /**
@@ -567,12 +696,67 @@ enum {
 #define VCONFKEY_SETAPPL_ACCESSIBILITY_FONT_SIZE                VCONFKEY_SETAPPL_PREFIX"/accessibility/font_size"
 
 /**
+ * @brief font name
+ *
+ * font name by font-config
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_FONT_NAME 				VCONFKEY_SETAPPL_PREFIX"/accessibility/font_name"
+
+/**
  * @brief Accessibility setting : status of assistive light
  *
  * 0 : Off \n
  * 1 : On \n
  */
-#define VCONFKEY_SETAPPL_ACCESSIBILITY_TORCH_LIGHT              VCONFKEY_SETAPPL_PREFIX"/accessibility/torch_light"
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_TORCH_LIGHT              VCONFKEY_SETAPPL_MEM_PREFIX"/accessibility/torch_light"
+
+/**
+ * @brief Accessibility setting : status of Rapid key input
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_RAPID_KEY_INPUT			VCONFKEY_SETAPPL_PREFIX"/accessibility/rapid_key_input"
+
+/**
+ * @brief Accessibility setting : status of checkbox that manages notification popup of assistive light
+ *
+ * 0 : do not show notification popup when turn on assistive light \n
+ * 1 : show notification popup when turn on assistive light \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_ASSISTIVE_LIGHT_REMINDER              VCONFKEY_SETAPPL_PREFIX"/accessibility/assistive_light_reminder"
+
+/**
+ * @brief Accessibility setting : status of turn off all sounds
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_TURN_OFF_ALL_SOUNDS              VCONFKEY_SETAPPL_PREFIX"/accessibility/turn_off_all_sounds"
+
+/**
+ * @brief Accessibility setting : backup the status of sound_on for supporting <turn off all sounds>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SOUND_STATUS_BAK_BOOL              VCONFKEY_SETAPPL_PREFIX"/sound/sound_on_bak"
+
+/**
+ * @brief Accessibility setting : backup the status of touch_sounds for supporting <turn off all sounds>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_TOUCH_SOUNDS_BAK_BOOL              VCONFKEY_SETAPPL_PREFIX"/sound/touch_sounds_bak"
+
+/**
+ * @brief Accessibility setting : backup the status of lock_sound for supporting <turn off all sounds>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SOUND_LOCK_BAK_BOOL              VCONFKEY_SETAPPL_PREFIX"/sound/sound_lock_bak"
 
 /**
  * @brief Accessibility setting : status of accept call
@@ -618,6 +802,22 @@ enum {
 #define VCONFKEY_SETAPPL_ACCESSIBILITY_LED_NOTIFY       VCONFKEY_SETAPPL_PREFIX"/accessibility/led_notify"
 
 /**
+ * @brief Accessibility setting : screen lock time
+ *
+ * 0 : Immediately
+ * 5 : 5 seconds
+ * 15 : 15 seconds
+ * 30 : 30 seconds
+ * 60 : 1 minute
+ * 120 : 2 minutes
+ * 300 : 5 minutes
+ * 600 : 10 minites
+ * 900 : 15 minites
+ * 1800 : 30 minites
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_LOCK_TIME_INT VCONFKEY_SETAPPL_PREFIX"/accessibility/lock_time"
+
+/**
  * @brief Accessibility setting : power key shortcut
  *
  * 0 : off \n
@@ -638,9 +838,44 @@ enum {
 	SETTING_POWERKEY_SHORTCUT_ZOOM,
 	SETTING_POWERKEY_SHORTCUT_ASSISTIVE_LIGHT,
 	SETTING_POWERKEY_SHORTCUT_SHOT_READER,
+	SETTING_POWERKEY_SHORTCUT_ACCESSIBILITY,
 	SETTING_POWERKEY_SHORTCUT_MAX
 };
 
+/**
+ * @brief Accessibility setting : easy touch mode
+ *
+ * 0 : off \n
+ * 1 : on \n
+ */
+#define VCONFKEY_SETAPPL_EASY_TOUCH_MODE_BOOL			VCONFKEY_SETAPPL_PREFIX"/accessibility/easy_touch_mode"
+
+/**
+ * @brief Accessibility setting : status of screen reader (TTS)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_TTS       VCONFKEY_SETAPPL_PREFIX"/accessibility/tts"
+
+/**
+ * @brief Accessibility setting : TTS speech rate
+ *
+ * 0 : Very slow \n
+ * 1 : Slow \n
+ * 2 : Normal \n
+ * 3 : Fast \n
+ * 4 : Very fast \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_SPEECH_RATE  VCONFKEY_SETAPPL_PREFIX"/accessibility/speech_rate"
+
+/**
+ * @brief status of Open Dark screen (Accessibility)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_DARK_SCREEN VCONFKEY_SETAPPL_PREFIX"/accessibility/dark_screen"
 
 /**
  * @brief Powersaving : status of system power saving
@@ -933,6 +1168,21 @@ enum {
 #define VCONFKEY_SETAPPL_SELECTED_PACKAGE_NAME	                "db/setting/menuscreen/package_name"
 
 /**
+ * @brief current selected package name of homescreen
+ *
+ * Value : package name string
+ */
+#define VCONFKEY_SETAPPL_SELECTED_HOMESCREEN_PACKAGE_NAME	"db/setting/homescreen/package_name"
+
+/**
+ * @brief easy mode status of homescreen
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_HOMESCREEN_EASYMODE_BOOL	"db/setting/homescreen/easymode"
+
+/**
  * @brief status of transaction tracking
  *
  * 0 : Off \n
@@ -971,6 +1221,56 @@ enum {
  * 1 : Memory card \n
  */
 #define VCONFKEY_SETAPPL_DEFAULT_MEM_WAP_INT                    VCONFKEY_SETAPPL_PREFIX"/default_memory/wap"
+
+/**
+ * @brief default memory of app download
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_DOWNLOAD_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/download"
+
+/**
+ * @brief default memory of nfc download
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_DOWNLOAD_NFC_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/download_nfc"
+
+
+/**
+ * @brief default memory of contents download
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_DOWNLOAD_CONTENTS_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/download_contents"
+
+/**
+ * @brief default memory of application download
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_DOWNLOAD_APPLICATION_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/download_application"
+
+/**
+ * @brief default memory of application install
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_INSTALL_APPLICATIONS_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/install_applications"
+
+/**
+ * @brief default memory of wifi direct
+ *
+ * 0 : Phone \n
+ * 1 : SD card \n
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_MEM_WIFI_DIRECT_INT              VCONFKEY_SETAPPL_PREFIX"/default_memory/wifi_direct"
+
 
 /**
  * @brief default memory of bluetooth
@@ -1086,12 +1386,23 @@ enum {
 #define VCONFKEY_SETAPPL_ROTATE_LOCK_BOOL                       VCONFKEY_SETAPPL_PREFIX"/rotate_lock"
 
 /**
+ * @brief status of auto-rotate screen
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_AUTO_ROTATE_SCREEN_BOOL                       VCONFKEY_SETAPPL_PREFIX"/auto_rotate_screen"
+
+/**
  * @brief status of mono audio
  *
  * 0 : Off \n
  * 1 : On \n
  */
 #define VCONFKEY_SETAPPL_ACCESSIBILITY_MONO_AUDIO               VCONFKEY_SETAPPL_PREFIX"/accessibility/mono_audio"
+
+/** @brief led playing file path */
+#define VCONFKEY_SETAPPL_LED_PLAYING_PATH     			VCONFKEY_SETAPPL_PREFIX"/accessibility/led_playing_path"
 
 /**
  * @brief type of displaying time
@@ -1137,6 +1448,22 @@ enum {
  * 1 : Shuffled list
  */
 #define VCONFKEY_SETAPPL_GALLERY_SLIDESHOW_SHUFFLE             VCONFKEY_SETAPPL_PREFIX"/gallery/shuffle_state"
+
+/**
+ * @brief Image viewer slideshow music state
+ *
+ * type : bool
+ * 0 : Use BG music
+ * 1 : Do not use BG music
+ */
+#define VCONFKEY_SETAPPL_GALLERY_SLIDESHOW_MUSIC_STATE		VCONFKEY_SETAPPL_PREFIX"/gallery/music_state"
+
+/**
+ * @brief Image viewer slideshow music path
+ *
+ * type : string
+ */
+#define VCONFKEY_SETAPPL_GALLERY_SLIDESHOW_MUSIC_PATH		VCONFKEY_SETAPPL_PREFIX"/gallery/ss_music"
 
 /**
  * @brief Voicerecorder recording time limitation
@@ -1212,6 +1539,42 @@ enum {
  * 1 : On \n
  */
 #define VCONFKEY_SETAPPL_VIBRATION_STATUS_BOOL      VCONFKEY_SETAPPL_PREFIX"/sound/vibration_on"
+
+/**
+ * @brief sound mode { sound mode, vibration mode, silent mode}
+ *
+ */
+#define VCONFKEY_SETAPPL_SOUND_MODE      VCONFKEY_SETAPPL_PREFIX"/sound/sound_mode"
+enum {
+        SETTING_SOUNDMODE_SOUND = 0,
+        SETTING_SOUNDMODE_VIBRATION,
+        SETTING_SOUNDMODE_SILENT,
+        SETTING_SOUNDMODE_MAX
+};
+
+/**
+ * @brief status of <vibrate when ringing>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_VIBRATE_WHEN_RINGING_BOOL      VCONFKEY_SETAPPL_PREFIX"/sound/vibrate_when_ringing"
+
+/**
+ * @brief status of <vibrate when notification>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_VIBRATE_WHEN_NOTIFICATION_BOOL      VCONFKEY_SETAPPL_PREFIX"/sound/vibrate_when_notification"
+
+/**
+ * @brief status of <haptic feedback>
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_HAPTIC_FEEDBACK_STATUS_BOOL      VCONFKEY_SETAPPL_PREFIX"/sound/haptic_feedback_on"
 
 /**
  * @brief status of data roaming
@@ -1334,6 +1697,22 @@ enum {
 #define VCONFKEY_SETAPPL_USE_SHAKE                  VCONFKEY_SETAPPL_PREFIX"/use_shake"
 
 /**
+ * @brief status of motion-> mute pause
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_USE_MUTE_PAUSE     VCONFKEY_SETAPPL_PREFIX"/use_mute_pause"
+
+/**
+ * @brief status of palm motion activation
+ *
+ * 0 : off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_PALM_MOTION            VCONFKEY_SETAPPL_PREFIX"/motion/palm_motion"
+
+/**
  * @brief function of muting sounds by covering screen with your hand when play media
  *
  * 0 : Off \n
@@ -1350,6 +1729,14 @@ enum {
 #define VCONFKEY_SETAPPL_PALM_SWIP_CAPTURE          VCONFKEY_SETAPPL_PREFIX"/motion/palm_swipe_capture"
 
 /**
+ * @brief show if user is entering "capture screen->try it" or NOT.
+ *
+ * 0 : user get out of "capture screen->try it" view
+ * 1 : user enter "capture screen->try it" view
+ */
+#define VCONFKEY_SETAPPL_PALM_SWIP_CAPTURE_TRY_IT VCONFKEY_SETAPPL_PREFIX"/motion/palm_swipe_tryit"
+
+/**
  * @brief current background image file path
  *
  * Value : BG image file path
@@ -1363,6 +1750,15 @@ enum {
  * 1 : On \n
  */
 #define VCONFKEY_SETAPPL_DRIVINGMODE_DRIVINGMODE		VCONFKEY_SETAPPL_PREFIX"/drivingmode/drivingmode"
+
+/**
+ * @brief activate outdoor  mode
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_OUTDOOR_MODE		VCONFKEY_SETAPPL_PREFIX"/outdoormode"
+
 
 /**
  * @brief activate Driving mode only for incoming call
@@ -1433,8 +1829,1518 @@ enum {
 #define VCONFKEY_SETAPPL_DEVOPTION_BGPROCESS		VCONFKEY_SETAPPL_PREFIX"/devoption/bgprocess"
 
 /**
+ * @brief activate Smart Rotation
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SMARTSCREEN_SMART_ROTATION VCONFKEY_SETAPPL_PREFIX"/smartscreen/smart_rotation"
+
+/**
+ * @brief activate Smart Stay
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SMARTSCREEN_SMARTSTAY_STATUS   VCONFKEY_SETAPPL_PREFIX"/smartscreen/smart_stay"
+
+/**
+ * @brief activate Smart Stay Reminder
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SMARTSCREEN_SMARTSTAY_STATUS_REMINDER   VCONFKEY_SETAPPL_PREFIX"/smartscreen/smart_stay_r"
+
+
+/**
+ * @brief activate Smart Status Reminder
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_SMARTSCREEN_SMARTROTATE_STATUS_REMINDER VCONFKEY_SETAPPL_PREFIX"/smartscreen/smart_rotation_r"
+
+/**
+ * @brief Blockingmode allday state
+ *
+ * 0 : Off
+ * 1 : On
+ */
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_ALLDAY VCONFKEY_SETAPPL_PREFIX"/blockingmode/allday"
+
+/**
+ * @brief Blockingmode alarm_and_timer state
+ *
+ * 0 : Off
+ * 1 : On
+ */
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_ALARM_AND_TIMER VCONFKEY_SETAPPL_PREFIX"/blockingmode/alarm_and_timer"
+
+/**
+ * @brief Blockingmode notifications state
+ *
+ * 0 : Off
+ * 1 : On
+ */
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_NOTIFICATIONS VCONFKEY_SETAPPL_PREFIX"/blockingmode/notifications"
+
+/**
+ * @brief Blockingmode incomingcall state
+ *
+ * 0 : Off
+ * 1 : On
+ */
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_INCOMINGCALL VCONFKEY_SETAPPL_PREFIX"/blockingmode/incomingcall"
+
+/**
+ * @brief Blockingmode state
+ *
+ * 0 : Off
+ * 1 : On
+ */
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_BLOCKINGMODE VCONFKEY_SETAPPL_PREFIX"/blockingmode/blockingmode"
+
+/**
+* @brief Blockingmode allowed contact type
+* 0: None
+* 1: All contacts
+* 2: Favorites
+* 3: Custom
+*/
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_TYPE VCONFKEY_SETAPPL_PREFIX"/blockingmode/allowed_contact_type"
+
+ /** @brief Blockingmode allowed contact list (string) **/
+ #define VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_LIST VCONFKEY_SETAPPL_PREFIX"/blockingmode/allowed_contact_list"
+
+/**
+ * @brief current selected engine type
+ *
+ * 0 : HW engine
+ * 1 : SW engine
+ */
+#define VCONFKEY_SETAPPL_DEFAULT_RENDERING_ENGINE_TYPE_INT		VCONFKEY_SETAPPL_PREFIX"/default_rendering_engine"
+enum {
+        SETTING_RENDERING_ENGINE_HW = 0,
+        SETTING_RENDERING_ENGINE_SW,
+        SETTING_RENDERING_ENGINE_MAX
+};
+
+/**
+ * @brief most recent opened menu name
+ *
+ * menu name string(string)
+ *
+ */
+#define VCONFKEY_SETAPPL_MOST_RECENTLY_SETTING VCONFKEY_SETAPPL_PREFIX"/most_recently_setting"
+
+/**
+ * @brief frequently used menu names (max 3 menus)
+ *
+ * menu name; menu name; menu name string(string)
+ *
+ */
+#define VCONFKEY_SETAPPL_FREQUENTLY_SETTINGS VCONFKEY_SETAPPL_PREFIX"/frequently_settings"
+
+/**
+ * @brief data usage > input on data limit
+ *
+ * typed limited data size(int)
+ *
+ */
+#define VCONFKEY_SETAPPL_DATA_LIMIT_INT VCONFKEY_SETAPPL_PREFIX"/data_limit"
+
+/**
+ * @brief network > plmn info for network list, access tech
+ *
+ * telnet plmn list(int)
+ *
+ */
+#define VCONFKEY_SETAPPL_SELECT_OLD_NT_ACT VCONFKEY_SETAPPL_PREFIX"/select_network_act"
+
+/**
+ * @brief language > change language region auto or not
+ *
+ * 0 : automatic
+ * 1 : custom
+ *
+ */
+#define VCONFKEY_SETAPPL_LANG_AUTOMATIC_BOOL VCONFKEY_SETAPPL_PREFIX"/lang_automatic"
+
+/**
+ * @brief blockingmode > start alarm minute
+ *
+ * setted start alarm minute time
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_START_MIN VCONFKEY_SETAPPL_PREFIX"/blockingmode/start_min"
+
+/**
+ * @brief blockingmode > end alarm minute
+ *
+ * setted end alarm minute time
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_END_MIN VCONFKEY_SETAPPL_PREFIX"/blockingmode/end_min"
+
+/**
+ * @brief blockingmode > end alarm hour
+ *
+ * setted end alarm hour time
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_END_HOUR VCONFKEY_SETAPPL_PREFIX"/blockingmode/end_hour"
+
+/**
+ * @brief blockingmode > registed end alarm id for launching blockingmode alarm
+ *
+ * registed alarm id digit for end alarm
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_ALARM_ID_END VCONFKEY_SETAPPL_PREFIX"/blockingmode/end_alarm_id"
+
+/**
+ * @brief blockingmode > registed start alarm id for launching blockingmode alarm
+ *
+ * registed alarm id digit for start alarm
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_ALARM_ID_START VCONFKEY_SETAPPL_PREFIX"/blockingmode/start_alarm_id"
+
+/**
+ * @brief blockingmode > start alarm hour
+ *
+ * setted start alarm hour time
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_START_HOUR VCONFKEY_SETAPPL_PREFIX"/blockingmode/start_hour"
+
+/**
+ * @brief blockingmode > alarm and timer flag for reminder
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_INTER_ALARM_AND_TIMER VCONFKEY_SETAPPL_PREFIX"/blockingmode/inter/alarm_and_timer"
+
+/**
+ * @brief blockingmode > incomingcall flag for reminder
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_INTER_INCOMING_CALL VCONFKEY_SETAPPL_PREFIX"/blockingmode/inter/incomingcall"
+
+/**
+ * @brief blockingmode > notification flag for reminder
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_BM_INTER_NOTIFICATIONS VCONFKEY_SETAPPL_PREFIX"/blockingmode/inter/notifications"
+
+/**
+ * @brief event notify status for instant messenger
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_TICKER_NOTI_SOUND_IM VCONFKEY_SETAPPL_PREFIX"/ticker_noti/sound/im"
+
+/**
+ * @brief event notify status for email
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_TICKER_NOTI_SOUND_EMAIL VCONFKEY_SETAPPL_PREFIX"/ticker_noti/sound/email"
+
+/**
+ * @brief event notify status for messages
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_TICKER_NOTI_SOUND_MESSAGES VCONFKEY_SETAPPL_PREFIX"/ticker_noti/sound/messages"
+
+/**
+ * @brief data usage > data usage cycle
+ *
+ * Month / Week / Day
+ *
+ */
+#define VCONFKEY_SETAPPL_DATA_USAGE_CYCLE_INT VCONFKEY_SETAPPL_PREFIX"/data_usage_cycle"
+
+/**
+ * @brief store the roaming check status
+ *
+ * Month / Week / Day
+ *
+ */
+#define VCONFKEY_SETAPPL_DATA_USAGE_ROAMING_STATUS VCONFKEY_SETAPPL_PREFIX"/data_usage_roaming_status"
+
+
+
+/**
+ * @brief in/out profile flag
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_IOPROFILE VCONFKEY_SETAPPL_PREFIX"/ioprofile"
+
+/**
+ * @brief activate data usage limit
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_SET_DATA_USAGE_LIMIT_BOOL VCONFKEY_SETAPPL_PREFIX"/set_data_usage_limit"
+
+/**
+ * @brief Accessibility setting : tap hold delay
+ *
+ * delay type string
+ *
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_TAP_HOLD_DELAY_STR VCONFKEY_SETAPPL_PREFIX"/accessibility/taphold_delay"
+
+/**
+ * @brief Accessibility setting : status of speak password
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_SPEAK_PASSWD_BOOL VCONFKEY_SETAPPL_PREFIX"/accessibility/speak_passwd"
+
+/**
+ * @brief Accessibility setting : sound balance slider value
+ *
+ * sound balance slider value
+ *
+ */
+#define VCONFKEY_SETAPPL_SOUND_BALANCE_INT VCONFKEY_SETAPPL_PREFIX"/accessibility/sound_balance"
+
+/**
+ * @brief About : selected phone num
+ *
+ * selected about phone number string
+ *
+ */
+#define VCONFKEY_SETAPPL_SELECTED_NUM VCONFKEY_SETAPPL_PREFIX"/selected_num"
+
+/**
+ * @brief Screen mode : selected screen mode str
+ *
+ * "Dynamic", "Standard", "Movie"
+ *
+ */
+#define VCONFKEY_SETAPPL_SCREENMODE_SELNAME VCONFKEY_SETAPPL_PREFIX"/screenmode/selected_name"
+
+/**
+ * @brief lcd timeout selected time
+ *
+ * 0 : Immediately
+ * 15 : 15 seconds
+ * 30 : 30 seconds
+ * 60 : 1 minute
+ * 120 : 2 minutes
+ * 300 : 5 minutes
+ * 600 : 10 minites
+ *
+ */
+#define VCONFKEY_LCD_TIMEOUT_NORMAL_BACKUP VCONFKEY_SETAPPL_PREFIX"/lcd_timeout_normal_backup"
+
+/**
+ * @brief led indicator setting : activate led indicator charging
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_LED_INDICATOR_CHARGING VCONFKEY_SETAPPL_PREFIX"/led_indicator/charging"
+
+/**
+ * @brief led indicator setting : activate led indicator low battery
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_LED_INDICATOR_LOW_BATT VCONFKEY_SETAPPL_PREFIX"/led_indicator/low_batt"
+
+/**
+ * @brief led indicator setting : activate led indicator notifications
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_LED_INDICATOR_NOTIFICATIONS VCONFKEY_SETAPPL_PREFIX"/led_indicator/notifications"
+
+/**
+ * @brief led indicator setting : activate led indicator voice recording
+ *
+ * 0 : off
+ * 1 : on
+ *
+ */
+#define VCONFKEY_SETAPPL_LED_INDICATOR_VOICE_REC VCONFKEY_SETAPPL_PREFIX"/led_indicator/voice_rec"
+
+/**
+ * @brief activate hold rotate(disable rotate : on)
+ *
+ * 0 : off
+ * 1 : on (disable the rotation function)
+ */
+#define VCONFKEY_SETAPPL_ROTATE_HOLD_BOOL VCONFKEY_SETAPPL_MEM_PREFIX"/rotate_hold"
+
+/**
  * @}
  */
+#define VCONFKEY_SETAPPL_SETTING_FONT_NAME  VCONFKEY_SETAPPL_MEM_PREFIX"/tmp_font_name"
+/**
+ * @brief font update setting:active font update once name is changed.
+ */
+
+ /**
+ * @brief ps(power saving) mode status
+ * type : int
+ * 0 : normal mode, SETTING_PSMODE_NORMAL
+ * 1 : powerful mode, SETTING_PSMODE_POWERFUL
+ * 2 : emergency mode, SETTING_PSMODE_EMERGENCY
+ * 3 : power saver(for wearable device), SETTING_PSMODE_WEARABLE
+ * 4 : enahanced power saver(for wearable device), SETTING_PSMODE_WEARABLE_ENHANCED
+ *
+ */
+#define VCONFKEY_SETAPPL_PSMODE VCONFKEY_SETAPPL_PREFIX"/psmode"
+enum {
+	SETTING_PSMODE_NORMAL = 0,
+	SETTING_PSMODE_POWERFUL = 1,
+	SETTING_PSMODE_ADVISOR = 1,
+	SETTING_PSMODE_SURVIVAL = 2,
+	SETTING_PSMODE_EMERGENCY = 2,
+	SETTING_PSMODE_WEARABLE = 3,
+	SETTING_PSMODE_WEARABLE_ENHANCED = 4,
+	SETTING_PSMODE_MAX
+};
+
+/**
+ * @brief status of data roaming option
+ *
+ * 0 : Disable \n
+ * 1 : Notional roaming only \n
+ * 2 : All networks \n
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_OPTION_INT    VCONFKEY_SETAPPL_PREFIX"/data_roaming_option"
+enum
+{
+	VCONF_VALUE_SETTING_DATA_ROAMING_OPTION_DISABLE = 0,
+	VCONF_VALUE_SETTING_DATA_ROAMING_OPTION_NATIONAL_ROAMING_ONLY,
+	VCONF_VALUE_SETTING_DATA_ROAMING_OPTION_ALL_NETWORKS
+};
+
+/**
+ * @brief color blind status : colorblind is applied to system, (share with system)
+ *
+ * 0 : off (not applied)
+ * 1 : on (applied)
+ *
+ */
+#define VCONFKEY_SETAPPL_COLORBLIND_STATUS_BOOL		VCONFKEY_SETAPPL_PREFIX"/colorblind/status"
+
+/**
+ * @brief chip array numbers : 15 chips's numbers are arrayed, (use setting only)
+ *
+ * "010203040506070809101112131415"
+ *
+ */
+#define VCONFKEY_SETAPPL_COLORBLIND_CHIP_ARRAY_STR	VCONFKEY_SETAPPL_PREFIX"/colorblind/chip_array"
+
+/**
+ * @brief rgbcmy : the last applied rgbcmy values for colorblind, (share with system)
+ *
+ * "fe0100ff00ff01feff006d9001fe00fffe00"
+ *
+ */
+#define VCONFKEY_SETAPPL_COLORBLIND_LAST_RGBCMY_STR	VCONFKEY_SETAPPL_PREFIX"/colorblind/rgbcmy"
+
+/**
+ * @brief user adjustment level of color blind : user adjusts slider for color blind (use setting only)
+ *
+ * MIN : 0.0
+ * MAX : 1.0
+ *
+ */
+#define VCONFKEY_SETAPPL_COLORBLIND_USER_ADJUSTMENT_DOUBLE	VCONFKEY_SETAPPL_PREFIX"/colorblind/user_adjustment"
+
+/**
+ * @brief mmc encryption status : mmc encryption is enabled or not, (share with system)
+ *
+ * 0 : disabled
+ * 1 : enabled
+ *
+ */
+#define VCONFKEY_SETAPPL_MMC_ENCRYPTION_STATUS_BOOL         VCONFKEY_SETAPPL_PREFIX"/mmc_encryption/status"
+
+/**
+ * @brief mmc encrypting status : mmc is encrypting or not. (share with system)
+ *
+ * 0 : is not encrypting now
+ * 1 : is encrypting now
+ *
+ */
+#define VCONFKEY_SETAPPL_MMC_IS_ENCRYPTING_BOOL         VCONFKEY_SETAPPL_PREFIX"/mmc_encryption/is_encrypting_flag"
+
+/**
+ * @brief store the myplace home location info
+ *
+ * latitude,longitude,map_img_path
+ *
+ */
+#define VCONFKEY_SETAPPL_MYPLACE_HOME VCONFKEY_SETAPPL_PREFIX"/myplace_home"
+
+/**
+ * @brief store the myplace office location info
+ *
+ * latitude,longitude,map_img_path
+ *
+ */
+#define VCONFKEY_SETAPPL_MYPLACE_OFFICE VCONFKEY_SETAPPL_PREFIX"/myplace_office"
+
+/**
+ * @brief status to show if turn on screen or NOT.
+ * When this option is checked, if user open the clear cover, the screen of phone will turn on.
+ *
+ * 0 : off
+ * 1 : on (enable screen wake-up)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_SCREEN_WAKE_UP VCONFKEY_SETAPPL_PREFIX"/accessories/screen_wakeup"
+
+
+/**
+ * @brief activate screen automatic unlock when flip SViewer cover
+ *
+ * 0 : off
+ * 1 : on (enable automatic unlock)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_AUTOMATIC_UNLOCK VCONFKEY_SETAPPL_PREFIX"/accessories/atuomatic_unlock"
+
+/**
+ * @brief status of showing weather info on S View cover
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_SVIEW_COVER_WEATHER            VCONFKEY_SETAPPL_PREFIX"/accessories/weather"
+
+/**
+ * @brief status of showing walking mate info on S View cover
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_SVIEW_COVER_WALKING_MATE            VCONFKEY_SETAPPL_PREFIX"/accessories/walking_mate"
+
+
+/**
+ * @brief enable/disable "dock sound"
+ *
+ * 0 : off
+ * 1 : on (enable dock sound)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_DOCK_SOUND VCONFKEY_SETAPPL_PREFIX"/accessories/dock_sound"
+
+/**
+ * @brief enable/disable "Audio output mode"
+ *
+ * 0 : off
+ * 1 : on (enable Audio output mode)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_AUDIO_OUTPUT_MODE VCONFKEY_SETAPPL_PREFIX"/accessories/audio_output_mode"
+
+/**
+ * @brief show/unshow help info when enable "Audio output mode"
+ *
+ * 0 : show message
+ * 1 : never show message
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_AUDIO_OUTPUT_MODE_REMINDER VCONFKEY_SETAPPL_PREFIX"/accessories/audio_output_mode_reminder"
+
+/**
+ * @brief enable/disable "Desk home screen display"
+ *
+ * 0 : off
+ * 1 : on (enable Desk home screen display)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_DESK_HOME_SCREEN_DISPLAY VCONFKEY_SETAPPL_PREFIX"/accessories/desk_home_screen_display"
+
+/**
+ * @brief current Audio output type(int)
+ *
+ * 0 : Stereo
+ * 1 : Surround
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_AUDIO_OUTPUT VCONFKEY_SETAPPL_PREFIX"/accessories/audio_output"
+
+/**
+ * @brief enable/disable "HDMI applications"
+ *
+ * 0 : off
+ * 1 : on (enable HDMI applications)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_HDMI_APPLICATIONS VCONFKEY_SETAPPL_PREFIX"/accessories/hdmi_application"
+
+/**
+ * @brief enable/disable "Audio applications"
+ *
+ * 0 : off
+ * 1 : on (enable Audio applications)
+ */
+#define VCONFKEY_SETAPPL_ACCESSORY_AUDIO_APPLICATIONS VCONFKEY_SETAPPL_PREFIX"/accessories/audio_applications"
+
+/**
+ * @brief store the value for "touch key light duration"
+ *
+ *  90: 1.5 seconds
+ * 360: 6 seconds
+ *   0: always off
+ *  -1: always on
+ */
+#define VCONFKEY_SETAPPL_TOUCHKEY_LIGHT_DURATION VCONFKEY_SETAPPL_PREFIX"/display/touchkey_light_duration"
+enum {
+	SETTING_TOUCHKEY_LIGIT_DURATION_90SEC = 90,
+	SETTING_TOUCHKEY_LIGIT_DURATION_360SEC = 360,
+	SETTING_TOUCHKEY_LIGIT_DURATION_ALWAYS_OFF = 0,
+	SETTING_TOUCHKEY_LIGIT_DURATION_ALWAYS_ON = -1
+};
+/**
+ * @brief store the location where captured image will be saved("screen capture destination")
+ *	type: int
+ *	0: Gallery
+ *	1: KeepIt
+ *
+ */
+#define VCONFKEY_SETAPPL_SCREEN_CAPTURE_DESTINATION VCONFKEY_SETAPPL_PREFIX"/display/screen_capture_destination"
+enum {
+	SETTING_SCREEN_CAPTURE_DESTINATION_ASK = 0,
+	SETTING_SCREEN_CAPTURE_DESTINATION_GALLERY = 1,
+	SETTING_SCREEN_CAPTURE_DESTINATION_KEEPIT = 2
+};
+
+/**
+ * @brief activate the function "Edit after screen capture"
+ *  type: bool
+ *  0: off
+ *  1: on(enable "Edit after screen capture")
+ *
+ */
+#define VCONFKEY_SETAPPL_SCREEN_CAPTURE_EDIT_AFTER_CAPTURE VCONFKEY_SETAPPL_PREFIX"/display/edit_after_screen_capture"
+
+/**
+ * @brief Network restriction mode
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+#define VCONFKEY_SETAPPL_NETWORK_RESTRICT_MODE	VCONFKEY_SETAPPL_PREFIX"/network_restrict_mode"
+
+/**
+ * @brief whether blockingmode led indicator is enabled or not
+ *
+ * type : bool
+*/
+#define VCONFKEY_SETAPPL_BLOCKINGMODE_LED_INDICATOR VCONFKEY_SETAPPL_PREFIX"/blockingmode/led_indicator"
+
+/**
+ * @brief whether 3g data enable/disable regarding LCD on/off
+ *
+ * type : bool
+*/
+#define VCONFKEY_SETAPPL_TURN_OFF_3G_DURING_LCD_OFF VCONFKEY_SETAPPL_PREFIX"/3g_turn_off_during_lcd_off"
+
+/**
+ * @brief blockingmode > led indicator flag for reminder
+ *
+ * type : bool
+*/
+#define VCONFKEY_SETAPPL_BM_INTER_LED_INDICATOR VCONFKEY_SETAPPL_PREFIX"/blockingmode/inter/led_indicator"
+
+/**
+ * @brief LCD frequecny can be changed for power saving
+ *
+ * type : bool(off, on)
+*/
+#define VCONFKEY_SETAPPL_LCD_FREQ_CONTROL VCONFKEY_SETAPPL_PREFIX"/lcd_freq_control"
+
+/**
+ * @brief Status of specific application for data roaming / Status
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_STATUS	VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/status"
+
+/**
+ * @brief Status of specific application for data roaming / Email
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_EMAIL	VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/email"
+
+/**
+ * @brief Status of specific application for data roaming / Exchange active sync
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_EAS		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/eas"
+
+/**
+ * @brief Status of specific application for data roaming / Internet
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_INTERNET	VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/internet"
+
+/**
+ * @brief Status of specific application for data roaming / MMS
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_MMS		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/mms"
+
+/**
+ * @brief Status of specific application for data roaming / S Cloud
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_SCLOUD		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/scloud"
+
+/**
+ * @brief Status of specific application for data roaming / S Translator
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_STRANSLATOR		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/stranslator"
+
+/**
+ * @brief Status of specific application for data roaming / S Voice
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_SVOICE		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/svoice"
+
+/**
+ * @brief Status of specific application for data roaming / News
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_NEWS		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/news"
+
+/**
+ * @brief Status of specific application for data roaming / Stocks
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_STOCKS		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/stocks"
+
+/**
+ * @brief Status of specific application for data roaming / Weather
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_WEATHER		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/weather"
+
+/**
+ * @brief Status of specific application for data roaming / Twitter
+ *
+ * type : bool
+ */
+#define VCONFKEY_SETAPPL_STATE_DATA_ROAMING_APP_TWITTER		VCONFKEY_SETAPPL_PREFIX"/data_roaming_app/twitter"
+
+/**
+ * @brief Dynamic status bar on/off control
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_DYNAMIC_STATUS_BAR		VCONFKEY_SETAPPL_PREFIX"/display/dynamic_status_bar"
+
+/**
+ * @brief HOME BG color type number
+ *
+ * type : int ( 1 ~ 4 )
+**/
+#define VCONFKEY_SETAPPL_HOME_BG_COLOR_TYPE_INT		"db/setting/home_bg_color_type"
+
+/**
+ * @brief Idle clock type number
+ *
+ * type : int ( 1 ~ 9 )
+**/
+#define VCONFKEY_SETAPPL_CLOCK_TYPE_INT                 "db/setting/idle_clock_type"
+
+/**
+ * @brief This is alert hourly.
+ *
+ * type : bool (off, on)
+**/
+#define VCONFKEY_SETAPPL_HOURLY_ALERT_BOOL              "db/setting/hourly_alert"
+
+/**
+ * @brief Left or Right arm. that is perfered arm.
+ *
+ * type : bool ( 0:left, 1:right )
+**/
+#define VCONFKEY_SETAPPL_PERFERED_ARM_LEFT_BOOL         "db/setting/prefer_arm_left"
+
+/**
+ * @brief Wake up guesture of motion functions
+ *
+ * type : int ( 0:off, 1:clock, 2:last viewd screen )
+**/
+#define VCONFKEY_SETAPPL_MOTIONS_WAKE_UP_GESTURE_INT	"db/setting/motion_wake_up_guesture"
+enum {
+	SETTING_WAKE_UP_GESTURE_OFF = 0,
+	SETTING_WAKE_UP_GESTURE_CLOCK = 1,
+	SETTING_WAKE_UP_GESTURE_LAST_VIEWED_SCREEN = 2
+};
+/**
+ * @brief Smart relay of motion functions
+ *
+ * type : bool ( off, on )
+**/
+#define VCONFKEY_SETAPPL_MOTIONS_SMART_RELAY_BOOL	"db/setting/motion_smart_relay"
+
+/**
+ * @brief Type of homescreen layout
+ *
+ * type : int (0 : 1x1, 1 : 2x2)
+**/
+#define VCONFKEY_SETAPPL_HOMESCREEN_TYPE_INT		"db/setting/homescreen_type"
+enum {
+	SETTING_HOMESCREEN_TYPE_1_1 = 0,
+	SETTING_HOMESCREEN_TYPE_2_2 = 1
+};
+
+/**
+ * @brief Default app for double pressing power key
+ *
+ * type : string for app id
+**/
+#define VCONFKEY_SETAPPL_DEFAULT_APP_STR		"db/setting/default_app"
+
+/**
+ * @brief check state for mobile data popup
+ *
+ * type : bool
+ *
+ * 0 : need to launch
+ * 1 : done
+ */
+
+#define VCONFKEY_SETAPPL_MOBILE_DATA_POPUP_DONE		VCONFKEY_SETAPPL_PREFIX"/mobile_data_popup"
+
+/**
+   * @brief control this homescreen easy mode on/off when easy mode is ON.
+   *
+   * type : bool
+   *
+   * 0 : Off
+   * 1 : On
+   */
+
+#define VCONFKEY_SETAPPL_EASYMODE_HOME_SCREEN		VCONFKEY_SETAPPL_PREFIX"/easymoe/home_screen"
+
+/**
+ * @brief control this Phone easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_PHONE		VCONFKEY_SETAPPL_PREFIX"/easymoe/phone"
+
+/**
+ * @brief control this Contacts easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_CONTACTS	VCONFKEY_SETAPPL_PREFIX"/easymoe/contacts"
+
+/**
+ * @brief control this Messages easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_MESSAGES	VCONFKEY_SETAPPL_PREFIX"/easymoe/messages"
+
+/**
+ * @brief control this Internet easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_INTERNET	VCONFKEY_SETAPPL_PREFIX"/easymoe/internet"
+
+
+
+/**
+ * @brief control this Voice Recorder easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_VOICE_RECORDER	VCONFKEY_SETAPPL_PREFIX"/easymoe/voice_recorder"
+
+/**
+ * @brief control this S Planner easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_SPLANNER	VCONFKEY_SETAPPL_PREFIX"/easymoe/s_planner"
+
+/**
+ * @brief control this Camera easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_CAMERA	VCONFKEY_SETAPPL_PREFIX"/easymoe/camera"
+
+/**
+ * @brief control Gallery easy mode on/off when easy mode is ON.
+ *
+ * type : bool
+ *
+ * 0 : Off
+ * 1 : On
+ */
+
+#define VCONFKEY_SETAPPL_EASYMODE_GALLERY	VCONFKEY_SETAPPL_PREFIX"/easymoe/gallery"
+
+/**
+ * @brief show/unshow popup info when turn ON "Mobile data"
+ *
+ * 0 : show popup info
+ * 1 : never show popup
+ */
+#define VCONFKEY_SETAPPL_MOBILE_DATA_ON_REMINDER VCONFKEY_SETAPPL_PREFIX"/network/mobile_data_on_reminder"
+
+/**
+ * @brief show/unshow popup info when turn OFF "Mobile data"
+ *
+ * 0 : show popup info
+ * 1 : never show popup info
+ */
+#define VCONFKEY_SETAPPL_MOBILE_DATA_OFF_REMINDER VCONFKEY_SETAPPL_PREFIX"/network/mobile_data_off_reminder"
+
+/**
+ * @brief control USB OTG mode on/off
+ *
+ * type : bool
+ *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_SETAPPL_USB_OTG_MODE VCONFKEY_SETAPPL_PREFIX"/usb_otg"
+
+/**
+ * @brief power saving shorcut on/off
+ *
+ * type : bool
+ *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_SETAPPL_PSMODE_SHORTCUT_KEY VCONFKEY_SETAPPL_PREFIX"/psmode_shortcut"
+
+/**
+ * @brief sound status(sound/mute/vibration) reminder for hands-freemode off
+ *
+ * type : int
+ *
+ * 0 : sound on
+ * 1 : mute
+ * 2 : vibration
+ */
+#define VCONFKEY_SETAPPL_HANDSFREE_SOUND_REMINDER VCONFKEY_SETAPPL_PREFIX"/handsfree_sound_reminder"
+enum {
+	SETTING_HANDSFREE_SOUND_ON = 0,
+	SETTING_HANDSFREE_SOUND_MUTE = 1,
+	SETTING_HANDSFREE_SOUND_VIB = 2
+};
+
+/**
+ * @brief firewall status on/off
+ *
+ * type : bool
+ *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_SETAPPL_FIREWALL_KEY VCONFKEY_SETAPPL_PREFIX"/firewall"
+
+/**
+ * @brief personal mode status on/off
+ *
+ * type : bool
+ *
+ * 0 : off
+ * 1 : on
+ */
+#define VCONFKEY_SETAPPL_PERSONAL_MODE_STATUS_BOOL	VCONFKEY_SETAPPL_MEM_PREFIX"/personal"
+
+/**
+ * @brief unlock method type of personal mode
+ *
+ * type : int
+ *
+ * 0 : none
+ * 1 : simple password
+ * 2 : password
+ */
+#define VCONFKEY_SETAPPL_PERSONAL_MODE_UNLOCK_METHOD_INT	VCONFKEY_SETAPPL_PREFIX"/personal_unlock_method"
+
+/**
+ * @brief flag to show popup when personal mode is disabled
+ *
+ * type : bool
+ *
+ * 0 : show flag
+ * 1 : do not show flag
+ */
+#define VCONFKEY_SETAPPL_PERSONAL_MODE_OFF_POPUP_FLAG_BOOL	VCONFKEY_SETAPPL_PREFIX"/personal_off_popup_do_not_show_flag"
+
+/**
+ * @brief attempt count when personal mode is enabled
+ *
+ * type : int
+ *
+ * 0 : min attempt count
+ * 5 : max attempt count
+ */
+#define VCONFKEY_SETAPPL_PERSONAL_MODE_CURRENT_ATTEMPTS_INT	VCONFKEY_SETAPPL_PREFIX"/personal_attempts"
+
+/**
+ * @brief time when enter wrong password max attempt count times
+ *
+ * type : string
+ *
+ */
+#define VCONFKEY_SETAPPL_PERSONAL_MODE_TIMESTAMP_STR		VCONFKEY_SETAPPL_PREFIX"/personal_timestamp"
+
+/**
+ * @brief flag to show/hide "developer option"
+ *
+ * type : bool
+ *
+ * 0 : hide
+ * 1 : show
+ */
+#define VCONFKEY_SETAPPL_DEVELOPER_OPTION_STATE  VCONFKEY_SETAPPL_PREFIX"/developer_option_state"
+
+/**
+ * @brief keep net interface to set iptables for firewall
+ *
+ * type : string
+ *
+ */
+#define VCONFKEY_SETAPPL_FIREWALL_NET_INTERFACE_REMINDER_STR		VCONFKEY_SETAPPL_PREFIX"/firewall_net_interface"
+
+/**
+ * @brief Changeable UI - theme number 1~n
+ *
+ * type : int
+ *
+ * 1 ~ n : index of theme (currently n = 6 and it is able to grow up)
+ */
+#define  VCONFKEY_SETAPPL_CHANGE_UI_THEME_INT VCONFKEY_SETAPPL_PREFIX"/change_ui/theme"
+
+/**
+ * @brief SELECT STATE OF DATA SERVICE
+ *
+ * 0: using SIM1 when using data service
+ * 1: using SIM2 when using data service
+ * 2: data service off
+*/
+#define VCONFKEY_DUALSIM_DATA_SERVICE_INT                 VCONFKEY_SETAPPL_PREFIX"/dualsim/data_service"
+enum {
+ /** using none */
+ VCONFKEY_DUALSIM_DATA_SERVICE_OFF = 0,
+ /** using SIM1 */
+ VCONFKEY_DUALSIM_DATA_SERVICE_SIM1,
+ /** using SIM2 */
+ VCONFKEY_DUALSIM_DATA_SERVICE_SIM2
+};
+
+/**
+ * @brief Changeable UI - apply color theme from the wallpaper to applications
+ *
+ * type : bool
+ *
+ * 0 : OFF
+ * 1 : ON
+ */
+#define VCONFKEY_SETAPPL_WALLPAPER_APPLY_COLORTHEME_BOOL             VCONFKEY_SETAPPL_PREFIX"/change_ui/color_theme_wallpaper_set"
+
+/**
+ * @brief status of window gray tone
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_WINDOW_GRAYTONE          VCONFKEY_SETAPPL_PREFIX"/win_gray"
+
+/**
+ * @brief status of FPS (frame rate for screen) high/low
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_WINDOW_FPS            VCONFKEY_SETAPPL_PREFIX"/win_fps"
+
+/**
+ * @brief status of Open via multi window view (multi window)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_OPEN_VIA_MULTI            VCONFKEY_SETAPPL_PREFIX"/open_via_multi"
+
+/**
+  * @brief status of verify samsung account
+  *
+  * 0 : Un-verified
+  * 1 : Verified
+  */
+ #define VCONFKEY_SETAPPL_VERIFY_SAMSUNG_ACCOUNT          VCONFKEY_SETAPPL_PREFIX"/verify_samsung_account"
+
+/**
+  * @brief status of verify tizen account
+  *
+  * 0 : Un-verified
+  * 1 : Verified
+  */
+ #define VCONFKEY_SETAPPL_VERIFY_TIZEN_ACCOUNT          VCONFKEY_SETAPPL_PREFIX"/verify_tizen_account"
+
+/**
+   * @brief status of web sign in method
+   *
+   * 0 : web sign in by default(password)
+   * 1 : web sign in by fingerprint
+   */
+ #define VCONFKEY_SETAPPL_WEB_SIGN_IN_BY_FINGERPRINT          VCONFKEY_SETAPPL_PREFIX"/web_sign_in_by_fingerprint"
+
+
+ /**
+   * @brief flag for showing fingerprint disclaimer view or not
+   *
+   * 0 : Show it
+   * 1 : Do not show it
+   */
+ #define VCONFKEY_SETAPPL_FINGERPRINT_DO_NOT_SHOW_DISCLAIMER          VCONFKEY_SETAPPL_PREFIX"/fingerprint_no_disclaimer"
+
+  /**
+   * @brief flag for showing 'upsm'(ultra-power saving mode) disclaimer view or not
+   *
+   * 0 : Show it
+   * 1 : Do not show it
+   */
+ #define VCONFKEY_SETAPPL_UPSM_DO_NOT_SHOW_DISCLAIMER          VCONFKEY_SETAPPL_PREFIX"/upsm_no_disclaimer"
+
+  /**
+   * @brief flag for seperating ui for emerngency mode
+   *
+   * 1 : EMERGENCY_UI_MODE_EMERGENCY
+   * 2 : EMERGENCY_UI_MODE_ULTRA_POWER_SAVING
+   */
+ #define VCONFKEY_SETAPPL_EMERGENCY_UI_MODE          VCONFKEY_SETAPPL_PREFIX"/emergency/mode"
+ enum {
+	EMERGENCY_UI_MODE_EMERGENCY = 1,
+	EMERGENCY_UI_MODE_ULTRA_POWER_SAVING,
+	EMERGENCY_UI_MODE_MAX
+};
+ /**
+	* @brief value for record the counts of custom vibration
+	*
+	* type : int
+	* 0~n: current customized vibration count
+	*/
+#define VCONFKEY_SETAPPL_VIBRATION_CUSTOM_FILE_COUNT_INT	VCONFKEY_SETAPPL_PREFIX"/sound/vibration_custom_file_count"
+
+/**
+ * @brief status of Air wake up (Accessibility)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_AIR_WAKEUP            VCONFKEY_SETAPPL_PREFIX"/accessibility/air_wakeup"
+
+/**
+ * @brief status of Open Auto haptic (Accessibility)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_AUTO_HAPTIC            VCONFKEY_SETAPPL_PREFIX"/accessibility/auto_haptic"
+
+/**
+ * @brief status of Open Dark screen (Accessibility)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_ACCESSIBILITY_DARK_SCREEN            VCONFKEY_SETAPPL_PREFIX"/accessibility/dark_screen"
+
+/**
+ * @brief status of data on/off with FMM emergency (request by misun kim, network team)
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_NETWORK_PERMIT_WITH_LCD_OFF_LIMIT            VCONFKEY_SETAPPL_PREFIX"/network_with_lcd_off_limit"
+
+ /**
+  * @brief flag for showing 'emergency'(emergency mode) disclaimer view or not
+  *
+  * 0 : Show it
+  * 1 : Do not show it
+  */
+#define VCONFKEY_SETAPPL_EMERGENCY_DO_NOT_SHOW_DISCLAIMER          VCONFKEY_SETAPPL_PREFIX"/emergency_no_disclaimer"
+
+/**
+  * @brief index for vpn status which is updated by vpn-daemon
+  *
+  * index
+  *
+  */
+#define VCONFKEY_SETAPPL_SETTING_VPN_KEY_INDEX          VCONFKEY_SETAPPL_PREFIX"/current_vpn_id"
+
+/**
+  * @brief  status of one add vpn record which is updated by vpn-daemon
+  *
+  * index
+  *
+  */
+#define VCONFKEY_SETAPPL_SETTING_VPN_KEY_STATUS          VCONFKEY_SETAPPL_PREFIX"/current_vpn_status"
+
+/**
+ * @brief name of sim1
+ *
+ * type : string
+ *
+*/
+#define VCONFKEY_SETAPPL_SIM1_NAME                 VCONFKEY_SETAPPL_PREFIX"/sim1_name"
+
+/**
+ * @brief name of sim2
+ *
+ * type : string
+ *
+*/
+#define VCONFKEY_SETAPPL_SIM2_NAME                 VCONFKEY_SETAPPL_PREFIX"/sim2_name"
+
+/**
+ * @brief icon type of sim1
+ *
+ * type : int
+ *
+*/
+#define VCONFKEY_SETAPPL_SIM1_ICON                 VCONFKEY_SETAPPL_PREFIX"/sim1_icon"
+
+/**
+ * @brief icon type of sim2
+ *
+ * type : int
+ *
+*/
+#define VCONFKEY_SETAPPL_SIM2_ICON                 VCONFKEY_SETAPPL_PREFIX"/sim2_icon"
+
+enum {
+	SIM_ICON_SIM1 = 0,
+	SIM_ICON_SIM2,
+	SIM_ICON_CALL,
+	SIM_ICON_SMS,
+	SIM_ICON_MMS,
+	SIM_ICON_INTERNET,
+	SIM_ICON_HOME,
+	SIM_ICON_OFFICE,
+	SIM_ICON_HEART,
+	SIM_ICON_MAX
+};
+
+/**
+ * @brief SELECT STATE OF VOICE CALL
+ *
+ * 0: using current network when voice call occurs
+ * 1: ask always when voice call occurs
+ * 2: using SIM1 when voice call occurs
+ * 3: using SIM2 when voice call occurs
+*/
+#define VCONFKEY_DUALSIM_VOICE_CALL_INT                 VCONFKEY_SETAPPL_PREFIX"/dualsim/voice_call"
+enum {
+	/**<  Unknown status **/
+	VCONFKEY_DUALSIM_VOICE_CALL_UNKNOWN = -1,
+	/** using current network */
+	VCONFKEY_DUALSIM_VOICE_CALL_CURRENT_NETWORK = 0,
+	/** ask always */
+	VCONFKEY_DUALSIM_VOICE_CALL_ASK_ALWAYS,
+	/** using SIM1 */
+	VCONFKEY_DUALSIM_VOICE_CALL_SIM1,
+	/** using SIM2 */
+	VCONFKEY_DUALSIM_VOICE_CALL_SIM2
+};
+
+#define VCONFKEY_TELEPHONY_ALWAYS_ON_BOOL  VCONFKEY_SETAPPL_PREFIX"/dualsim/always_dualsim"
+
+/**
+ * @brief SELECT STATE OF DUAL SIM
+ *
+ * 0: Both sim cards
+ * 1: SIM1 to SIM2
+ * 2: SIM2 to SIM1
+*/
+#define VCONFKEY_DUALSIM_SELECTED_SIM                 VCONFKEY_SETAPPL_PREFIX"/dualsim/selected_sim"
+enum {
+ /** Unknow*/
+ VCONFKEY_DUALSIM_SELECT_UNKNOW = -1,
+ /** Both sim cards */
+ VCONFKEY_DUALSIM_SELECT_BOTH_SIM = 0,
+ /** SIM1 to SIM2 */
+ VCONFKEY_DUALSIM_SELECT_SIM1_TO_SIM2,
+ /** SIM2 to SIM1 */
+ VCONFKEY_DUALSIM_SELECT_SIM2_TO_SIM1
+};
+
+/**
+ * @brief whether sim card is attached to slot1
+ *
+ * type : bool
+*/
+#define VCONFKEY_SETAPPL_SIM1_ATTACHED VCONFKEY_SETAPPL_PREFIX"/sim1_attached"
+
+/**
+ * @brief whether sim card is attached to slot2
+ *
+ * type : bool
+*/
+#define VCONFKEY_SETAPPL_SIM2_ATTACHED VCONFKEY_SETAPPL_PREFIX"/sim2_attached"
+
+/**
+ * @brief status of carrier match
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_CARRIER_MATCH_BOOL          VCONFKEY_SETAPPL_PREFIX"/carrier_match"
+
+/**
+ * @brief status of carrier match always ask
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_CARRIER_MATCH_ALWAYS_ASK_BOOL          VCONFKEY_SETAPPL_PREFIX"/carrier_match_always_ask"
+
+/**
+ * @brief degree of screen rotation
+ *
+ * type : int (0 : 0 / 1 : 90 / 2 : 180 / 3: 270)
+**/
+#define VCONFKEY_SETAPPL_SCREENROTATION_DEG_INT		"db/setting/screen_rotation"
+enum {
+	SETTING_SCREENROTATION_0_DEGREE = 0,
+	SETTING_SCREENROTATION_90_DEGREE = 1,
+	SETTING_SCREENROTATION_180_DEGREE = 2,
+	SETTING_SCREENROTATION_270_DEGREE = 3
+};
+
+/**
+ * @brief Home screen bg set, color or image
+ *
+ * type : int ( 0:bg color, 1:set wallpaper image )
+**/
+#define VCONFKEY_SETAPPL_HOMESCREEN_BG_INT	"db/setting/homescreen_bg"
+enum {
+	SETTING_HOMESCREEN_BG_SET_COLOR = 0,
+	SETTING_HOMESCREEN_BG_SET_IMAGE = 1
+};
+
+/**
+ * @brief Privacy lock type
+ *
+ * type: int
+**/
+#define VCONFKEY_SETAPPL_PRIVACY_LOCK_TYPE_INT		"db/setting/lock_type"
+enum {
+	SETTING_PRIVACY_LOCK_TYPE_NONE = 0,
+	SETTING_PRIVACY_LOCK_TYPE_PATTERN = 1
+};
+
+/**
+ * @brief Privacy lock visibility
+ *
+ * type: bool ( 0: disable, 1: enable )
+**/
+#define VCONFKEY_SETAPPL_PRIVACY_LOCK_ENABLE_BOOL	"db/setting/see_pattern"
+
+/**
+ * @brief support Emergency
+ *
+ * type: bool ( 0: not supported, 1: supported )
+**/
+#define VCONFKEY_SETAPPL_SUPPORT_EMERGENCY_BOOL	"db/setting/support_emergency"
+
+/**
+ * @brief Emergency mode status
+ *
+ * type: bool ( 0: off, 1: on )
+**/
+#define VCONFKEY_SETAPPL_EMERGENCY_STATUS_BOOL	"db/setting/emergency_status"
+
+/**
+ * @brief Wake up gesture status for emergency
+ *
+ * type : int ( 0:off )
+**/
+#define VCONFKEY_SETAPPL_EMERGENCY_WAKE_UP_GESTURE_INT	"db/setting/emergency_wakeup_gesture"
+
+/**
+ * @brief Ringtone path for emergency
+ *
+ * type : string
+ *
+ */
+#define VCONFKEY_SETAPPL_EMERGENCY_RINGTONE_STR		"db/setting/emergency_ringtone"
+
+/**
+ * @brief Wake up gesture status for emergency
+ *
+ * type : int ( 0:off )
+**/
+#define VCONFKEY_SETAPPL_PWS_WAKE_UP_GESTURE_INT	"db/setting/pws_wakeup_gesture"
+
+/**
+ * @brief Brightness value for emergency
+ *
+ * type : int ( lowest : 1 )
+**/
+#define VCONFKEY_SETAPPL_PWS_LCD_BRIGHTNESS_INT	"db/setting/pws_brightness"
+
+/**
+ * @brief Screen timeout value for emergency
+ *
+ * type : int ( shortest : 10sec )
+**/
+#define VCONFKEY_SETAPPL_PWS_LCD_TIMEOUT_INT	"db/setting/pws_lcd_timeout"
+
+/**
+ * @brief Ringtone path for emergency
+ *
+ * type : string
+ *
+ */
+#define VCONFKEY_SETAPPL_PWS_RINGTONE_STR		"db/setting/pws_ringtone"
+
+/**
+ * @brief (wearable)Blocking mode status
+ *
+ * type : bool ( 0: off, 1: on )
+ *
+ */
+#define VCONFKEY_SETAPPL_BLOCKMODE_WEARABLE_BOOL		"db/setting/blockmode_wearable"
+
+/**
+ * @brief (wearable)Blocking mode status for UI
+ *
+ * type : bool ( 0: off, 1: on )
+ *
+ */
+#define VCONFKEY_SETAPPL_BLOCKMODE_WEARABLE_R_BOOL		"db/setting/blockmode_wearable_r"
+
+/**
+ * @brief (wearable)Blocking mode, sleep share key
+ *
+ * type : bool ( 0: off, 1: on )
+ *
+ */
+#define VCONFKEY_SETAPPL_BLOCKMODE_SLEEP_SHARE_BOOL	"db/setting/blockmode_sleep_share"
+
+/**
+ * @brief (wearable)Ambient mode status
+ *
+ * type : bool ( 0: off, 1: on )
+ *
+ */
+#define VCONFKEY_SETAPPL_AMBIENT_MODE_BOOL	"db/setting/ambient_mode"
+
+/**
+ * @brief (wearable)wallpaper changed status
+ *
+ * type : int ( 0: none, 1: changed from Gear, 2: changed from host manager )
+ *
+ */
+#define VCONFKEY_SETAPPL_WALLPAPER_CHANGED_NOTI_INT	"db/setting/wallpaper_changed"
+enum {
+	VCONFKEY_WALLPAPER_CHANGED_NOTI_NONE = 0,
+	VCONFKEY_WALLPAPER_CHANGED_NOTI_GEAR = 1,
+	VCONFKEY_WALLPAPER_CHANGED_NOTI_HM = 2
+};
+
+/**
+ * @brief power saving mode(wearable) check enhanced key
+ *
+ * 0 : Basic mode(not enhanced mode)
+ * 1 : Enhanced mode
+ */
+#define VCONFKEY_SETAPPL_PSMODE_IS_ENHANCED_BOOL	"db/setting/psmode_is_enhanced"
+
+/**
+ * @brief status of  Report diagnostic info
+ *
+ * 0 : Off \n
+ * 1 : On \n
+ */
+#define VCONFKEY_SETAPPL_REPORT_DIAGNOSTIC_INFO_BOOL          VCONFKEY_SETAPPL_PREFIX"/report_diagnostic_info"
+
+
 
 #endif	/* __VCONF_INTERNAL_SETTING_KEYS_H__ */
 

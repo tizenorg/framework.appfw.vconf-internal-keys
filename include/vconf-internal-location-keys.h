@@ -35,6 +35,7 @@
 
 /* ========================== Location Setting Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief Location Setting Keys & Values\n
@@ -42,7 +43,15 @@
  */
 
 /**
- * @brief location service on/off status(int)
+ * @brief 'Use my location' on/off status(int)
+ *
+ * Disabled = 0 \n
+ * Enabled = 1
+ */
+#define VCONFKEY_LOCATION_USE_MY_LOCATION "db/location/setting/Usemylocation"
+
+/**
+ * @brief GPS service on/off status(int)
  *
  * Disabled = 0 \n
  * Enabled = 1
@@ -79,6 +88,7 @@
 
 /* ========================== GPS setting Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief Replay mode Keys & Values\n
@@ -99,6 +109,57 @@ enum {
 	VCONFKEY_GPS_OPERATION_MS_ASSISTED,
 	VCONFKEY_GPS_OPERATION_MAX
 };
+
+
+/**
+ * @brief GPS operation test mode(int)
+ *
+ * NORMAL = 0 \n
+ * TEST_HW_SENSITIVITY = 1
+ */
+#define VCONFKEY_LOCATION_GPS_OPERATION_TEST "db/location/gps/OperationTest"
+enum {
+	VCONFKEY_GPS_OPERATION_TEST_NORMAL = 0,
+	VCONFKEY_GPS_OPERATION_TEST_HW_SENSITIVITY,
+	VCONFKEY_GPS_OPERATION_TEST_HW_CN0,
+	VCONFKEY_GPS_OPERATION_TEST_HW_CW,
+	VCONFKEY_GPS_OPERATION_TEST_MAX
+};
+
+/**
+ * @brief GPS operation in virtual simulation mode(int)
+ * For example, running with ULTS/PLTS is virtual mode.
+ *
+ * NORMAL = 0 \n
+ * VIRTUAL = 1
+ */
+#define VCONFKEY_LOCATION_GPS_OPERATION_VIRTUAL "db/location/gps/OperationVirtual"
+
+/**
+ * @brief GPS operation in focused in GLONASS mode(int)
+ *
+ * NORMAL = 0 \n
+ * GLONASS = 1
+ */
+#define VCONFKEY_LOCATION_GPS_OPERATION_GLONASS "db/location/gps/OperationGlonass"
+
+/**
+ * @brief GPS quality of precision in dynamic accuracy mode(int)
+ *
+ * NORMAL = 0 \n
+ * DYNAMIC_ACC = 1
+ */
+#define VCONFKEY_LOCATION_GPS_QOP_DYNAMIC_ACC "db/location/gps/QoP/DynamicAcc"
+
+/**
+ * @brief GPS quality of precision timeout in seconds (int)
+ */
+#define VCONFKEY_LOCATION_GPS_QOP_TIMEOUT "db/location/gps/QoP/Timeout"
+
+/**
+ * @brief GPS quality of precision accuracy in meters (int)
+ */
+#define VCONFKEY_LOCATION_GPS_QOP_ACCURACY "db/location/gps/QoP/Accuracy"
 
 /**
  * @brief GPS starting mode(int)
@@ -143,12 +204,67 @@ enum {
  * Enabled = 1
  */
 #define VCONFKEY_LOCATION_SUPL_SSL "db/location/supl/SslEnabled"
+
+/**
+ * @brief GPS session mode(int)
+ *
+ * FQDN CUSTOM = 0 \n
+ * AUTO = 1 \n
+ * SPIRENT = 2 \n
+ * DOCOMO = 3
+ */
+#define VCONFKEY_LOCATION_SUPL_FQDNTYPE "db/location/supl/FQDNType"
+enum {
+	VCONFKEY_LOCATION_SUPL_FQDN_CUSTOM = 0,
+	VCONFKEY_LOCATION_SUPL_FQDN_AUTO,
+	VCONFKEY_LOCATION_SUPL_FQDN_SPIRENT,
+	VCONFKEY_LOCATION_SUPL_FQDN_DOCOMO,
+	VCONFKEY_LOCATION_SUPL_FQDN_BUILD,
+	VCONFKEY_LOCATION_SUPL_FQDN_HERE,
+	VCONFKEY_LOCATION_SUPL_FQDN_VFONE
+};
+
+/**
+ * @brief SUPL version(int)
+ *
+ * SUPL 1.0 = 0 \n
+ * SUPL 2.0 = 1
+ *
+ */
+#define VCONFKEY_LOCATION_SUPL_VERSION "db/location/supl/Version"
+
+/**
+ * @brief Log Enable(int)
+ *
+ * LOG Disable = 0 \n
+ * LOG Enable = 1
+ *
+ */
+#define VCONFKEY_LOCATION_LOG_ENABLED "db/location/supl/LogEnabled"
+
+/**
+ * @brief LTO Enable(int)
+ *
+ * LTO Disable = 0 \n
+ * LTO Enable = 1
+ *
+ */
+#define VCONFKEY_LOCATION_LTO_ENABLED "db/location/supl/LtoEnabled"
+
+
+/**
+ * @brief last GPS Xtra download time(double)
+ */
+
+#define VCONFKEY_LOCATION_LAST_GPS_XTRA_DOWNLOAD_TIME "db/location/gps/XtraDownloadTime"
+
 /**
  * @}
  */
 
 /* ========================== NMEA Logging mode Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief Replay mode Keys & Values\n
@@ -169,6 +285,7 @@ enum {
 
 /* ========================== Replay mode Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief Replay mode Keys & Values\n
@@ -224,6 +341,7 @@ enum {
 
 /* ========================== GPS / WPS Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief GPS/ WPS Keys & Values\n
@@ -284,6 +402,7 @@ enum {
 
 /* ========================== GPS / WPS Last Position Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_location_key
  * @{
  * @brief GPS/ WPS Keys & Values\n
@@ -293,102 +412,98 @@ enum {
 /**
  * @brief last GPS timestamp(int)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_TIMESTAMP "db/location/last/gps/Timestamp"
+#define VCONFKEY_LOCATION_LAST_GPS_TIMESTAMP "memory/location/last/gps/Timestamp"
 
 /**
  * @brief last GPS latitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_LATITUDE "db/location/last/gps/Latitude"
+#define VCONFKEY_LOCATION_LAST_GPS_LATITUDE "memory/location/last/gps/Latitude"
 
 /**
  * @brief last GPS longitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_LONGITUDE "db/location/last/gps/Longitude"
+#define VCONFKEY_LOCATION_LAST_GPS_LONGITUDE "memory/location/last/gps/Longitude"
 
 /**
  * @brief last GPS altitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_ALTITUDE "db/location/last/gps/Altitude"
+#define VCONFKEY_LOCATION_LAST_GPS_ALTITUDE "memory/location/last/gps/Altitude"
 
 /**
  * @brief last GPS speed(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_SPEED "db/location/last/gps/Speed"
+#define VCONFKEY_LOCATION_LAST_GPS_SPEED "memory/location/last/gps/Speed"
 
 /**
  * @brief last GPS direction(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_DIRECTION "db/location/last/gps/Direction"
+#define VCONFKEY_LOCATION_LAST_GPS_DIRECTION "memory/location/last/gps/Direction"
 
 /**
  * @brief last GPS horizontal accuracy(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_HOR_ACCURACY "db/location/last/gps/HorAccuracy"
+#define VCONFKEY_LOCATION_LAST_GPS_HOR_ACCURACY "memory/location/last/gps/HorAccuracy"
 
 /**
  * @brief last GPS vertical accuracy(double)
  */
-#define VCONFKEY_LOCATION_LAST_GPS_VER_ACCURACY "db/location/last/gps/VerAccuracy"
+#define VCONFKEY_LOCATION_LAST_GPS_VER_ACCURACY "memory/location/last/gps/VerAccuracy"
 
 /**
  * @brief last WPS timestamp(int)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_TIMESTAMP "db/location/last/wps/Timestamp"
+#define VCONFKEY_LOCATION_LAST_WPS_TIMESTAMP "memory/location/last/wps/Timestamp"
 
 /**
  * @brief last WPS latitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_LATITUDE "db/location/last/wps/Latitude"
+#define VCONFKEY_LOCATION_LAST_WPS_LATITUDE "memory/location/last/wps/Latitude"
 
 /**
  * @brief last WPS longitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_LONGITUDE "db/location/last/wps/Longitude"
+#define VCONFKEY_LOCATION_LAST_WPS_LONGITUDE "memory/location/last/wps/Longitude"
 
 /**
  * @brief last WPS altitude(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_ALTITUDE "db/location/last/wps/Altitude"
+#define VCONFKEY_LOCATION_LAST_WPS_ALTITUDE "memory/location/last/wps/Altitude"
 
 /**
  * @brief last WPS speed(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_SPEED "db/location/last/wps/Speed"
+#define VCONFKEY_LOCATION_LAST_WPS_SPEED "memory/location/last/wps/Speed"
 
 /**
  * @brief last WPS direction(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_DIRECTION "db/location/last/wps/Direction"
+#define VCONFKEY_LOCATION_LAST_WPS_DIRECTION "memory/location/last/wps/Direction"
 
 /**
  * @brief last WPS horizontal accuracy(double)
  */
-#define VCONFKEY_LOCATION_LAST_WPS_HOR_ACCURACY "db/location/last/wps/HorAccuracy"
+#define VCONFKEY_LOCATION_LAST_WPS_HOR_ACCURACY "memory/location/last/wps/HorAccuracy"
 
 /**
- * @brief last CPS timestamp(int)
+ * @brief last GPS location timestamp(int)
  */
-#define VCONFKEY_LOCATION_LAST_CPS_TIMESTAMP "db/location/last/cps/Timestamp"
+#define VCONFKEY_LOCATION_NV_LAST_GPS_TIMESTAMP "db/location/last/gps/LocTimestamp"
 
 /**
- * @brief last CPS latitude(double)
+ * @brief last WPS location timestamp(int)
  */
-#define VCONFKEY_LOCATION_LAST_CPS_LATITUDE "db/location/last/cps/Latitude"
+#define VCONFKEY_LOCATION_NV_LAST_WPS_TIMESTAMP "db/location/last/wps/LocTimestamp"
 
 /**
- * @brief last CPS longitude(double)
+ * @brief last GPS location(string)
  */
-#define VCONFKEY_LOCATION_LAST_CPS_LONGITUDE "db/location/last/cps/Longitude"
+#define VCONFKEY_LOCATION_NV_LAST_GPS_LOCATION "db/location/last/gps/Location"
 
 /**
- * @brief last CPS altitude(double)
+ * @brief last WPS location(string)
  */
-#define VCONFKEY_LOCATION_LAST_CPS_ALTITUDE "db/location/last/cps/Altitude"
+#define VCONFKEY_LOCATION_NV_LAST_WPS_LOCATION "db/location/last/wps/Location"
 
-/**
- * @brief last CPS horizontal accuracy(double)
- */
-#define VCONFKEY_LOCATION_LAST_CPS_HOR_ACCURACY "db/location/last/cps/HorAccuracy"
 /**
  * @}
  */

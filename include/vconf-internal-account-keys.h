@@ -35,6 +35,7 @@
 
 /* ========================== Account Keys & Values ============================ */
 /**
+ * @internal
  * @addtogroup vconf_internal_account_key
  * @{
  * @brief Account-hotspot Keys & Values\n
