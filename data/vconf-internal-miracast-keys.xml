@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_MIRACAST_KEYS_H__"/>
+  <vconfkey type="int" name="memory/wifi/miracast/source_status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MIRACAST_WFD_SOURCE_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_MIRACAST_WFD_SOURCE_OFF</enumdata>
+      <enumdata>VCONFKEY_MIRACAST_WFD_SOURCE_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi/miracast/web_video_player_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WFD_WEB_VIDEO_PLAYER_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ webkit2-efl is in use for TV profile ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WFD_WEB_VIDEO_PLAYER_STOP</enumdata>
+      <enumdata val="1">VCONFKEY_WFD_WEB_VIDEO_PLAYER_PLAY</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

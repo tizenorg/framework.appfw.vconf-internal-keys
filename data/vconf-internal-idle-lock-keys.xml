@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_IDLE_LOCK_KEYS_H__"/>
+  <vconfkey type="string" name="db/idle_lock/bgset" value="/opt/usr/share/settings/Wallpapers/home_006.png" label="tizen::vconf::public::rw" gid="6514" uid="">
+    <header>VCONFKEY_IDLE_LOCK_BGSET</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/idle_lock/state" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_IDLE_LOCK_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_IDLE_UNLOCK</enumdata>
+      <enumdata>VCONFKEY_IDLE_LOCK</enumdata>
+      <enumdata>VCONFKEY_IDLE_LAUNCHING_LOCK</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

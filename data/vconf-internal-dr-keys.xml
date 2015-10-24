@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_DR_KEYS_H__"/>
+  <vconfkey type="int" name="memory/data_router/osp_serial_open" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_DR_OSP_SERIAL_OPEN_INT</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[Serial open value for serial API]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_DR_OSP_SERIAL_CLOSE</enumdata>
+      <enumdata val="1">VCONFKEY_DR_OSP_SERIAL_OPEN</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

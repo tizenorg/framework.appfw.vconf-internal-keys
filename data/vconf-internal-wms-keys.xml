@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_WMS_KEYS_H__"/>
+  <vconfkey type="int" name="memory/wms/favorites_order" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WMS_FAVORITE_ORDER</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wms/apps_order" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WMS_APPS_ORDER</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/wms/wakeup_by_gesture_setting" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_WMS_WAKEUP_BY_GESTURE_SETTING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/wms/clocks_set_idle" value="org.tizen.idle-clock-digital" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_WMS_CLOCKS_SET_IDLE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/wms/powerkey_double_pressing" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_WMS_POWERKEY_DOUBLE_PRESSING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/wms/smart_relay" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_WMS_SMART_RELAY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wms/wmanager_connected" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_WMS_WMANAGER_CONNECTED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

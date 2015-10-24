@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,44 +21,19 @@
 
 #ifndef __VCONF_INTERNAL_BROWSER_KEYS_H__
 #define __VCONF_INTERNAL_BROWSER_KEYS_H__
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_BROWSER_PREFIX  "db/browser"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-browser-keys.h
- * @defgroup    vconf_internal_browser_key Definitions of internal shared Keys for browser
- * @ingroup     vconf_internal_key
- * @author      Sangpyo Kim sangpyo7.kim@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for browser \n
- */
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_BROWSER_BROWSER_USER_AGENT  "db/browser/browser_user_agent"
 
-/* ========================== browser Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_browser_key
- * @{
- * @brief browser Keys & Values\n
- *        Maintainer : Sangpyo Kim sangpyo7.kim@samsung.com
- */
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_BROWSER_CUSTOM_USER_AGENT  "db/browser/custom_user_agent"
 
-#define VCONFKEY_BROWSER_PREFIX                       "db/browser"
-
-/**
- * @brief UserAgent profile for browser
- *
- */
-#define VCONFKEY_BROWSER_BROWSER_USER_AGENT    VCONFKEY_BROWSER_PREFIX"/browser_user_agent"
-
-/**
- * @brief UserAgent profile for user customizing
- *
- */
-#define VCONFKEY_BROWSER_CUSTOM_USER_AGENT    VCONFKEY_BROWSER_PREFIX"/custom_user_agent"
-
-/**
- * @}
- */
-
-#endif	/* __VCONF_INTERNAL_BROWSER_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_BROWSER_KEYS_H__    */

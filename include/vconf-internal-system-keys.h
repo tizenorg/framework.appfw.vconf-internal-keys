@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,51 +21,8 @@
 
 #ifndef __VCONF_INTERNAL_SYSTEM_KEYS_H__
 #define __VCONF_INTERNAL_SYSTEM_KEYS_H__
+#define VCONFKEY_SYSTEM_TIME_CHANGED  "memory/system/timechanged"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-system-keys.h
- * @defgroup    vconf_internal_system_key Definitions of internal shared Keys for System
- * @ingroup     vconf_internal_key
- * @author      Jaeho Lee <jaeho81.lee@samsung.com>
- * @version     0.1
- * @brief       This file has the definitions of shared keys for System \n
- */
+#define VCONFKEY_SYSTEM_TIMECHANGE_EXTERNAL  "db/system/timechange_external"
 
-/* ========================== System Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_system_key
- * @{
- * @brief System Keys & Values\n
- *        Maintainer : Jaeho Lee <jaeho81.lee@samsung.com>
- */
-
-/**
-* @brief current time value when time is changed
-*
-* value : current time
-*/
-#define VCONFKEY_SYSTEM_TIME_CHANGED "memory/system/timechanged"
-
-/**
- * @brief new time when time is changed
- *
- * value : new time
- */
-#define VCONFKEY_SYSTEM_TIMECHANGE "db/system/timechange"
-
-/**
- * @brief time diff when time is changed externally
- *
- * value : new time
- */
-#define VCONFKEY_SYSTEM_TIMECHANGE_EXTERNAL "db/system/timechange_external"
-
-/**
- * @}
- */
-
-#endif	/* __VCONF_INTERNAL_SYSTEM_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_SYSTEM_KEYS_H__    */

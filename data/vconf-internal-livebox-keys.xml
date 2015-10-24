@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_LIVEBOX_KEYS_H__"/>
+  <vconfkey type="bool" name="memory/data-provider-master/started" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_MASTER_STARTED</header>
+    <creator>Kyu-Ho Jo</creator>
+    <email>kyuho.jo@samsung.com</email>
+    <comment><![CDATA[Notify to the clients whether the master service is started or not. if they recognize that the master is started, they will try to connect to master service ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/data-provider-master/serveraddr" value="/tmp/.data-provider-master-client.socket" label="tizen::vconf::setting::admin" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_MASTER_CLIENT_ADDR</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[Viewer applications will try to connect to master service using this address.]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/data-provider-master/restart_count" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_MASTER_RESTART_COUNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[To count the recovery from fault of master service]]></comment>
+  </vconfkey>
+</vconfkeylists>

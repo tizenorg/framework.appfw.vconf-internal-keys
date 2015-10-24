@@ -1,9 +1,9 @@
 /*
- * vconf-internal-camera-keys
+ * vconf-internal-keys
  *
- * Copyright (c) 2000 - 2012 Samsung Electronics Co., Ltd. All rights reserved.
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Jeongmo Yang <jm80.yang@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,76 +21,41 @@
 
 #ifndef __VCONF_INTERNAL_CAMERA_KEYS_H__
 #define __VCONF_INTERNAL_CAMERA_KEYS_H__
+#define VCONFKEY_CAMERA_STATE  "memory/camera/state"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-camera-keys.h
- * @defgroup    vconf_internal_camera_key Definitions of internal shared Keys for camera
- * @ingroup     vconf_internal_key
- * @author      jm80.yang@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of internal shared keys for camera \n
- */
-
-/* ========================== Camera Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_camera_key
- * @{
- * @brief Camera Keys & Values\n
- *        Maintainer : jm80.yang@samsung.com
- */
-
-/**
- * @brief Camera state(int)
- *
- * 0 : Not opened
- * 1 : Opened
- * 2 : Now previewing
- * 3 : Now recording
- * 4 : Paused while recording
- */
-#define VCONFKEY_CAMERA_STATE "memory/camera/state"
 enum {
 	VCONFKEY_CAMERA_STATE_NULL,
-	VCONFKEY_CAMERA_STATE_OPEN,
-	VCONFKEY_CAMERA_STATE_PREVIEW,
-	VCONFKEY_CAMERA_STATE_RECORDING,
-	VCONFKEY_CAMERA_STATE_RECORDING_PAUSE
+		VCONFKEY_CAMERA_STATE_OPEN,
+		VCONFKEY_CAMERA_STATE_PREVIEW,
+		VCONFKEY_CAMERA_STATE_RECORDING,
+		VCONFKEY_CAMERA_STATE_RECORDING_PAUSE
 };
 
-/**
- * @brief Camera shutter sound policy
- *
- * 0 : OFF
- * 1 : ON
- */
-#define VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY "file/camera/shutter_sound_policy"
+#define VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY  "file/camera/shutter_sound_policy"
+
 enum {
-        VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_OFF,
-        VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_ON
+	VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_OFF,
+		VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_ON
 };
 
-/**
- * @brief Recorder state(int)
- *
- * 0 : Not created
- * 1 : Created
- * 2 : Now recording
- * 3 : Paused while recording
- */
-#define VCONFKEY_RECORDER_STATE "memory/recorder/state"
+#define VCONFKEY_RECORDER_STATE  "memory/recorder/state"
+
 enum {
-        VCONFKEY_RECORDER_STATE_NULL,
-        VCONFKEY_RECORDER_STATE_CREATED,
-        VCONFKEY_RECORDER_STATE_RECORDING,
-        VCONFKEY_RECORDER_STATE_RECORDING_PAUSE
+	VCONFKEY_RECORDER_STATE_NULL,
+		VCONFKEY_RECORDER_STATE_CREATED,
+		VCONFKEY_RECORDER_STATE_RECORDING,
+		VCONFKEY_RECORDER_STATE_RECORDING_PAUSE
 };
 
-/**
- * @}
- */
+#define VCONFKEY_CAMERA_PID  "memory/camera/pid"
 
-#endif	/* __VCONF_INTERNAL_CAMERA_KEYS_H__ */
+#define VCONFKEY_CAMERA_FLASH_STATE  "memory/camera/flash_state"
 
+enum {
+	VCONFKEY_CAMERA_FLASH_STATE_OFF,
+		VCONFKEY_CAMERA_FLASH_STATE_ON
+};
+
+#define VCONFKEY_RECORDER_PID  "memory/recorder/pid"
+
+#endif /*   __VCONF_INTERNAL_CAMERA_KEYS_H__    */

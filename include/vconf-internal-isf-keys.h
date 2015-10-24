@@ -1,9 +1,9 @@
-
 /*
  * vconf-internal-keys
- * Copyright (c) 2000 - 2013 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Jihoon Kim <jihoon48.kim@samsung.com>
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
+ *
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,49 +21,17 @@
 
 #ifndef __VCONF_INTERNAL_ISF_KEYS_H__
 #define __VCONF_INTERNAL_ISF_KEYS_H__
+#define VCONFKEY_ISF_INPUT_LANGUAGE  "db/isf/input_language"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-isf-keys.h
- * @defgroup    vconf_internal_isf_key Definitions of internal shared Keys for ISF
- * @ingroup     vconf_internal_key
- * @author      Jihoon Kim <jihoon48.kim@samsung.com>
- * @version     0.1
- * @brief       This file has the definitions of shared keys for ISF \n
- */
+#define VCONFKEY_ISF_ACTIVE_KEYBOARD_UUID  "db/isf/input_keyboard_uuid"
 
-/* ========================== ISF Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_ISF_key
- * @{
- * @brief ISF Keys & Values\n
- *        Maintainer : Jihoon Kim <jihoon48.kim@samsung.com>
- */
+#define VCONFKEY_ISF_INPUT_PANEL_STATE  "memory/isf/input_panel_state"
 
-/**
- * @brief input language string
- */
-#define VCONFKEY_ISF_INPUT_LANGUAGE 	"db/isf/input_language"
-
-/**
- * @brief activated keyboard uuid
- */
-#define VCONFKEY_ISF_ACTIVE_KEYBOARD_UUID	"db/isf/input_keyboard_uuid"
-
-/**
- * @brief Input Panel(virtual keypad) status
- */
-#define VCONFKEY_ISF_INPUT_PANEL_STATE	"memory/isf/input_panel_state"
 enum {
-	VCONFKEY_ISF_INPUT_PANEL_STATE_HIDE = 0,    /* after hiding Input Panel */
-	VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_HIDE,   /* prior to hiding Input Panel */
-	VCONFKEY_ISF_INPUT_PANEL_STATE_SHOW,        /* after showing Input Panel */
-	VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_SHOW    /* prior to showing Input Panel */
+	VCONFKEY_ISF_INPUT_PANEL_STATE_HIDE = 0,
+		VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_HIDE,
+		VCONFKEY_ISF_INPUT_PANEL_STATE_SHOW,
+		VCONFKEY_ISF_INPUT_PANEL_STATE_WILL_SHOW
 };
 
-/**
- * @}
- */
-#endif	/* __VCONF_INTERNAL_ISF_KEYS_H__ */
+#endif /*   __VCONF_INTERNAL_ISF_KEYS_H__    */

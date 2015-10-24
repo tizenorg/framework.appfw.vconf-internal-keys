@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_WIFI_KEYS_H__"/>
+  <vconfkey type="int" name="memory/wifi/state" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_STATE</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_WIFI_OFF</enumdata>
+      <enumdata>VCONFKEY_WIFI_UNCONNECTED</enumdata>
+      <enumdata>VCONFKEY_WIFI_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_WIFI_TRANSFER</enumdata>
+      <enumdata>VCONFKEY_WIFI_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi/transfer_state" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_TRANSFER_STATE</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_WIFI_TRANSFER_STATE_NONE</enumdata>
+      <enumdata>VCONFKEY_WIFI_TRANSFER_STATE_TX</enumdata>
+      <enumdata>VCONFKEY_WIFI_TRANSFER_STATE_RX</enumdata>
+      <enumdata>VCONFKEY_WIFI_TRANSFER_STATE_TXRX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi/strength" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_STRENGTH</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WIFI_STRENGTH_MIN</enumdata>
+      <enumdata val="4">VCONFKEY_WIFI_STRENGTH_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi/wifi_qs_exit" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_QS_EXIT</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_WIFI_QS_CANCEL</enumdata>
+      <enumdata>VCONFKEY_WIFI_QS_WIFI_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_WIFI_QS_3G</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/wifi/enable_quick_start" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_ENABLE_QS</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_WIFI_QS_DISABLE</enumdata>
+      <enumdata val="0x01">VCONFKEY_WIFI_QS_ENABLE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="memory/wifi/connected_ap_name" value="" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_CONNECTED_AP_NAME</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi/ug_run_state" value="3" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_UG_RUN_STATE</header>
+    <creator/>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_WIFI_UG_RUN_STATE_NUL</enumdata>
+      <enumdata>VCONFKEY_WIFI_UG_RUN_STATE_ON_FOREGROUND</enumdata>
+      <enumdata>VCONFKEY_WIFI_UG_RUN_STATE_ON_BACKGROUND</enumdata>
+      <enumdata>VCONFKEY_WIFI_UG_RUN_STATE_OFF</enumdata>
+      <enumdata>VCONFKEY_WIFI_UG_RUN_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/wifi/bssid_address" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_BSSID_ADDRESS</header>
+    <creator>Hyunuk Tak</creator>
+    <email>hyunuk.tak@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi_direct/transfer_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_DIRECT_TRANSFER_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WIFI_DIRECT_TRANSFER_START</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_TRANSFER_FAIL</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_TRANSFER_FINISH</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi_direct/share/sending_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_DIRECT_SENDING_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WIFI_DIRECT_SENDING_IDLE</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_SENDING_IN_PROGRESS</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi_direct/share/receiving_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_DIRECT_RECEIVING_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WIFI_DIRECT_RECEIVING_IDLE</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_RECEIVING_IN_PROGRESS</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/wifi_direct_manager/dhcp_ip_lease" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_DHCP_IP_LEASE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/wifi_direct_manager/dhcpc_server_ip" value="0.0.0.0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_DHCPC_SERVER_IP</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ error took place ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/wifi_direct_manager/p2p_gateway" value="0.0.0.0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_P2P_GATEWAY</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ error took place ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/wifi_direct_manager/p2p_ifname" value="0.0.0.0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_P2P_IFNAME</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ error took place ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/wifi_direct_manager/p2p_local_ip" value="0.0.0.0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_P2P_LOCAL_IP</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ error took place ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/wifi_direct_manager/p2p_subnet_mask" value="0.0.0.0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_WIFI_DIRECT_P2P_SUBNET_MASK</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/wifi_direct/state" value="0" label="tizen::vconf::wifidirect" gid="6514" uid="">
+    <header>VCONFKEY_WIFI_DIRECT_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  <enumlist>
+      <enumdata val="0">VCONFKEY_WIFI_DIRECT_DEACTIVATED</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_ACTIVATED</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_DISCOVERING</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_WIFI_DIRECT_GROUP_OWNER</enumdata>
+  </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/allshare_cast/state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_ALLSHARE_CAST_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_ALLSHARECAST_NOT_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_ALLSHARECAST_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/screen_mirroring/status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SCREEN_MIRRORING_STATE</header>
+    <creator>Jiung Yu</creator>
+    <email>jiung.yu@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SCREEN_MIRRORING_DEACTIVATED</enumdata>
+      <enumdata>VCONFKEY_SCREEN_MIRRORING_ACTIVATED</enumdata>
+      <enumdata>VCONFKEY_SCREEN_MIRRORING_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

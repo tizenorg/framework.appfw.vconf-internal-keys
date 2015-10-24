@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,46 +21,54 @@
 
 #ifndef __VCONF_INTERNAL_EMAIL_KEYS_H__
 #define __VCONF_INTERNAL_EMAIL_KEYS_H__
+#define VCONFKEY_EMAIL_IS_INBOX_ACTIVE  "db/private/org.tizen.email/is_inbox_active"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-email-keys.h
- * @defgroup    vconf_internal_email_key Definitions of internal shared Keys for email
- * @ingroup     vconf_internal_key
- * @author      kyuho.jo@samsung.com, sh0701.kwon@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for email \n
- */
+#define VCONFKEY_EMAIL_IS_SYNC_STATUS  "memory/sync/email"
 
-/* ========================== email Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_email_key
- * @{
- * @brief email Keys & Values\n
- *        Maintainer : kyuho.jo@samsung.com, sh0701.kwon@samsung.com
- */
+#define VCONFKEY_EMAIL_IS_ACTIVE_SYNC_HANDLE  "db/email_handle/active_sync_handle"
 
-/**
- * @brief email-service sync status for indicator. email-service will set this value.
- *
- * 0 : Not synchronizing \n
- * 1 : Synchronizing \n
- */
-#define VCONFKEY_EMAIL_SYNC_STATE "memory/sync/email"
+#define VCONFKEY_EMAIL_IS_DEFAULT_ACCOUNT_ID  "db/private/email-service/default_account_id"
 
-/**
- * @brief If email application is shown as topmost window, it set this value with current shown account.
- *
- * 0 : All account \n
- * 1~ : Account ID \n
- */
-#define VCONFKEY_EMAIL_TOPMOST_ACCOUNT "memory/email/topmost_account"
+#define VCONFKEY_EMAIL_IS_LATEST_MAIL_ID  "db/private/email-service/latest_mail_id"
 
-/**
- * @}
- */
+#define VCONFKEY_EMAIL_IS_NOTI_BADGE_TICKER  "db/private/email-service/noti_badge_ticker"
 
-#endif	/* __VCONF_INTERNAL_SYNC_KEYS_H__ */
+#define VCONFKEY_EMAIL_IS_NOTI_DISPLAY_CONTENT_TICKER  "db/private/email-service/noti_display_content_ticker"
 
+#define VCONFKEY_EMAIL_IS_NOTI_NOTIFICATION_TICKER  "db/private/email-service/noti_notification_ticker"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_1  "db/private/email-service/noti_private_id/1"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_10  "db/private/email-service/noti_private_id/10"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_2  "db/private/email-service/noti_private_id/2"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_3  "db/private/email-service/noti_private_id/3"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_4  "db/private/email-service/noti_private_id/4"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_5  "db/private/email-service/noti_private_id/5"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_6  "db/private/email-service/noti_private_id/6"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_7  "db/private/email-service/noti_private_id/7"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_8  "db/private/email-service/noti_private_id/8"
+
+#define VCONFKEY_EMAIL_IS_NOTI_PRIVATE_ID_9  "db/private/email-service/noti_private_id/9"
+
+#define VCONFKEY_EMAIL_IS_NOTI_REP_TYPE  "db/private/email-service/noti_rep_type"
+
+#define VCONFKEY_EMAIL_IS_NOTI_RINGTONE_PATH  "db/private/email-service/noti_ringtone_path"
+
+#define VCONFKEY_EMAIL_IS_NOTI_USE_DEFAULT_RINGTONE  "db/private/email-service/noti_use_default_ringtone"
+
+#define VCONFKEY_EMAIL_IS_NOTI_VIBRATION_STATUS  "db/private/email-service/noti_vibration_status"
+
+#define VCONFKEY_EMAIL_IS_NOTI_VIP_USE_DEFAULT_RINGTONE  "db/private/email-service/noti_vip_use_default_ringtone"
+
+#define VCONFKEY_EMAIL_IS_NOTI_VIP_VIBRATION_STATUS  "db/private/email-service/noti_vip_vibration_status"
+
+#define VCONFKEY_EMAIL_IS_SLOT_SIZE  "db/private/email-service/slot_size"
+
+#endif /*   __VCONF_INTERNAL_EMAIL_KEYS_H__    */

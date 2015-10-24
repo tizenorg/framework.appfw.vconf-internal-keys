@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Vconf key list </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<H1> vconf key list</H1>
+<table border="1" style="border-collapse:collapse; border:1px gray solid;">
+<tr>
+<td bgcolor="yellow" align="center"> ID </td>
+<td bgcolor="yellow" align="center"> Keyname </td>
+<td bgcolor="yellow" align="center"> Type </td>
+<td bgcolor="yellow" align="center"> Value </td>
+<td bgcolor="yellow" align="center"> Smack Label </td>
+<td bgcolor="yellow" align="center"> Maintainer </td>
+<td bgcolor="yellow" align="center"> Comment </td>
+<td bgcolor="yellow" align="center"> Header Only </td>
+</tr>
+
+  <tr>
+<td>VCONFKEY_MASTER_STARTED</td>
+<td>memory/data-provider-master/started</td>
+<td>bool</td>
+<td>0</td>
+<td>tizen::vconf::setting::admin</td>
+<td>Kyu-Ho Jo</td>
+<td>Notify to the clients whether the master service is started or not. if they recognize that the master is started, they will try to connect to master service </td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_MASTER_CLIENT_ADDR</td>
+<td>db/data-provider-master/serveraddr</td>
+<td>string</td>
+<td>/tmp/.data-provider-master-client.socket</td>
+<td>tizen::vconf::setting::admin</td>
+<td></td>
+<td>Viewer applications will try to connect to master service using this address.</td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_MASTER_RESTART_COUNT</td>
+<td>memory/private/data-provider-master/restart_count</td>
+<td>int</td>
+<td>0</td>
+<td>tizen::vconf::platform::rw</td>
+<td></td>
+<td>To count the recovery from fault of master service</td>
+<td bgcolor="green" align="center"></td>
+</tr>
+</table>
+</body>
+</html>

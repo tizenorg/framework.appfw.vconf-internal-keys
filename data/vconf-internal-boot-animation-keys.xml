@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_BOOT_ANIMATION_KEYS_H__"/>
+  <vconfkey type="int" name="memory/boot_animation/finished" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BOOT_ANIMATION_FINISHED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[whether boot animation is finished]]></comment>
+  </vconfkey>
+</vconfkeylists>

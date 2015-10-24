@@ -1,0 +1,303 @@
+<html>
+<head>
+<title> Vconf key list </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<H1> vconf key list</H1>
+<table border="1" style="border-collapse:collapse; border:1px gray solid;">
+<tr>
+<td bgcolor="yellow" align="center"> ID </td>
+<td bgcolor="yellow" align="center"> Keyname </td>
+<td bgcolor="yellow" align="center"> Type </td>
+<td bgcolor="yellow" align="center"> Value </td>
+<td bgcolor="yellow" align="center"> Smack Label </td>
+<td bgcolor="yellow" align="center"> Maintainer </td>
+<td bgcolor="yellow" align="center"> Comment </td>
+<td bgcolor="yellow" align="center"> Header Only </td>
+</tr>
+
+  <tr>
+<td>VCONFKEY_SETAPPL_TOUCH_FEEDBACK_SOUND_VOLUME_INT</td>
+<td>db/setting/sound/touch_feedback/sound_volume</td>
+<td>int</td>
+<td>9</td>
+<td>tizen::vconf::public::r::platform::rw</td>
+<td></td>
+<td> it's for Wearable project - org.tizen.clocksetting </td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_NOTI_SOUND_VOLUME_INT</td>
+<td>db/setting/sound/noti/sound_volume</td>
+<td>int</td>
+<td>11</td>
+<td>tizen::vconf::public::r::platform::rw</td>
+<td></td>
+<td> it's for wearable project - org.tizen.clocksetting </td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETUP_WIZARD_FIRST_BOOT</td>
+<td>db/setup_wizard/first_boot</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETUP_WIZARD_STATE</td>
+<td>memory/setup_wizard/state</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> org.tizen.whome refers to this key, bt-syspopup refers to VCONFKEY_SETUP_WIZARD_LOCK. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_ODE_CRYPTO_STATE</td>
+<td>db/ode/crypto_state</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> callmgr-util, org.tizen.call-ui and starter-0.5.52 refers to this key. but Removing is required. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SDE_ENCRYPT_PROGRESS</td>
+<td>db/sde/encrypt_progress</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SDE_CRYPTO_STATE</td>
+<td>db/sde/crypto_state</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_PERFERED_ARM_LEFT_BOOL</td>
+<td>db/setting/prefer_arm_left</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> b2clocksetting use this key for setting-sound </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_COLORBLIND_STATUS_BOOL</td>
+<td>db/setting/colorblind/status</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> deviced refers to this key. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_COLORBLIND_LAST_RGBCMY_STR</td>
+<td>db/setting/colorblind/rgbcmy</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> deviced refers to this key. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_PALM_SWIP_CAPTURE</td>
+<td>db/setting/motion/palm_swipe_capture</td>
+<td>bool</td>
+<td>1</td>
+<td>tizen::vconf::public::r::platform::rw</td>
+<td></td>
+<td> e17-extra-config-module refers to this key. </td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_PALM_TOUCH_MUTE</td>
+<td>db/setting/motion/palm_touch_mute</td>
+<td>bool</td>
+<td>1</td>
+<td>tizen::vconf::public::r::platform::rw</td>
+<td></td>
+<td> e17-extra-config-module refers to this key. </td>
+<td bgcolor="green" align="center"></td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_STATE_TICKER_NOTI_EMAIL_BOOL</td>
+<td>db/setting/ticker_noti/email</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> email-service refers to this key. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_ACCESSORY_DOCK_SOUND</td>
+<td>db/setting/accessories/dock_sound</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> libmm-sound refers to this key. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_EASYMODE_HOME_SCREEN</td>
+<td>db/setting/easymoe/home_screen</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> org.tizen.add-viewer refers to this key. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_SMARTSCREEN_SMARTSTAY_STATUS</td>
+<td>db/setting/smartscreen/smart_stay</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> deviced refers to this key. but it's the unused key for Setting. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_TYPE</td>
+<td>db/setting/blockingmode/allowed_contact_type</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> email-service, msg-service refers to this key. but it's the unused key for Setting. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_LIST</td>
+<td>db/setting/blockingmode/allowed_contact_list</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> email-service, msg-service refers to this key. but it's the unused key for Setting. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_SETAPPL_BLOCKINGMODE_NOTIFICATIONS</td>
+<td>db/setting/blockingmode/notifications</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> msg-service, org.tizen.quickpanel refers to this key. but it's the unused key for Setting. </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_CSC_SALESCODE</td>
+<td>db/csc/salescode</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_CSC_CONFIG_MODE_RUNNING</td>
+<td>memory/csc/config_mode_running</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_CONNECTOR_PREFIX</td>
+<td>memory/mobex_connector</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_CONNECTOR_STATUS</td>
+<td>memory/mobex_connector/status</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_ENGINE_PREFIX</td>
+<td>memory/mobex_engine</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_ENGINE_STATUS_INT</td>
+<td>memory/mobex_engine/status</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_ENGINE_MEMO_SYNC_STATUS</td>
+<td>memory/mobex_engine/memo_sync_status</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_ENGINE_CONNECTION_METHOD_INT</td>
+<td>memory/mobex_engine/conn_method</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+  <tr>
+<td>VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_INT</td>
+<td>memory/mobex_engine/fus_ode_status</td>
+<td>int</td>
+<td>0</td>
+<td> tizen::vconf::headeronly </td>
+<td></td>
+<td> </td>
+<td bgcolor="red" align="center">true</td>
+</tr>
+
+</table>
+</body>
+</html>

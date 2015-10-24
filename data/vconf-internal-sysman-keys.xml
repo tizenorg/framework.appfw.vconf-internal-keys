@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_SYSMAN_KEYS_H__"/>
+  <vconfkey type="int" name="memory/sysman/added_usb_storage" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_ADDED_USB_STORAGE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/removed_usb_storage" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_REMOVED_USB_STORAGE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/charger_status" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_CHARGER_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (runtime-info)]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_CHARGER_DISCONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_CHARGER_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/charge_now" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_BATTERY_CHARGE_NOW</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (device)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/battery_status_low" value="-1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_BATTERY_STATUS_LOW</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (device)]]></comment>
+    <enumlist>
+      <enumdata val="1">VCONFKEY_SYSMAN_BAT_POWER_OFF</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_CRITICAL_LOW</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_WARNING_LOW</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_NORMAL</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_FULL</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_REAL_POWER_OFF</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/battery_capacity" value="-1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_BATTERY_CAPACITY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (device)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/battery_level_status" value="-1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_BATTERY_LEVEL_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (device)]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_BAT_LEVEL_EMPTY   </enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_LEVEL_CRITICAL</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_LEVEL_LOW     </enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_LEVEL_HIGH    </enumdata>
+      <enumdata>VCONFKEY_SYSMAN_BAT_LEVEL_FULL    </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/usb_status" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_USB_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_USB_DISCONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_USB_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_USB_AVAILABLE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/usbhost_status" value="-1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_USB_HOST_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_USB_HOST_DISCONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_USB_HOST_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_USB_HOST_OVERCURRENT</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/earjack" value="-1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_EARJACK</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (runtime-info)]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_EARJACK_REMOVED</enumdata>
+      <enumdata val="0x1">VCONFKEY_SYSMAN_EARJACK_3WIRE</enumdata>
+      <enumdata val="0x3">VCONFKEY_SYSMAN_EARJACK_4WIRE</enumdata>
+      <enumdata val="0x10">VCONFKEY_SYSMAN_EARJACK_TVOUT</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/earjack_key" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_EARJACKKEY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/cradle_status" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_CRADLE_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/low_memory" value="1" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_LOW_MEMORY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x01">VCONFKEY_SYSMAN_LOW_MEMORY_NORMAL      </enumdata>
+      <enumdata val="0x02">VCONFKEY_SYSMAN_LOW_MEMORY_SOFT_WARNING</enumdata>
+      <enumdata val="0x04">VCONFKEY_SYSMAN_LOW_MEMORY_HARD_WARNING</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/sliding_keyboard" value="-1" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_SLIDING_KEYBOARD</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="-1">VCONFKEY_SYSMAN_SLIDING_KEYBOARD_NOT_SUPPORTED</enumdata>
+      <enumdata val="0">VCONFKEY_SYSMAN_SLIDING_KEYBOARD_NOT_AVAILABE</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_SLIDING_KEYBOAED_AVAILABLE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (libstorage)]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_REMOVED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_MOUNTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_INSERTED_NOT_MOUNTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc_mount" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_MOUNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_MOUNT_COMPLETED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_MOUNT_ALREADY</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_MOUNT_FAILED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc_unmount" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_UNMOUNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_UNMOUNT_COMPLETED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_UNMOUNT_FAILED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc_format" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_FORMAT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_FORMAT_COMPLETED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_FORMAT_FAILED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc_err_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_ERR_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="1">VCONFKEY_SYSMAN_MMC_EPERM</enumdata>
+      <enumdata val="2">VCONFKEY_SYSMAN_MMC_ENOENT</enumdata>
+      <enumdata val="6">VCONFKEY_SYSMAN_MMC_ENXIO</enumdata>
+      <enumdata val="11">VCONFKEY_SYSMAN_MMC_EAGAIN</enumdata>
+      <enumdata val="12">VCONFKEY_SYSMAN_MMC_ENOMEM</enumdata>
+      <enumdata val="13">VCONFKEY_SYSMAN_MMC_EACCESS</enumdata>
+      <enumdata val="14">VCONFKEY_SYSMAN_MMC_EFAULT</enumdata>
+      <enumdata val="15">VCONFKEY_SYSMAN_MMC_ENOTBLK</enumdata>
+      <enumdata val="16">VCONFKEY_SYSMAN_MMC_EBUSY</enumdata>
+      <enumdata val="19">VCONFKEY_SYSMAN_MMC_ENODEV</enumdata>
+      <enumdata val="20">VCONFKEY_SYSMAN_MMC_ENOTDIR</enumdata>
+      <enumdata val="22">VCONFKEY_SYSMAN_MMC_EINVAL</enumdata>
+      <enumdata val="24">VCONFKEY_SYSMAN_MMC_EMFILE</enumdata>
+      <enumdata val="36">VCONFKEY_SYSMAN_MMC_ENAMETOOLONG</enumdata>
+      <enumdata val="40">VCONFKEY_SYSMAN_MMC_ELOOP</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/sysman/mmc_dev_changed" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_DEVICE_CHANGED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_NOT_CHANGED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_CHANGED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/hdmi" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_HDMI</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_HDMI_DISCONNECTED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_HDMI_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/stime_changed" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_STIME</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_STIME_NOT_CHANGED</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_STIME_CHANGED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/power_off" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_POWER_OFF_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_POWER_OFF_NONE</enumdata>
+      <enumdata val="1">VCONFKEY_SYSMAN_POWER_OFF_POPUP</enumdata>
+      <enumdata val="2">VCONFKEY_SYSMAN_POWER_OFF_DIRECT</enumdata>
+      <enumdata val="3">VCONFKEY_SYSMAN_POWER_OFF_RESTART</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/mmc_format_progress" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSMAN_MMC_FORMAT_PROGRESS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_SYSMAN_MMC_FORMAT_PROGRESS_NONE</enumdata>
+      <enumdata>VCONFKEY_SYSMAN_MMC_FORMAT_PROGRESS_NOW</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

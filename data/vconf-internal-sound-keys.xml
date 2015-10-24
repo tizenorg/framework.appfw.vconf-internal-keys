@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_SOUND_KEYS_H__"/>
+  <vconfkey type="int" name="memory/Sound/SoundStatus" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/system" value="9" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_SYSTEM</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/notification" value="11" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_NOTIFICATION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/alarm" value="7" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_ALARM</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/ringtone" value="11" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_RINGTONE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/media" value="7" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_MEDIA</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/call" value="4" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_CALL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/sound/volume/voip" value="4" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_VOIP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+    <vconfkey type="int" name="file/private/sound/volume/voice" value="7" label="tizen::vconf::volume::set" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_VOLUME_TYPE_VOICE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/sound/PrimaryVolumetype" value="-1" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_PRIMARY_VOLUME_TYPE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/sound/PrimaryVolumetypeForce" value="-1" label="tizen::vconf::public::rw" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_PRIMARY_VOLUME_TYPE_FORCE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/sound/pcm_dump" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_PCM_DUMP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/sound/booting" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SOUND_BOOT_SOUND</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

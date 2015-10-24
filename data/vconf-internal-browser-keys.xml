@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_BROWSER_KEYS_H__"/>
+  <vconfkey type="int" name="db/browser" value="0" label="SMACK_CHECK_TODO" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_BROWSER_PREFIX</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/browser/browser_user_agent" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_BROWSER_BROWSER_USER_AGENT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/browser/custom_user_agent" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_BROWSER_CUSTOM_USER_AGENT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_ACCOUNT_KEYS_H__"/>
+  <vconfkey type="string" name="db/account/msg" value="" label="tizen::vconf::account" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_ACCOUNT_MSG_STR</header>
+    <creator>Jang JiSeob</creator>
+    <email>jiseob.jang</email>
+    <comment><![CDATA[ This key is used to notify inserting, updating, deleting account to another application. ]]></comment>
+  </vconfkey>
+</vconfkeylists>

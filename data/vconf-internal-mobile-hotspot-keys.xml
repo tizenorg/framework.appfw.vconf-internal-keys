@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_MOBILE_HOTSPOT_KEYS_H__"/>
+  <vconfkey type="int" name="memory/mobile_hotspot/mode" value="0" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_MODE</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ To notify which tethering type is enabled ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_MOBILE_HOTSPOT_MODE_NONE     </enumdata>
+      <enumdata val="0x01">VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI     </enumdata>
+      <enumdata val="0x02">VCONFKEY_MOBILE_HOTSPOT_MODE_USB      </enumdata>
+      <enumdata val="0x04">VCONFKEY_MOBILE_HOTSPOT_MODE_BT       </enumdata>
+      <enumdata val="0x08">VCONFKEY_MOBILE_HOTSPOT_MODE_WIFI_AP  </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobile_hotspot/connected_device" value="0" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_CONNECTED_DEVICE</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ To notify clients which are connected through tethering ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/mobile_hotspot/security" value="1" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_SECURITY</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ To notify tethering security type ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_MOBILE_AP_SECURITY_OFF </enumdata>
+      <enumdata>VCONFKEY_MOBILE_AP_SECURITY_ON  </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/mobile_hotspot/hide" value="0" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_HIDE</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ To notify tethering visibility mode(visible/invisible) ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_MOBILE_AP_HIDE_OFF </enumdata>
+      <enumdata>VCONFKEY_MOBILE_AP_HIDE_ON  </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/mobileap-agent/ssid" value="" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_SSID</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ Thethering device's SSID ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/libug-setting-mobileap-efl/prev_wifi_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_PREV_WIFI_STATUS</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ To check previous wifi status ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/libug-setting-mobileap-efl/is_device_rename_local" value="0" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_IS_DEVICE_RENAME_LOCAL</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/libug-setting-mobileap-efl/wifi_popup_check_box_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_WIFI_POPUP_CHECK_BOX_STATUS</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ Wi-fi popup check-box status for enabling Wi-Fi tethering ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/libug-setting-mobileap-efl/bt_popup_check_box_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_BT_POPUP_CHECK_BOX_STATUS</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ BT popup check-box status for enabling BT tethering ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/libug-setting-mobileap-efl/usb_popup_check_box_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_USB_POPUP_CHECK_BOX_STATUS</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ USB popup check-box status for enabling USB tethering ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/libug-setting-mobileap-efl/trying_usb_tethering" value="0" label="tizen::vconf::tethering::admin" gid="6514" uid="">
+    <header>VCONFKEY_MOBILE_HOTSPOT_TRYING_USB_TETHERING</header>
+    <creator>Seonah Moon</creator>
+    <email>seonah1.moon@samsung.com</email>
+    <comment><![CDATA[ Connect USB poup status ]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_CISS_KEYS_H__"/>
+  <vconfkey type="int" name="db/ciss" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_PREFIX</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/show_my_number" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_SHOW_MY_NUMBER_INT</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ Keep option value to show number on call. By network/Show/Hide. ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/incoming_call_notification" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_INCOMING_CALL_NOTIFICATION_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/reject_call_message_cnt" value="5" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_REJECT_CALL_MSG_INT</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ Number of reject messages ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message1" value="IDS_CST_MBODY_SORRY_IM_BUSY_CALL_YOU_LATER_ABB" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG1_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 1st reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message2" value="IDS_CST_BODY_SORRY_IM_BUSY_PLEASE_TEXT_ME_ABB" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG2_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 2nd reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message3" value="IDS_CST_TMBODY_I_CANT_TALK_NOW_WHATS_UP_Q" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG3_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 3rd reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message4" value="IDS_CST_BODY_IM_IN_A_MEETING" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG4_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 4th reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message5" value="IDS_CST_TMBODY_SORRY_IM_DRIVING_NOW" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG5_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 5h reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/ciss/user_create_message6" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_USER_CREATE_MSG6_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ 6th reject message ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/call_answering_key" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_ANSWERING_KEY_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ Keep option about use or not the home key to answer the incoming call ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/call_power_key_ends_call" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_POWER_KEY_ENDS_CALL_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ Keep option about use or not the power key to end during call ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/noise_reduction" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_NOISE_REDUCTION_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/in_call_sound_eq" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_IN_CALL_SOUND_EQ_INT</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/increase_ringtone" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_INCREASE_RINGTONE_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/personalised_eq" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_PERSONALISED_EQ_STR</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/call_sound" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_CALL_SOUND_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/intl_dial_auto_conversion" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_DOCOMO_INTL_DIAL_AUTO_CONVERSION_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/ciss/msg_noti_vib" value="2" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_MSG_NOTI_VIB_INT</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/ciss/msg_noti_sound" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_CISSAPPL_MSG_NOTI_SOUND_BOOL</header>
+    <creator>Aleksandr Sapozhnik</creator>
+    <email>a.sapozhnik@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

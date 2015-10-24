@@ -1,7 +1,9 @@
 /*
- * vconf-internal-livebox-keys
+ * vconf-internal-keys
  *
- * Copyright (c) 2000 - 2013 Samsung Electronics Co., Ltd. All rights reserved.
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
+ *
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,40 +21,10 @@
 
 #ifndef __VCONF_INTERNAL_LIVEBOX_KEYS_H__
 #define __VCONF_INTERNAL_LIVEBOX_KEYS_H__
+#define VCONFKEY_MASTER_STARTED  "memory/data-provider-master/started"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-livebox-keys.h
- * @defgroup    vconf_internal_livebox-key Definitions of internal shared Keys for livebox
- * @ingroup     vconf_internal_key
- * @author      Youngjoo Park <yjoo93.park@samsung.com>, Sung-jae Park <nicesj.park@samsung.com>
- * @version     0.1
- * @brief       This file has the definitions of shared keys for livebox \n
- */
+#define VCONFKEY_MASTER_CLIENT_ADDR  "db/data-provider-master/serveraddr"
 
-/* ========================== Livebox Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_livebox_key
- * @{
- * @brief Livebox Keys & Values\n
- *        Maintainer : Youngjoo Park <yjoo93.park@samsung.com>, Sung-jae Park <nicesj.park@samsung.com>
- */
+#define VCONFKEY_MASTER_RESTART_COUNT  "memory/private/data-provider-master/restart_count"
 
-/**
- * @brief service status of data provider master.
- *
- * type : bool
- */
-#define VCONFKEY_MASTER_STARTED		"memory/data-provider-master/started"
-
-
-/**
- * @brief Address of service provider (master)
- *
- * type : string
- */
-#define VCONFKEY_MASTER_CLIENT_ADDR	"db/data-provider-master/serveraddr"
-
-#endif	/* __VCONF_INTERNAL_LIVEBOX_KEYS_H__ */
+#endif /*   __VCONF_INTERNAL_LIVEBOX_KEYS_H__    */

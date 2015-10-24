@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_BT_KEYS_H__"/>
+  <vconfkey type="bool" name="memory/bluetooth/btsco" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_BT_HEADSET_SCO</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ BT SCO connect / diconnect status value ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_BT_SCO_DISCONNECT</enumdata>
+      <enumdata val="0x01">VCONFKEY_BT_SCO_CONNECT</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="memory/bluetooth/sco_headset_name" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_HEADSET_NAME</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ Headset name for sco  ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/bluetooth/lestatus" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_LE_STATUS</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ LE status value ]]></comment>
+    <enumlist>
+      <enumdata val="0x0000">VCONFKEY_BT_LE_STATUS_OFF</enumdata>
+      <enumdata val="0x0001">VCONFKEY_BT_LE_STATUS_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/bluetooth/dutmode" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_DUT_MODE</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ DUT mode value ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_BT_DUT_MODE_OFF</enumdata>
+      <enumdata val="0x01">VCONFKEY_BT_DUT_MODE_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/libug-setting-bluetooth-efl/visibility_time" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_BT_FILE_VISIBLE_TIME</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ BT Visible time value ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/bt-service/bt_off_due_to_timeout" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_OFF_DUE_TO_TIMEOUT</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ BT off mode value ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/bt-core/powersaving_mode_deactivated" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_POWERSAVING_MODE_DEACTIVATED</header>
+    <creator> Dohyun Pyun </creator>
+    <email> dh79.pyun@samsung.com </email>
+    <comment><![CDATA[ Power saving mode value ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/bt-core/flight_mode_deactivated" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_BT_FLIGHT_MODE_DEACTIVATED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ Filght mode value ]]></comment>
+  </vconfkey>
+    <vconfkey type="int" name="db/bluetooth/status" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x0000">VCONFKEY_BT_STATUS_OFF</enumdata>
+      <enumdata val="0x0001">VCONFKEY_BT_STATUS_ON</enumdata>
+      <enumdata val="0x0002">VCONFKEY_BT_STATUS_BT_VISIBLE</enumdata>
+      <enumdata val="0x0004">VCONFKEY_BT_STATUS_TRANSFER</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/bluetooth/device" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_BT_DEVICE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00000">VCONFKEY_BT_DEVICE_NONE</enumdata>
+      <enumdata val="0x00001">VCONFKEY_BT_DEVICE_HEADSET_CONNECTED</enumdata>
+      <enumdata val="0x00002">VCONFKEY_BT_DEVICE_A2DP_HEADSET_CONNECTED</enumdata>
+      <enumdata val="0x00004">VCONFKEY_BT_DEVICE_HID_CONNECTED</enumdata>
+      <enumdata val="0x00008">VCONFKEY_BT_DEVICE_PAN_CONNECTED</enumdata>
+      <enumdata val="0x00010">VCONFKEY_BT_DEVICE_SAP_CONNECTED</enumdata>
+      <enumdata val="0x00020">VCONFKEY_BT_DEVICE_PBAP_CONNECTED</enumdata>
+      <enumdata val="0x00040">VCONFKEY_BT_DEVICE_HID_KEYBOARD_CONNECTED</enumdata>
+      <enumdata val="0x00080">VCONFKEY_BT_DEVICE_HID_MOUSE_CONNECTED</enumdata>
+      <enumdata val="0x1000">VCONFKEY_BT_DEVICE_AG_CONNECTED</enumdata>
+    </enumlist>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_BT_PLAYER_SELECT_SPEAKER</enumdata>
+      <enumdata val="0x01">VCONFKEY_BT_PLAYER_SELECT_BLUETOOTH</enumdata>
+      <enumdata val="0x02">VCONFKEY_BT_APP_SELECT_SPEAKER</enumdata>
+      <enumdata val="0x04">VCONFKEY_BT_APP_SELECT_BLUETOOTH</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

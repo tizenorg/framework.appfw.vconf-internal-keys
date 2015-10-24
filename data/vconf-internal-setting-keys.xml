@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_SETTING_KEYS_H__"/>
+  <vconfkey type="int" name="db/setting" value="0" label="SMACK_CHECK_TODO" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PREFIX</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ prefix string ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/setting" value="0" label="SMACK_CHECK_TODO" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MEM_PREFIX</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sound/call/vibration_pattern_path" value="/opt/usr/share/settings/Vibrations/haptic/default/Ticktock.ivt" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_VIBRATION_PATTERN_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/touch_sounds" value="1" label="tizen::vconf::setting" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TOUCH_SOUNDS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/button_sounds" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BUTTON_SOUNDS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/sound_lock" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SOUND_LOCK_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/region_automatic" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_REGION_AUTOMATIC_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/media/sound_volume" value="9" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MEDIA_SOUND_VOLUME_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]>it's for wearable project</comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/Brightness" value="100" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LCD_BRIGHTNESS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="1">SETTING_BRIGHTNESS_LEVEL1</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL2</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL3</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL4</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL5</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL6</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL7</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL8</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL9</enumdata>
+      <enumdata>SETTING_BRIGHTNESS_LEVEL10</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lcd_brightness_emergency" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EMERGENCY_LCD_BRIGHTNESS_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lcd_timeout_emergency" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EMERGENCY_LCD_TIMEOUT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/automatic_brightness_level" value="50" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LCD_AUTOMATIC_BRIGHTNESS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/auto_display_adjustment" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LCD_AUTO_DISPLAY_ADJUSTMENT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/screen_mode" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREEN_MODE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SCREEN_MODE_DYNAMIC</enumdata>
+      <enumdata>SETTING_SCREEN_MODE_STANDARD</enumdata>
+      <enumdata>SETTING_SCREEN_MODE_NATURAL</enumdata>
+      <enumdata>SETTING_SCREEN_MODE_MOVIE</enumdata>
+      <enumdata>SETTING_SCREEN_MODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lcd_backlight_normal" value="30" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LCD_TIMEOUT_NORMAL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/call/ringtone_sound_volume" value="11" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_RINGTONE_SOUND_VOLUME_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <!-- SDK DEFAULT_CALL_TONE="/opt/usr/share/settings/Ringtones/ringtone_sdk.mp3" -->
+  <vconfkey type="string" name="db/setting/sound/call/ringtone_path" value="/opt/usr/share/settings/Ringtones/Over_the_horizon.ogg" label="tizen::vconf::setting" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_RINGTONE_PATH_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sound/call/ringtone_path_with_time" value="" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_RINGTONE_PATH_WITH_RECOMMENDATION_TIME_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <!-- SDK DEFAULT_CALL_TONE="/opt/usr/share/settings/Ringtones/ringtone_sdk.mp3" -->
+  <vconfkey type="string" name="db/setting/sound/call/ringtone_default_path" value="/opt/usr/share/settings/Ringtones/Over_the_horizon.ogg" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_RINGTONE_DEFAULT_PATH_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/call/vibration_level" value="5" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_VIBRATION_LEVEL_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/call/vibration_type" value="2" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CALL_VIBRATION_PATTERN_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_CALL_ALERT_VIB_TYPE1</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE2</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE3</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE4</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE5</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE6</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE7</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE8</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE9</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_TYPE10</enumdata>
+      <enumdata>SETTING_CALL_ALERT_VIB_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/noti/msg_alert_rep_type" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_MSG_ALERT_REP_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SOUND_REP_ONCE</enumdata>
+      <enumdata>SETTING_SOUND_REP_EVERY_2_MIN</enumdata>
+      <enumdata>SETTING_SOUND_REP_EVERY_5_MIN</enumdata>
+      <enumdata>SETTING_SOUND_REP_EVERY_10_MIN</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sound/noti/msg_ringtone_path" value="/opt/usr/share/settings/Alerts/Whistle.ogg" label="tizen::vconf::setting" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_MSG_RINGTONE_PATH_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ msg-service is using this key. so DO NOT REMOVE. (sangkoo.kim@samsung.com) ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sound/noti/ringtone_default_path" value="/opt/usr/share/settings/Alerts/Whistle.ogg" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_RINGTONE_DEFAULT_PATH_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="VCONFKEY_SETAPPL_NOTI_MSG_RINGTONE_PATH_STR" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_RINGTONE_PATH_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/noti/vibration_level" value="5" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_VIBRATION_LEVEL_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/touch_feedback/vibration_level" value="3" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TOUCH_FEEDBACK_VIBRATION_LEVEL_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_VIB_FEEDBACK_LEVEL0</enumdata>
+      <enumdata>SETTING_VIB_FEEDBACK_LEVEL1</enumdata>
+      <enumdata>SETTING_VIB_FEEDBACK_LEVEL2</enumdata>
+      <enumdata>SETTING_VIB_FEEDBACK_LEVEL3</enumdata>
+      <enumdata>SETTING_VIB_FEEDBACK_LEVEL4</enumdata>
+      <enumdata>SETTING_VIB_FEEDBACK_LEVEL5</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/setting/usb_in_mode_change" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USB_IN_MODE_CHANGE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/setting/usb_mode" value="-1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USB_MODE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="-1">SETTING_USB_NONE_MODE</enumdata>
+      <enumdata val="0">SETTING_USB_DEFAULT_MODE</enumdata>
+      <enumdata val="0">SETTING_USB_SAMSUNG_KIES</enumdata>
+      <enumdata val="3">SETTING_USB_DEBUG_MODE</enumdata>
+      <enumdata val="3">SETTING_USB_ETHERNET_MODE</enumdata>
+      <enumdata val="4">SETTING_USB_TETHERING_MODE</enumdata>
+      <enumdata val="5">SETTING_USB_ACCESSORY_MODE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/debug_mode" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USB_DEBUG_MODE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/usb_connection_mode" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USB_CONNECTION_MODE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_USB_CONNECTION_MODE_CHARGING_ONLY</enumdata>
+      <enumdata>SETTING_USB_CONNECTION_MODE_USB_DEBUGGING</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/select_network" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SELECT_NETWORK_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SELECT_NETWORK_AUTOMATIC</enumdata>
+      <enumdata>SETTING_SELECT_NETWORK_MANUAL</enumdata>
+      <enumdata>SETTING_SELECT_NETWORK_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/network_mode" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NETWORK_MODE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_NETWORK_MODE_AUTOMATIC</enumdata>
+      <enumdata>SETTING_NETWORK_MODE_GSM_900_1800</enumdata>
+      <enumdata>SETTING_NETWORK_MODE_GSM_850_1900</enumdata>
+      <enumdata>SETTING_NETWORK_MODE_UTMS</enumdata>
+      <enumdata>SETTING_NETWORK_MODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/power_on_lock" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_STATE_POWER_ON_LOCK_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/phone_lock_attempts_left" value="5" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PHONE_LOCK_ATTEMPTS_LEFT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/phone_lock_timestamp" value="" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PHONE_LOCK_TIMESTAMP_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sim_lock_timestamp" value="" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM_LOCK_TIMESTAMP_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/simple_password" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_STATE_SIMPLE_PASSWORD_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/screen_lock_type" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREEN_LOCK_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SCREEN_LOCK_TYPE_NONE</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_SWIPE</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_MOTION</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_FINGERPRINT</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_FACE_AND_VOICE</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_SIMPLE_PASSWORD</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_PASSWORD</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_AUTO_LOCK</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_OTHER</enumdata>
+      <enumdata>SETTING_SCREEN_LOCK_TYPE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/3rd_lock_pkg_name" value="org.tizen.lockscreen" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_3RD_LOCK_PKG_NAME_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/font_size" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_FONT_SIZE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_FONT_SIZE_SMALL</enumdata>
+      <enumdata>SETTING_FONT_SIZE_MIDDLE</enumdata>
+      <enumdata>SETTING_FONT_SIZE_LARGE</enumdata>
+      <enumdata>SETTING_FONT_SIZE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/font_type" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_FONT_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/brightness_automatic" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BRIGHTNESS_AUTOMATIC_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_BRIGHTNESS_AUTOMATIC_OFF  </enumdata>
+      <enumdata>SETTING_BRIGHTNESS_AUTOMATIC_ON   </enumdata>
+      <enumdata>SETTING_BRIGHTNESS_AUTOMATIC_PAUSE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/automatic_time_update" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_STATE_AUTOMATIC_TIME_UPDATE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/date_format" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DATE_FORMAT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_DATE_FORMAT_DD_MM_YYYY</enumdata>
+      <enumdata>SETTING_DATE_FORMAT_MM_DD_YYYY</enumdata>
+      <enumdata>SETTING_DATE_FORMAT_YYYY_MM_DD</enumdata>
+      <enumdata>SETTING_DATE_FORMAT_YYYY_DD_MM</enumdata>
+      <enumdata>SETTING_DATE_FORMAT_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/cityname_id" value="Seoul" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CITYNAME_INDEX_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/weekofday_format" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_WEEKOFDAY_FORMAT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_WEEKOFDAY_FORMAT_SUNDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_MONDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_TUESDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_WEDNESDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_THURSDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_FRIDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_SATURDAY</enumdata>
+      <enumdata>SETTING_WEEKOFDAY_FORMAT_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lang" value="2" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LANG_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_LANG_AUTOMATIC</enumdata>
+      <enumdata>SETTING_LANG_KOREA</enumdata>
+      <enumdata>SETTING_LANG_ENGLISH</enumdata>
+      <enumdata>SETTING_LANG_CHINA </enumdata>
+      <enumdata>SETTING_LANG_CANTONESE</enumdata>
+      <enumdata>SETTING_LANG_TAIWAN</enumdata>
+      <enumdata>SETTING_LANG_GERMAN</enumdata>
+      <enumdata>SETTING_LANG_DUTCH</enumdata>
+      <enumdata>SETTING_LANG_SPAINISH</enumdata>
+      <enumdata>SETTING_LANG_PORTUGUESE</enumdata>
+      <enumdata>SETTING_LANG_GREEK</enumdata>
+      <enumdata>SETTING_LANG_ITALIAN</enumdata>
+      <enumdata>SETTING_LANG_FRENCH</enumdata>
+      <enumdata>SETTING_LANG_TURKISH</enumdata>
+      <enumdata>SETTING_LANG_JAPAN</enumdata>
+      <enumdata>SETTING_LANG_RUSSIAN</enumdata>
+      <enumdata>SETTING_LANG_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/font_size" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_FONT_SIZE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/accessibility/font_name" value="HelveticaNeue" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_FONT_NAME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/setting/accessibility/torch_light" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TORCH_LIGHT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/rapid_key_input" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_RAPID_KEY_INPUT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/turn_off_all_sounds" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TURN_OFF_ALL_SOUNDS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/led_notify" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_LED_NOTIFY</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/lock_time" value="5" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_LOCK_TIME_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/power_key_hold" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_POWER_KEY_HOLD</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_POWERKEY_SHORTCUT_OFF</enumdata>
+      <enumdata val="1">SETTING_POWERKEY_SHORTCUT_ALWAYS_ASK</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_SCREEN_READER_TTS</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_NEGATIVE_COLOURS</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_ZOOM</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_ASSISTIVE_LIGHT</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_SHOT_READER</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_ACCESSIBILITY</enumdata>
+      <enumdata>SETTING_POWERKEY_SHORTCUT_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/easy_touch_mode" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EASY_TOUCH_MODE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/speak_passwd" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_SPEAK_PASSWD_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ accessiblity, isf ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/pwrsv/custom_mode/backlight/time" value="15" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PWRSV_CUSTMODE_BLTIME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="8">SETTING_BACKLIGHT_TIME_8SEC</enumdata>
+      <enumdata val="15">SETTING_BACKLIGHT_TIME_15SEC</enumdata>
+      <enumdata val="30">SETTING_BACKLIGHT_TIME_30SEC</enumdata>
+      <enumdata val="60">SETTING_BACKLIGHT_TIME_1MIN</enumdata>
+      <enumdata val="180">SETTING_BACKLIGHT_TIME_3MIN</enumdata>
+      <enumdata val="600">SETTING_BACKLIGHT_TIME_10MIN</enumdata>
+      <enumdata>SETTING_BACKLIGHT_TIME_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/pwrsv/custom_mode/cpu" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PWRSV_CUSTMODE_CPU</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ticker_noti/display_content/messages" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TICKER_NOTI_DISPLAY_CONTENT_MESSASGES</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ticker_noti/display_content/email" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TICKER_NOTI_DISPLAY_CONTENT_EMAIL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ticker_noti/display_content/im" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TICKER_NOTI_DISPLAY_CONTENT_IM</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ticker_noti/badge/email" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TICKER_NOTI_BADGE_EMAIL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/menu_widget/language" value="en_US.UTF-8" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_LANGSET</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/menu_widget/regionformat" value="en_US.UTF-8" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_REGIONFORMAT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/menuscreen/package_name" value="org.tizen.homescreen" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SELECTED_PACKAGE_NAME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/homescreen/easymode" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_HOMESCREEN_EASYMODE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/roaming_network" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ROAMING_NETWORK_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_ROAM_NET_AUTO_DOWNLOAD</enumdata>
+      <enumdata>SETTING_ROAM_NET_MANUAL</enumdata>
+      <enumdata>SETTING_ROAM_NET_ALWAYS_REJECT</enumdata>
+      <enumdata>SETTING_ROAM_NET_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/default_memory/install_applications" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEFAULT_MEM_INSTALL_APPLICATIONS_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/default_memory/wifi_direct" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEFAULT_MEM_WIFI_DIRECT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/default_memory/bluetooth" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEFAULT_MEM_BLUETOOTH_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/battery_percentage" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BATTERY_PERCENTAGE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/high_contrast" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_HIGH_CONTRAST</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/screen_zoom" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_SCREEN_ZOOM</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/screen_reader" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_SCREEN_READER</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/timezone_id" value="Asia/Seoul" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TIMEZONE_ID</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/timezone" value="+9:00" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TIMEZONE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/rotate_lock" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ROTATE_LOCK_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/auto_rotate_screen" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_AUTO_ROTATE_SCREEN_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/mono_audio" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_MONO_AUDIO</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/menu_widget/regionformat_time1224" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_REGIONFORMAT_TIME1224</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="1">VCONFKEY_TIME_FORMAT_12</enumdata>
+      <enumdata>VCONFKEY_TIME_FORMAT_24</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sim_lock_attempts_left" value="5" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM_LOCK_ATTEMPTS_LEFT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/device_name" value="Tizen" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEVICE_NAME_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/sound_on" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SOUND_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/vibration_on" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_VIBRATION_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/sound_mode" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SOUND_MODE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[
+신규 구현중
+]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SOUNDMODE_SOUND</enumdata>
+      <enumdata>SETTING_SOUNDMODE_VIBRATION</enumdata>
+      <enumdata>SETTING_SOUNDMODE_SILENT</enumdata>
+      <enumdata>SETTING_SOUNDMODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/vibrate_when_ringing" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_VIBRATE_WHEN_RINGING_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/vibrate_when_notification" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_VIBRATE_WHEN_NOTIFICATION_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/sound/haptic_feedback_on" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_HAPTIC_FEEDBACK_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/data_roaming" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_STATE_DATA_ROAMING_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/motion_active" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MOTION_ACTIVATION</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_tilt" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_TILT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/tilt_sensitivity" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TILT_SENSITIVITY</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_panning" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_PANNING</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_panning_browser" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_PANNING_BROWSER</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/panning_sensitivity" value="3" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PANNING_SENSITIVITY</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/panning_browser_sensitivity" value="3" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PANNING_BROWSER_SENSITIVITY</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_double_tap" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_DOUBLE_TAP</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_turn_over" value="0" label="tizen::vconf::public::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_TURN_OVER</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_pick_up" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_PICK_UP</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_pick_up_call" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_PICK_UP_CALL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_shake" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_SHAKE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/use_mute_pause" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USE_MUTE_PAUSE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/menu_widget/bgset" value="/opt/usr/share/settings/Wallpapers/home_006.png" label="tizen::vconf::setting" gid="6514" uid="">
+    <header>VCONFKEY_BGSET</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/devoption/bgprocess" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEVOPTION_BGPROCESS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/default_rendering_engine" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEFAULT_RENDERING_ENGINE_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata>SETTING_RENDERING_ENGINE_HW </enumdata>
+      <enumdata>SETTING_RENDERING_ENGINE_SW </enumdata>
+      <enumdata>SETTING_RENDERING_ENGINE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/data_limit" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DATA_LIMIT_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/select_network_act" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SELECT_OLD_NT_ACT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/lang_automatic" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LANG_AUTOMATIC_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/data_usage_cycle" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DATA_USAGE_CYCLE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/data_usage_roaming_status" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DATA_USAGE_ROAMING_STATUS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/set_data_usage_limit" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SET_DATA_USAGE_LIMIT_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/accessibility/taphold_delay" value="IDS_COM_POP_SHORT" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TAP_HOLD_DELAY_STR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/sound_balance" value="50" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SOUND_BALANCE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/selected_num" value="" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SELECTED_NUM</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/screenmode/selected_name" value="Dynamic" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREENMODE_SELNAME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lcd_timeout_normal_backup" value="30" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LCD_TIMEOUT_NORMAL_BACKUP</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/led_indicator/charging" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LED_INDICATOR_CHARGING</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/led_indicator/low_batt" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LED_INDICATOR_LOW_BATT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/led_indicator/notifications" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_LED_INDICATOR_NOTIFICATIONS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/setting/rotate_hold" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ROTATE_HOLD_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/psmode" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PSMODE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_PSMODE_NORMAL</enumdata>
+      <enumdata val="1">SETTING_PSMODE_POWERFUL</enumdata>
+      <enumdata val="1">SETTING_PSMODE_ADVISOR</enumdata>
+      <enumdata val="2">SETTING_PSMODE_SURVIVAL</enumdata>
+      <enumdata val="2">SETTING_PSMODE_EMERGENCY</enumdata>
+      <enumdata val="3">SETTING_PSMODE_WEARABLE</enumdata>
+      <enumdata val="4">SETTING_PSMODE_WEARABLE_ENHANCED</enumdata>
+      <enumdata val="0">SETTING_PSMODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/mmc_encryption/status" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MMC_ENCRYPTION_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/display/touchkey_light_duration" value="90" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TOUCHKEY_LIGHT_DURATION</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="90">SETTING_TOUCHKEY_LIGIT_DURATION_90SEC</enumdata>
+      <enumdata val="360">SETTING_TOUCHKEY_LIGIT_DURATION_360SEC</enumdata>
+      <enumdata val="0">SETTING_TOUCHKEY_LIGIT_DURATION_ALWAYS_OFF</enumdata>
+      <enumdata val="-1">SETTING_TOUCHKEY_LIGIT_DURATION_ALWAYS_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/display/screen_capture_destination" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREEN_CAPTURE_DESTINATION</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SCREEN_CAPTURE_DESTINATION_ASK</enumdata>
+      <enumdata>SETTING_SCREEN_CAPTURE_DESTINATION_GALLERY</enumdata>
+      <enumdata>SETTING_SCREEN_CAPTURE_DESTINATION_KEEPIT</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/display/edit_after_screen_capture" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREEN_CAPTURE_EDIT_AFTER_CAPTURE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/network_restrict_mode" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NETWORK_RESTRICT_MODE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockingmode/led_indicator" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKINGMODE_LED_INDICATOR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/display/dynamic_status_bar" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DYNAMIC_STATUS_BAR</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/idle_clock_type" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CLOCK_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/hourly_alert" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_HOURLY_ALERT_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/homescreen_type" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_HOMESCREEN_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ it's for wearable ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_HOMESCREEN_TYPE_1_1</enumdata>
+      <enumdata val="1">SETTING_HOMESCREEN_TYPE_2_2</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/mobile_data_popup" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MOBILE_DATA_POPUP_DONE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/network/mobile_data_on_reminder" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MOBILE_DATA_ON_REMINDER</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/network/mobile_data_off_reminder" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_MOBILE_DATA_OFF_REMINDER</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/usb_otg" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_USB_OTG_MODE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/firewall" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_FIREWALL_KEY</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/setting/personal" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PERSONAL_MODE_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/personal_unlock_method" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PERSONAL_MODE_UNLOCK_METHOD_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/developer_option_state" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_DEVELOPER_OPTION_STATE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/app_hw_acceleration" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_APP_HW_ACCELERATION</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  	<enumlist>
+      <enumdata val="-1">SETTING_HW_ACCELERATION_NONE</enumdata>
+      <enumdata val="0">SETTING_HW_ACCELERATION_OFF</enumdata>
+      <enumdata val="1">SETTING_HW_ACCELERATION_ON</enumdata>
+    </enumlist>
+
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/change_ui/theme" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_CHANGE_UI_THEME_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/win_gray" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_WINDOW_GRAYTONE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/win_fps" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_WINDOW_FPS</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/emergency/mode" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EMERGENCY_UI_MODE</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="1">EMERGENCY_UI_MODE_EMERGENCY</enumdata>
+      <enumdata>EMERGENCY_UI_MODE_ULTRA_POWER_SAVING</enumdata>
+      <enumdata>EMERGENCY_UI_MODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessibility/dark_screen" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_DARK_SCREEN</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/network_with_lcd_off_limit" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NETWORK_PERMIT_WITH_LCD_OFF_LIMIT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sim1_name" value="SIM1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM1_NAME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ This key is for Indicator, Lockscreen popup. ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/setting/sim2_name" value="SIM2" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM2_NAME</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ This key is for Indicator, Lockscreen popup. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sim1_icon" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM1_ICON</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ This key is for Indicator, Lockscreen popup. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sim2_icon" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SIM2_ICON</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ This key is for Indicator, Lockscreen popup. ]]></comment>
+    <enumlist>
+      <enumdata val="0">SIM_ICON_SIM1    </enumdata>
+      <enumdata>SIM_ICON_SIM2    </enumdata>
+      <enumdata>SIM_ICON_CALL    </enumdata>
+      <enumdata>SIM_ICON_SMS     </enumdata>
+      <enumdata>SIM_ICON_MMS     </enumdata>
+      <enumdata>SIM_ICON_INTERNET</enumdata>
+      <enumdata>SIM_ICON_HOME    </enumdata>
+      <enumdata>SIM_ICON_OFFICE  </enumdata>
+      <enumdata>SIM_ICON_HEART   </enumdata>
+      <enumdata>SIM_ICON_MAX     </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/dualsim/voice_call" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_DUALSIM_VOICE_CALL_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="-1">VCONFKEY_DUALSIM_VOICE_CALL_UNKNOWN</enumdata>
+      <enumdata val="0">VCONFKEY_DUALSIM_VOICE_CALL_CURRENT_NETWORK</enumdata>
+      <enumdata>VCONFKEY_DUALSIM_VOICE_CALL_ASK_ALWAYS</enumdata>
+      <enumdata>VCONFKEY_DUALSIM_VOICE_CALL_SIM1</enumdata>
+      <enumdata>VCONFKEY_DUALSIM_VOICE_CALL_SIM2</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/dualsim/always_dualsim" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_ALWAYS_ON_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/dualsim/selected_sim" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_DUALSIM_SELECTED_SIM</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="-1">VCONFKEY_DUALSIM_SELECT_UNKNOW</enumdata>
+      <enumdata val="0">VCONFKEY_DUALSIM_SELECT_BOTH_SIM</enumdata>
+      <enumdata>VCONFKEY_DUALSIM_SELECT_SIM1_TO_SIM2</enumdata>
+      <enumdata>VCONFKEY_DUALSIM_SELECT_SIM2_TO_SIM1</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/screen_rotation" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SCREENROTATION_DEG_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_SCREENROTATION_0_DEGREE</enumdata>
+      <enumdata val="1">SETTING_SCREENROTATION_90_DEGREE</enumdata>
+      <enumdata val="2">SETTING_SCREENROTATION_180_DEGREE</enumdata>
+      <enumdata val="3">SETTING_SCREENROTATION_270_DEGREE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/lock_type" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PRIVACY_LOCK_TYPE_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">SETTING_PRIVACY_LOCK_TYPE_NONE</enumdata>
+      <enumdata val="1">SETTING_PRIVACY_LOCK_TYPE_PATTERN</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/emergency_status" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EMERGENCY_STATUS_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ it's for Wearable ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockmode_wearable" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKMODE_WEARABLE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockmode_wearable_r" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKMODE_WEARABLE_R_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ambient_mode" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_AMBIENT_MODE_BOOL</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ambient mode ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/wallpaper_changed" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_WALLPAPER_CHANGED_NOTI_INT</header>
+    <creator> Myoungjune Park </creator>
+    <email>mj2004.park@samsung.com</email>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_WALLPAPER_CHANGED_NOTI_NONE</enumdata>
+      <enumdata val="1">VCONFKEY_WALLPAPER_CHANGED_NOTI_GEAR</enumdata>
+      <enumdata val="2">VCONFKEY_WALLPAPER_CHANGED_NOTI_HM</enumdata>
+    </enumlist>
+  </vconfkey>
+
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/time" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_TIME</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/battery" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_BATTERY</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/signal_strenght" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_SIGNAL_STRENGHT</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/missed_events" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_MISSED_EVENTS</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/date" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_DATE</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/accessibility/tts/indicator/bluetooth" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSIBILITY_TTS_INDICATOR_INFORMATION_BLUETOOTH</header>
+    <creator>  </creator>
+    <email></email>
+    <comment></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/effect_image" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_AMD_EFFECT_IMAGE_ENABLE</header>
+    <creator> Inkyun Kil </creator>
+    <email> inkyun.kil@samsung.com </email>
+    <comment> this key is related to App F/W </comment>
+  </vconfkey>
+
+</vconfkeylists>

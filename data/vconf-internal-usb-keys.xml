@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_USB_KEYS_H__"/>
+  <vconfkey type="int" name="memory/usb/cur_mode" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_USB_CUR_MODE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist name="old_usb_mode">
+      <enumdata val="1">SET_USB_MTP</enumdata>
+      <enumdata val="2">SET_USB_MTP_SDB</enumdata>
+      <enumdata val="3">SET_USB_MTP_SDB_DIAG</enumdata>
+    </enumlist>
+    <enumlist name="usb_mode">
+      <enumdata val="0">SET_USB_NONE</enumdata>
+      <enumdata val="1">SET_USB_DEFAULT</enumdata>
+      <enumdata val="2">SET_USB_SDB</enumdata>
+      <enumdata val="3">SET_USB_SDB_DIAG</enumdata>
+      <enumdata val="4">SET_USB_RNDIS_TETHERING</enumdata>
+      <enumdata val="5">SET_USB_RNDIS </enumdata>
+      <enumdata val="6">SET_USB_RNDIS_SDB</enumdata>
+      <enumdata val="7">SET_USB_DIAG_SDB</enumdata>
+      <enumdata val="8">SET_USB_RNDIS_DIAG</enumdata>
+      <enumdata val="9">SET_USB_ACCESSORY</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/usb/sel_mode" value="1" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_USB_SEL_MODE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

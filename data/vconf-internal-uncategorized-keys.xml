@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_UNCATEGORIZED_KEYS_H__"/>
+    <vconfkey type="bool" name="db/private/deviced/lcd_brightness_init" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_24</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/0" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_49</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_50</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_51</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_52</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/4" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_53</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/5" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_54</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/6" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_55</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/7" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_56</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/8" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_57</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/language/9" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_58</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/cb_msg/max_sim_count/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_59</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/cb_msg/max_sim_count/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_60</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/cb_msg/max_sim_count/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_61</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/receive/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_62</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/receive/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_63</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/cb_msg/save" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_64</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/cb_noti_priv_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_65</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/auto_erase" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_68</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/block_msg" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_69</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/block_unknown_msg" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_70</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/keep_copy" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_72</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/general/mms_limit" value="100" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_74</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/general/msg_id_counter" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_75</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/notification" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_76</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/preview" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_78</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/general/ringtone_path" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_79</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/general/ringtone_type" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_80</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/general/sms_limit" value="1000" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_82</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/general/ua_profile" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_85</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/general/vibration" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_86</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_recv/abroad_network" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_87</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_recv/delivery_receipt" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_88</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_recv/home_network" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_89</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_recv/read_receipt" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_90</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_recv/reject_advertisement" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_91</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_recv/reject_unknown" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_92</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/body_replying" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_93</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/creation_mode" value="2" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_94</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/custom_delivery" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_95</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/delivery_report" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_96</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/delivery_time" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_97</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/expiry_time" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_98</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/hide_recipients" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_99</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/keep_copy" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_100</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/msg_class" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_101</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/priority" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_102</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/read_reply" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_103</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/reply_charging" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_104</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/reply_charging_deadline" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_105</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_send/reply_charging_size" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_106</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/report_allowed" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_107</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_send/sender_visibility" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_108</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/bg_color/blue" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_109</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/bg_color/green" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_110</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/bg_color/hue" value="255" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_111</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/bg_color/red" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_112</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/font_color/blue" value="255" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_113</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/font_color/green" value="255" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_114</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/font_color/hue" value="255" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_115</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/font_color/red" value="255" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_116</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/font_size" value="30" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_117</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_style/font_style/bold" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_118</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_style/font_style/italic" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_119</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/mms_style/font_style/underline" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_120</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/page_custom_dur" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_121</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/page_dur" value="2" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_122</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/mms_style/page_dur_manual" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_123</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/notification_priv_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_124</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/push_msg/recv_option" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_125</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/push_msg/service_load" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_126</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sentfail_noti_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_127</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/total_cnt/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_128</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/total_cnt/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_129</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/total_cnt/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_130</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/used_cnt/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_131</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/used_cnt/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_132</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_count/used_cnt/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_133</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_full_noti_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_134</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sim_msg_noti_priv_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_135</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/size_opt/msg_size" value="300" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_136</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sms_send/dcs" value="3" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_137</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/sms_send/delivery_report" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_138</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/msg-service/sms_send/reply_path" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_139</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/sms_send/save_storage" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_140</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_alphaid/1" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_141</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_alphaid/2" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_142</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_alphaid/3" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_143</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/voice_mail/voice_mail_count/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_144</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/voice_mail/voice_mail_count/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_145</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/voice_mail/voice_mail_count/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_146</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_number/1" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_147</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_number/2" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_148</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/msg-service/voice_mail/voice_mail_number/3" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_149</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/voice_noti_id1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_150</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/msg-service/voice_noti_id2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_151</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/rpm-installer/requestinfo/command" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_196</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/rpm-installer/requestinfo/options" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_197</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/rpm-installer/requestinfo/pkgname" value="" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_198</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/rpm-installer/state" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_199</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/rpm-installer/stateinfo" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_200</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/sysman/cool_down_mode" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_200_0</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/sysman/enhance_mode" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_201</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/sysman/enhance_outdoor" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_202</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/sysman/enhance_scenario" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_203</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/sysman/enhance_tone" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_204</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/sysman/mmc_device_id" value="" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_205</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/usb/usb_control" value="1" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_207</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/contacts-service/default_lang" value="0" label="tizen::vconf::platform::r" gid="6514" uid="200" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_221</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="file/private/isf/autocapital_allow" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_228</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="file/private/isf/autoperiod_allow" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_229</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/last_power_state" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_265</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/network_bonding" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_266</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/sleep_policy" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_267</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/sort_by" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_268</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/wifi_off_by_airplane" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_269</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/wifi_off_by_emergency" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_270</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="file/private/wifi/wifi_off_by_restricted" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_271</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/msg-service/default_network_sim" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_283</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/msisdn/1" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_287</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/msisdn/2" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_288</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/msisdn/3" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_289</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/msg-service/sim_changed/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_293</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/msg-service/sim_changed/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_294</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/msg-service/sim_changed/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_295</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_mo_ctrl/1" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_296</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_mo_ctrl/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_297</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_mo_ctrl/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_298</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_st/1" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_299</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_st/2" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_300</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/msg-service/sim_st/3" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_301</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/sim_subs_id/1" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_302</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/sim_subs_id/2" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_303</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/msg-service/sim_subs_id/3" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_304</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/org.tizen.indicator/show_more_noti_port" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_308</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/sysman/added_storage_uevent" value="" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_322</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/sysman/enhance_pid" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_323</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/sysman/removed_storage_uevent" value="" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_324</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/sysman/siop_disable" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_325</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/sysman/siop_level_uevent" value="" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_326</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/usb/conf_enabled" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_328</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/cradle_status" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_335</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/earjack_key" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_336</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/factory_mode" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_337</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/sysman/usbhost_status" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_UNCATEGORIZED_338</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/org.tizen.w-home/enabled_tutorial" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_352</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ wearable feature ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/wms/home_bg_wallpaper" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_387</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/org.tizen.w-home/auto_feed" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_390</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/org.tizen.w-home/sensitive_move" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_391</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/org.tizen.w-home/tutorial" value="0" label="tizen::vconf::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_UNCATEGORIZED_392</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_MSG_KEYS_H__"/>
+  <vconfkey type="bool" name="memory/msg/ready" value="0" label="tizen::vconf::message" gid="6514" uid="">
+    <header>VCONFKEY_MSG_SERVER_READY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/msg/recv_sms" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MESSAGE_RECV_SMS_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/msg/recv_mms" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MESSAGE_RECV_MMS_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/msg/network_mode" value="2" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_MESSAGE_NETWORK_MODE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ do not remove it's for enumeration (sangkoo.kim@samsung.com) ]]></comment>
+    <enumlist>
+      <enumdata val="0x01">VCONFKEY_MESSAGE_NETWORK_PS_ONLY</enumdata>
+      <enumdata val="0x02">VCONFKEY_MESSAGE_NETWORK_CS_ONLY</enumdata>
+      <enumdata val="0x03">VCONFKEY_MESSAGE_NETWORK_PS_PREFER</enumdata>
+      <enumdata val="0x04">VCONFKEY_MESSAGE_NETWORK_CS_PREFER</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

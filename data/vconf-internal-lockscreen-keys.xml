@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_LOCKSCREEN_KEYS_H__"/>
+  <vconfkey type="bool" name="db/lockscreen/camera_quick_access" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCKSCREEN_CAMERA_QUICK_ACCESS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/lockscreen/wallpaper_type" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCKSCREEN_WALLPAPER_TYPE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">LOCKSCREEN_WALLPAPER_TYPE_DEFAULT </enumdata>
+      <enumdata>LOCKSCREEN_WALLPAPER_TYPE_GALLERY</enumdata>
+      <enumdata>LOCKSCREEN_WALLPAPER_TYPE_MULTIPLE</enumdata>
+      <enumdata>LOCKSCREEN_WALLPAPER_TYPE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/lockscreen/wallpaper_count" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCKSCREEN_WALLPAPER_COUNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

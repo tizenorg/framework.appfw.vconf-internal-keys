@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,52 +21,19 @@
 
 #ifndef __VCONF_INTERNAL_ALARM_KEYS_H__
 #define __VCONF_INTERNAL_ALARM_KEYS_H__
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_ALARM_STATE  "db/alarm/state"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-alarm-keys.h
- * @defgroup    vconf_internal_alarm_key Definitions of internal shared Keys for Alarm
- * @ingroup     vconf_internal_key
- * @author      changyu.lu@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for Alarm \n
- */
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_ALARM_RINGING  "memory/alarm/ringing"
 
-/* ========================== Alarm Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_alarm_key
- * @{
- * @brief Alarm Keys & Values\n
- *        Maintainer : changyu.lu@samsung.com
- */
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_ALARM_VOLUME_POPUP_ENABLE  "memory/alarm/volume_popup_enable"
 
-/**
- * @brief it stands for number of enabled alarm by int value.
- *
- */
-#define VCONFKEY_ALARM_STATE	"db/alarm/state"
-
-/**
- * @brief Alarm ringing status
- *
- * TRUE : Alarm is ringing \n
- * FALSE : Alarm is not ringing \n
- */
-#define VCONFKEY_ALARM_RINGING	"memory/alarm/ringing"
-
-/**
- * @brief Alarm volume popup display in alarm setting menu
- *
- * TRUE : Display alarm sound type volume popup \n
- * FALSE : Do not display alarm sound type volume popup \n
- */
-#define VCONFKEY_ALARM_VOLUME_POPUP_ENABLE 	"memory/alarm/volume_popup_enable"
-
-/**
- * @}
- */
-
-#endif	/* __VCONF_INTERNAL_ALARM_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_ALARM_KEYS_H__    */

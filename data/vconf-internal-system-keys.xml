@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_SYSTEM_KEYS_H__"/>
+  <vconfkey type="int" name="memory/system/timechanged" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSTEM_TIME_CHANGED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="db/system/timechange_external" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_SYSTEM_TIMECHANGE_EXTERNAL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_HOTFIX_KEYS_H__"/>
+  <vconfkey type="int" name="db/setting/sound/touch_feedback/sound_volume" value="9" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_TOUCH_FEEDBACK_SOUND_VOLUME_INT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ it's for Wearable project - org.tizen.clocksetting ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/sound/noti/sound_volume" value="11" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_NOTI_SOUND_VOLUME_INT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ it's for wearable project - org.tizen.clocksetting ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setup_wizard/first_boot" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETUP_WIZARD_FIRST_BOOT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/setup_wizard/state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETUP_WIZARD_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ org.tizen.whome refers to this key, bt-syspopup refers to VCONFKEY_SETUP_WIZARD_LOCK. ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_SETUP_WIZARD_UNLOCK</enumdata>
+      <enumdata>VCONFKEY_SETUP_WIZARD_LOCK  </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/ode/crypto_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_ODE_CRYPTO_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ callmgr-util, org.tizen.call-ui and starter-0.5.52 refers to this key. but Removing is required. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/sde/encrypt_progress" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SDE_ENCRYPT_PROGRESS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/sde/crypto_state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SDE_CRYPTO_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/prefer_arm_left" value="0" label="tizen::vconf::public::r::platform::rw" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PERFERED_ARM_LEFT_BOOL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ b2clocksetting use this key for setting-sound ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/colorblind/status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_COLORBLIND_STATUS_BOOL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ deviced refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/colorblind/rgbcmy" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_COLORBLIND_LAST_RGBCMY_STR</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ deviced refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/motion/palm_swipe_capture" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PALM_SWIP_CAPTURE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ e17-extra-config-module refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/motion/palm_touch_mute" value="1" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_PALM_TOUCH_MUTE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ e17-extra-config-module refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/ticker_noti/email" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_STATE_TICKER_NOTI_EMAIL_BOOL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ email-service refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/accessories/dock_sound" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_ACCESSORY_DOCK_SOUND</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ libmm-sound refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/easymoe/home_screen" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_EASYMODE_HOME_SCREEN</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ org.tizen.add-viewer refers to this key. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/smartscreen/smart_stay" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_SMARTSCREEN_SMARTSTAY_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ deviced refers to this key. but it's the unused key for Setting. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockingmode/allowed_contact_type" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_TYPE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ email-service, msg-service refers to this key. but it's the unused key for Setting. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockingmode/allowed_contact_list" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKINGMODE_ALLOWED_CONTACT_LIST</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ email-service, msg-service refers to this key. but it's the unused key for Setting. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/setting/blockingmode/notifications" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_SETAPPL_BLOCKINGMODE_NOTIFICATIONS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ msg-service, org.tizen.quickpanel refers to this key. but it's the unused key for Setting. ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/csc/salescode" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_CSC_SALESCODE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/csc/config_mode_running" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_CSC_CONFIG_MODE_RUNNING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_connector" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_CONNECTOR_PREFIX</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_connector/status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_CONNECTOR_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_MOBEX_CONNECTOR_STATUS_DISCONNECTED</enumdata>
+      <enumdata>VCONFKEY_MOBEX_CONNECTOR_STATUS_WAITING</enumdata>
+      <enumdata>VCONFKEY_MOBEX_CONNECTOR_STATUS_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_engine" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_ENGINE_PREFIX</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_engine/status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_ENGINE_STATUS_INT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_MOBEX_ENGINE_STATUS_NOT_CONNECT</enumdata>
+      <enumdata val="0x01">VCONFKEY_MOBEX_ENGINE_STATUS_CONNECTED</enumdata>
+      <enumdata val="0x02">VCONFKEY_MOBEX_ENGINE_STATUS_SYNC_START</enumdata>
+      <enumdata val="0x04">VCONFKEY_MOBEX_ENGINE_STATUS_SYNC_END</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_engine/memo_sync_status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_ENGINE_MEMO_SYNC_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_engine/conn_method" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_ENGINE_CONNECTION_METHOD_INT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_MOBEX_ENGIN_NONE</enumdata>
+      <enumdata>VCONFKEY_MOBEX_ENGIN_USB</enumdata>
+      <enumdata>VCONFKEY_MOBEX_ENGIN_WIFI</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/mobex_engine/fus_ode_status" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_INT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_UNSET</enumdata>
+      <enumdata>VCONFKEY_MOBEX_ENGINE_FUS_ODE_STATUS_SET</enumdata>
+    </enumlist>
+  </vconfkey>
+
+</vconfkeylists>

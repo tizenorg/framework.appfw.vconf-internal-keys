@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_TELEPHONY_KEYS_H__"/>
+  <vconfkey type="int" name="memory/telephony" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PREFIX</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_DB_PREFIX</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/daemon_load_count" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_DAEMON_LOAD_COUNT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for telephony daemon load count between reboots]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/telephony/nw_name" value="" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_NWNAME</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current attached network name and status]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/plmn" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PLMN</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current attached network PLMN value]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/lac" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_LAC</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current attached network LAC value]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/cell_id" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CELLID</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current attached Cell ID value]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/roam_icon_mode" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_ROAM_ICON_MODE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for which icon mode will be displayed]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_ROAM_ICON_SOLID_MODE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_ROAM_ICON_OFF</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_ROAM_ICON_FLASHING_MODE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/svc_type" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SVCTYPE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current network type (3G, 2G, EDGE, Searching, Emergency, etc)]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_NONE     </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_NOSVC    </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_EMERGENCY</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_SEARCH   </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_2G       </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_2_5G     </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_2_5G_EDGE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_3G       </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_HSDPA    </enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVCTYPE_LTE      </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/svc_cs" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SVC_CS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current network circuit service availability]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SVC_CS_UNKNOWN</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_CS_OFF</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_CS_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/svc_ps" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SVC_PS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current network packet service availability]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SVC_PS_UNKNOWN</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_PS_OFF</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_PS_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/svc_roam" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SVC_ROAM</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current network zone is home zone or roaming zone]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SVC_ROAM_OFF</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ROAM_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/sim_slot" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_SLOT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current device has a SIM card or not]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SIM_UNKNOWN</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SIM_INSERTED</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SIM_NOT_PRESENT</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SIM_CARD_ERROR</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/sim_slot2" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_SLOT2</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current device has a second SIM card or not (for Dual SIM model)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/sim_slot_count" value="-1" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_SLOT_COUNT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for the number of sim slot having current device]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/pb_init" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_PB_INIT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current telephony phonebook is ready to give valid value or not]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SIM_PB_INIT_NONE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SIM_PB_INIT_COMPLETED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/sim_status" value="255" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_STATUS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current sim cached data status as below]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SIM_STATUS_CARD_ERROR</enumdata>
+      <enumdata val="0x01">VCONFKEY_TELEPHONY_SIM_STATUS_CARD_NOT_PRESENT</enumdata>
+      <enumdata val="0x02">VCONFKEY_TELEPHONY_SIM_STATUS_INITIALIZING</enumdata>
+      <enumdata val="0x03">VCONFKEY_TELEPHONY_SIM_STATUS_INIT_COMPLETED</enumdata>
+      <enumdata val="0x04">VCONFKEY_TELEPHONY_SIM_STATUS_PIN_REQUIRED</enumdata>
+      <enumdata val="0x05">VCONFKEY_TELEPHONY_SIM_STATUS_PUK_REQUIRED</enumdata>
+      <enumdata val="0x06">VCONFKEY_TELEPHONY_SIM_STATUS_CARD_BLOCKED</enumdata>
+      <enumdata val="0x07">VCONFKEY_TELEPHONY_SIM_STATUS_NCK_REQUIRED</enumdata>
+      <enumdata val="0x08">VCONFKEY_TELEPHONY_SIM_STATUS_NSCK_REQUIRED</enumdata>
+      <enumdata val="0x09">VCONFKEY_TELEPHONY_SIM_STATUS_SPCK_REQUIRED</enumdata>
+      <enumdata val="0x0a">VCONFKEY_TELEPHONY_SIM_STATUS_CCK_REQUIRED</enumdata>
+      <enumdata val="0x0b">VCONFKEY_TELEPHONY_SIM_STATUS_CARD_REMOVED</enumdata>
+      <enumdata val="0x0c">VCONFKEY_TELEPHONY_SIM_STATUS_SIM_LOCK_REQUIRED</enumdata>
+      <enumdata val="0x0d">VCONFKEY_TELEPHONY_SIM_STATUS_CARD_CRASHED</enumdata>
+      <enumdata val="0xff">VCONFKEY_TELEPHONY_SIM_STATUS_UNKNOWN</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/sim_is_changed" value="-1" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_IS_CHANGED</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current sim is changed or not]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/call_state" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current call status (idle, connect, held)]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_CALL_CONNECT_IDLE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_CALL_CONNECT_ACTIVE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_CALL_CONNECT_HELD</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/call_forward_state" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_FORWARD_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for SIM1 Call Forwarding Indicator status - Always case (CFU)]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_CALL_FORWARD_OFF</enumdata>
+      <enumdata val="0x01">VCONFKEY_TELEPHONY_CALL_FORWARD_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/call_forward_state2" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_FORWARD_STATE2</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for SIM2 Call Forwarding Indicator status - Always case (CFU)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/ss_cli_state" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SS_CLI_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for show my number status]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_SS_CLI_BYNETWORK</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SS_CLI_SHOW</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SS_CLI_HIDE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/ss_cli_state2" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SS_CLI_STATE2</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for show my number status of SIM2]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/tapi_state" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_TAPI_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current telephony apis is ready to use or not]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_TAPI_STATE_NONE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_TAPI_STATE_READY</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/spn_disp_condition" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SPN_DISP_CONDITION</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for display priority between SIM SPN and PLMN]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_DISP_INVALID</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_DISP_SPN</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_DISP_PLMN</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_DISP_SPN_PLMN</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="memory/telephony/spn" value="" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SPN_NAME</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for SPN name which is stored in SIM card]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/rssi" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_RSSI</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for current network RSSI strength]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_RSSI_0</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_1</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_2</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_3</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_4</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_5</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_RSSI_6</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/ps_type" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PSTYPE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for packet service protocol type]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_TELEPHONY_PSTYPE_NONE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_PSTYPE_HSDPA</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_PSTYPE_HSUPA</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_PSTYPE_HSPA</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_PSTYPE_HSPAP</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/setting/3gEnabled" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_3G_ENABLE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for cellular data connection enable status]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/telephony/telephony_ready" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_READY</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for telephony server is ready or not]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/nitz_gmt" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_NITZ_GMT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for NITZ GMT time]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/nitz_event_gmt" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_NITZ_EVENT_GMT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for NITZ Event arrival time]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/telephony/nitz_zone" value="" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_NITZ_ZONE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for NITZ time zone]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/telephony/flight_mode" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_FLIGHT_MODE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for flight mode status]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/svc_act" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SVC_ACT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for network Access Technology]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_NONE</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_GSM</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_GPRS</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_EGPRS</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_UMTS</enumdata>
+      <enumdata val="0x11">VCONFKEY_TELEPHONY_SVC_ACT_IS95A</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_IS95B</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_CDMA_1X</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_EVDO_REV0</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_CDMA_1X_EVDO_REV0</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_EVDO_REVA</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_CDMA_1X_EVDO_REVA</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_EVDV</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_SVC_ACT_EHRPD</enumdata>
+      <enumdata val="0x21">VCONFKEY_TELEPHONY_SVC_ACT_LTE</enumdata>
+      <enumdata val="0xFF">VCONFKEY_TELEPHONY_SVC_ACT_NOT_SPECIFIED </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/telephony/sim_power_state1" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_POWER_STATE1</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for SIM Power State for sim slot 1]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/telephony/sim_power_state2" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_SIM_POWER_STATE2</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for SIM Power State for sim slot 2]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/telephony/dualsim/receive_incoming_call" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_RECEIVE_INCOMING_CALL_BOOL</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for Enable/Disable "Receive Incoming Call" in Dual SIM during PS connected state]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/modem_always_on" value="2" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_MODEM_ALWAYS_ON_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for Modem always on state during companion mode]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_TELEPHONY_MODEM_ALWAYS_OFF</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_MODEM_ALWAYS_ON</enumdata>
+      <enumdata>VCONFKEY_TELEPHONY_MODEM_AUTO_ON_OFF</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="bool" name="db/telephony/activation_completed" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_ACTIVATION_COMPLETED</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for activation is completed or not]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/emergency_mode" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_EMERGENCY_CB_MODE_CDMA</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for if phone is entered emergency call back mode for CDMA]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/telephony/mdn" value="" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_MDN</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for MDN status]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/call_alert_signal_type" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_SIGNAL_TYPE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for call alert signal type]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/call_alert_pitch_type" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_PITCH_TYPE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for call alert pitch type]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/telephony/call_signal" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_CALL_SIGNAL</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for call signal]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/dualsim/default_data_service" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_DB_DEFAULT_DATA_SUBS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for default data subscription (Packet Switched)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/dualsim/preferred_voice_subscription" value="1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PREFERRED_VOICE_SUBSCRIPTION</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for preffered voice subscription]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/telephony/dualsim/default_subscription" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_DB_DEFAULT_SUBS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for default subscription (Circuit Switched]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/telephony/sim1_network_mode" value="3" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NETWORK_MODE_SIM_1</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for network mode of sim 1 (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/telephony/sim2_network_mode" value="-1" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NETWORK_MODE_SIM_2</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for network mode of sim 2 (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/telephony/modem_on_count" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_MODEM_ON_COUNT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for modem online count (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/telephony/ps_data_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_PS_DATA_STATUS</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for ps data status (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/telephony/no_sim_popup_checkbox" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NO_SIM_POPUP_CHECKBOX</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for no sim popup checkbox (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/telephony/data_roaming_popup_checkbox" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_DATA_ROAMING_POPUP_CHECKBOX</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for data roaming popup checkbox (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/telephony/net_mode_user_changed" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NET_MODE_USER_CHANGED</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for network mode is changed or not by user (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/telephony/perso_nwk_puk" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_PERSO_NWK_PUK</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for personal nck puk (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/private/telephony/modem_state" value="0" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_MODEM_STATE</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for modem state (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/telephony/nitz_iso" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NITZ_ISO</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for NITZ iso (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/telephony/manual_plmn" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_MANUAL_PLMN</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for manual plmn (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/private/telephony/nck_unlock_count" value="3" label="tizen::vconf::telephony::admin" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_NCK_UNLOCK_COUNT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for nck unlock count (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="db/private/telephony/pdp_last_connected_context_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_PDP_LAST_CONNECTED_CONTEXT</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for last pdp context connected (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/private/telephony/pdp_last_connected_context_profile_id" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_PDP_LAST_CONNECTED_CONTEXT_PROFILE_ID</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for last pdp context id connected (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/private/telephony/pdp_last_connected_context_plmn" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_PDP_LAST_CONNECTED_CONTEXT_PLMN</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for last pdp context plmn connected (private)]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/private/telephony/modemd_assert_reason" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_TELEPHONY_PRIVATE_MODEMD_ASSERT_REASON</header>
+    <creator>Wootak Jung</creator>
+    <email>wootak.jung</email>
+    <comment><![CDATA[It stands for assert reason for modemd (private)]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,37 +21,9 @@
 
 #ifndef __VCONF_INTERNAL_DESKTOP_MODE_KEYS_H__
 #define __VCONF_INTERNAL_DESKTOP_MODE_KEYS_H__
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_DESKTOP_MODE_ENABLED_STATUS  "db/desktop_mode/desktop_mode_status"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-desktop-mode-keys.h
- * @defgroup    vconf_internal_desktop_mode_key Definitions of internal shared Keys for Desktop mode
- * @ingroup     vconf_internal_key
- * @author      prabakaran.s@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for Desktop mode \n
- */
-
-/* ========================== Desktop mode Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_desktop_mode_key
- * @{
- * @brief Desktop mode Keys & Values\n
- *        Maintainer : prabakaran.s@samsung.com
- */
-
-/**
- * @brief it stands for desktop mode enabled in status by int value.
- *
- * 0 : No \n
- * 1 : Yes \n
- */
-#define VCONFKEY_DESKTOP_MODE_ENABLED_STATUS	"db/desktop_mode/desktop_mode_status"
-/**
- * @}
- */
-
-#endif	/* __VCONF_INTERNAL_DESKTOP_MODE_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_DESKTOP_MODE_KEYS_H__    */

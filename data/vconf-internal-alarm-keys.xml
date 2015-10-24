@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_ALARM_KEYS_H__"/>
+  <vconfkey type="int" name="db/alarm/state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_ALARM_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/alarm/ringing" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_ALARM_RINGING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/alarm/volume_popup_enable" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_ALARM_VOLUME_POPUP_ENABLE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

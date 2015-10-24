@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_CONTACTS_SVC_KEYS_H__"/>
+  <vconfkey type="int" name="db/contacts-svc/name_display_order" value="0" label="tizen::vconf::contact" gid="6514" uid="200">
+    <header>VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ Do not remove, it is in use (jiwon44.park@samsung.com) ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER_FIRSTLAST</enumdata>
+      <enumdata val="1">VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER_LASTFIRST</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/contacts-svc/name_sorting_order" value="0" label="tizen::vconf::contact" gid="6514" uid="200">
+    <header>VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ Do not remove, it is in use (jiwon44.park@samsung.com) ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_FIRSTLAST</enumdata>
+      <enumdata val="1">VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_LASTFIRST</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/contacts-svc/phonenumber_min_match_digit" value="8" label="tizen::vconf::platform::r" gid="6514" uid="200">
+    <header>VCONFKEY_CONTACTS_SVC_PHONENUMBER_MIN_MATCH_DIGIT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ Do not remove, it is in use (jiwon44.park@samsung.com) ]]></comment>
+  </vconfkey>
+</vconfkeylists>

@@ -1,9 +1,9 @@
 /*
- * vconf-internal-idle-lock-keys
+ * vconf-internal-keys
  *
- * Copyright (c) 2000 - 2012 Samsung Electronics Co., Ltd. All rights reserved.
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, YoungSub Ko <ys4610.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,32 +21,14 @@
 
 #ifndef __VCONF_INTERNAL_IDLE_LOCK_KEYS_H__
 #define __VCONF_INTERNAL_IDLE_LOCK_KEYS_H__
+#define VCONFKEY_IDLE_LOCK_BGSET  "db/idle_lock/bgset"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-idle-lock-keys.h
- * @defgroup    vconf_internal_idle-lock-key Definitions of internal shared Keys for idle_lock
- * @ingroup     vconf_internal_key
- * @author      Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, youngsub Ko <ys4610.ko@samsung.com>
- * @version     0.1
- * @brief       This file has the definitions of shared keys for idle_lock \n
- */
+#define VCONFKEY_IDLE_LOCK_STATE  "memory/idle_lock/state"
 
-/* ========================== idle_lock Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_idle_lock_key
- * @{
- * @brief idle_lock Keys & Values\n
- *        Maintainer : Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, YoungSub Ko <ys4610.ko@samsung.com>
- */
+enum {
+	VCONFKEY_IDLE_UNLOCK = 0,
+		VCONFKEY_IDLE_LOCK,
+		VCONFKEY_IDLE_LAUNCHING_LOCK
+};
 
-/**
- * @brief time information position displayed in idle_lock screen.
- *
- * type : int
-*/
-#define VCONFKEY_IDLE_LOCK_POSITION	"db/idle_lock/info_position"
-
-#endif	/* __VCONF_INTERNAL_IDLE_LOCK_KEYS_H__ */
+#endif /*   __VCONF_INTERNAL_IDLE_LOCK_KEYS_H__    */

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_MOVEDFROM_KEYS_H__"/>
+  <vconfkey type="int" name="memory/pwlock/state" value="0" label="" headeronly="true" gid="6514" uid="">
+    <header>VCONFKEY_PWLOCK_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_PWLOCK_BOOTING_UNLOCK</enumdata>
+      <enumdata>VCONFKEY_PWLOCK_BOOTING_LOCK</enumdata>
+      <enumdata>VCONFKEY_PWLOCK_RUNNING_UNLOCK</enumdata>
+      <enumdata>VCONFKEY_PWLOCK_RUNNING_LOCK</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_CALL_KEYS_H__"/>
+  <vconfkey type="int" name="memory/call/state" value="0" label="tizen::vconf::setting::admin" gid="6514" uid="">
+    <header>VCONFKEY_CALL_STATE</header>
+    <creator>Dongchul Lim</creator>
+    <email>dc7.lim@samsung.com</email>
+    <comment><![CDATA[Will be repalced metheod which is not using vconf key ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_CALL_OFF</enumdata>
+      <enumdata>VCONFKEY_CALL_VOICE_CONNECTING</enumdata>
+      <enumdata>VCONFKEY_CALL_VOICE_ACTIVE</enumdata>
+      <enumdata>VCONFKEY_CALL_VIDEO_CONNECTING</enumdata>
+      <enumdata>VCONFKEY_CALL_VIDEO_ACTIVE</enumdata>
+      <enumdata>VCONFKEY_CALL_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

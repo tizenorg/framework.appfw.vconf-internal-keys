@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_CAMERA_KEYS_H__"/>
+  <vconfkey type="int" name="memory/camera/state" value="0" label="tizen::vconf::camcorder" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_CAMERA_STATE</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ camera state checker for system wide ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_CAMERA_STATE_NULL</enumdata>
+      <enumdata>VCONFKEY_CAMERA_STATE_OPEN</enumdata>
+      <enumdata>VCONFKEY_CAMERA_STATE_PREVIEW</enumdata>
+      <enumdata>VCONFKEY_CAMERA_STATE_RECORDING</enumdata>
+      <enumdata>VCONFKEY_CAMERA_STATE_RECORDING_PAUSE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="file/camera/shutter_sound_policy" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ camera shutter sound policy while capturing and recording mode according to country policy ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_OFF</enumdata>
+      <enumdata>VCONFKEY_CAMERA_SHUTTER_SOUND_POLICY_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/recorder/state" value="0" label="tizen::vconf::camcorder" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_RECORDER_STATE</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ recorder state checker for system wide ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_RECORDER_STATE_NULL</enumdata>
+      <enumdata>VCONFKEY_RECORDER_STATE_CREATED</enumdata>
+      <enumdata>VCONFKEY_RECORDER_STATE_RECORDING</enumdata>
+      <enumdata>VCONFKEY_RECORDER_STATE_RECORDING_PAUSE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/camera/pid" value="0" label="tizen::vconf::camcorder" gid="6514" uid="">
+    <header>VCONFKEY_CAMERA_PID</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ pid number checker for applications from product team requirement ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/camera/flash_state" value="0" label="tizen::vconf::camcorder" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_CAMERA_FLASH_STATE</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ flash state checker for application from flash api team and product team requirement ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_CAMERA_FLASH_STATE_OFF</enumdata>
+      <enumdata>VCONFKEY_CAMERA_FLASH_STATE_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/recorder/pid" value="0" label="tizen::vconf::camcorder" gid="6514" uid="">
+    <header>VCONFKEY_RECORDER_PID</header>
+    <creator>Jeongmo Yang</creator>
+    <email>jm80.yang</email>
+    <comment><![CDATA[ pid number checker for applications from product team requirement ]]></comment>
+  </vconfkey>
+</vconfkeylists>

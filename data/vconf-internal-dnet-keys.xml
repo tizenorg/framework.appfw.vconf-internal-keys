@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_DNET_KEYS_H__"/>
+  <vconfkey type="int" name="memory/dnet/status" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_NETWORK_OFF</enumdata>
+      <enumdata>VCONFKEY_NETWORK_CELLULAR</enumdata>
+      <enumdata>VCONFKEY_NETWORK_WIFI</enumdata>
+      <enumdata>VCONFKEY_NETWORK_ETHERNET</enumdata>
+      <enumdata>VCONFKEY_NETWORK_BLUETOOTH</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/network_config" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CONFIGURATION_CHANGE_IND</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/dnet/ip" value="" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_IP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="memory/dnet/proxy" value="" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_PROXY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/wifi" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_WIFI_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata>VCONFKEY_NETWORK_WIFI_OFF</enumdata>
+      <enumdata>VCONFKEY_NETWORK_WIFI_NOT_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_NETWORK_WIFI_CONNECTED</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/cellular" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_NETWORK_CELLULAR_ON</enumdata>
+      <enumdata>VCONFKEY_NETWORK_CELLULAR_3G_OPTION_OFF</enumdata>
+      <enumdata>VCONFKEY_NETWORK_CELLULAR_ROAMING_OFF</enumdata>
+      <enumdata>VCONFKEY_NETWORK_CELLULAR_FLIGHT_MODE</enumdata>
+      <enumdata>VCONFKEY_NETWORK_CELLULAR_NO_SERVICE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/state" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_DNET_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_DNET_OFF</enumdata>
+      <enumdata>VCONFKEY_DNET_NORMAL_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_DNET_SECURE_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_DNET_TRANSFER</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/state2" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_DNET_STATE2</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/dnet/packet_state" value="0" label="tizen::vconf::platform::r" gid="6514" uid="">
+    <header>VCONFKEY_PACKET_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x00">VCONFKEY_PACKET_NORMAL</enumdata>
+      <enumdata>VCONFKEY_PACKET_RX</enumdata>
+      <enumdata>VCONFKEY_PACKET_TX</enumdata>
+      <enumdata>VCONFKEY_PACKET_RXTX</enumdata>
+      <enumdata>VCONFKEY_PACKET_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/totalrcv" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_RCV</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/totalrcv2" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_RCV2</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/totalsnt" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_SNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/totalsnt2" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_TOTAL_SNT2</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/lastrcv" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_LAST_RCV</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/lastrcv2" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_LAST_RCV2</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/lastsnt" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_LAST_SNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/cellular/lastsnt2" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_CELLULAR_PKT_LAST_SNT2</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/wifi/totalrcv" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_WIFI_PKT_TOTAL_RCV</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/wifi/totalsnt" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_WIFI_PKT_TOTAL_SNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/wifi/lastrcv" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_WIFI_PKT_LAST_RCV</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/dnet/statistics/wifi/lastsnt" value="0" label="tizen::vconf::network" gid="6514" uid="">
+    <header>VCONFKEY_NETWORK_WIFI_PKT_LAST_SNT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/dnet/mac_address" value="" label="tizen::vconf::public::r" gid="6514" uid="">
+   <header>VCONFKEY_NETWORK_ETHERNET_MAC_ADDRESS</header>
+   <creator/>
+   <email/>
+   <comment>Ethernet mac address for TV profile. It will be moved later.</comment>
+  </vconfkey>
+</vconfkeylists>

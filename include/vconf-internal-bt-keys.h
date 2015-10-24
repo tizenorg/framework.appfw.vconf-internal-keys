@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,121 +21,66 @@
 
 #ifndef __VCONF_INTERNAL_BT_KEYS_H__
 #define __VCONF_INTERNAL_BT_KEYS_H__
+#define VCONFKEY_BT_HEADSET_SCO  "memory/bluetooth/btsco"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-bt-keys.h
- * @defgroup    vconf_internal_bt_key Definitions of internal shared Keys for bluetooth
- * @ingroup     vconf_internal_key
- * @author      chanyeol.park@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for bluetooth \n
- */
-
-/* ========================== Bluetooth Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_bt_key
- * @{
- * @brief Bluetooth Keys & Values\n
- *        Maintainer : chanyeol.park@samsung.com
- */
-
-/**
- * @brief Bluetooth SCO connected status
- *
- * 0x00 : SCO disconnected \n
- * 0x01 : SCO connected \n
-*/
-#define VCONFKEY_BT_HEADSET_SCO "memory/bluetooth/btsco"
 enum {
-	/** SCO Disconnected */
 	VCONFKEY_BT_SCO_DISCONNECT = 0x00,
-	/** SCO Connected */
-	VCONFKEY_BT_SCO_CONNECT = 0x01
+		VCONFKEY_BT_SCO_CONNECT = 0x01
 };
 
-/**
- * @brief Bluetooth Connected headset name
- *
- * string : name of the connected headset
-*/
-#define VCONFKEY_BT_HEADSET_NAME "memory/bluetooth/sco_headset_name"
+#define VCONFKEY_BT_HEADSET_NAME  "memory/bluetooth/sco_headset_name"
 
-/**
- * @brief Bluetooth file sending status
- *
- * 0x00 : sending none \n
- * 0x01 : sending started \n
-*/
-#define VCONFKEY_BT_SENDING_STATUS "memory/bluetooth/sending"
-enum {
-	/** Sending none */
-	VCONFKEY_BT_SENDING_NONE = 0x00,
-	/** Sending */
-	VCONFKEY_BT_SENDING = 0x01
-};
+#define VCONFKEY_BT_LE_STATUS  "db/bluetooth/lestatus"
 
-/**
- * @brief Bluetooth file receiving status
- *
- * 0x00 : receiving none \n
- * 0x01 : receiving started \n
-*/
-#define VCONFKEY_BT_RECEIVING_STATUS "memory/bluetooth/receiving"
 enum {
-	/** Receiving none */
-	VCONFKEY_BT_RECEIVING_NONE = 0x00,
-	/** Receiving */
-	VCONFKEY_BT_RECEIVING = 0x01
-};
-
-/** \
- * @brief Bluetooth LE status
- *
- * 0x0000 : Bluetooth LE OFF \n
- * 0x0001 : Bluetooth LE ON \n
-*/
-#define VCONFKEY_BT_LE_STATUS    "db/bluetooth/lestatus"
-enum {
-	/** Bluetooth LE OFF */
 	VCONFKEY_BT_LE_STATUS_OFF = 0x0000,
-	/** Bluetooth LE ON */
-	VCONFKEY_BT_LE_STATUS_ON = 0x0001
+		VCONFKEY_BT_LE_STATUS_ON = 0x0001
 };
 
-/**
- * @brief Bluetooth DUT mode
- *
- * 0x00 : DUT mode Off \n
- * 0x01 : DUT mode On \n
-*/
-#define VCONFKEY_BT_DUT_MODE "memory/bluetooth/dutmode"
+#define VCONFKEY_BT_DUT_MODE  "memory/bluetooth/dutmode"
+
 enum {
-	/** DUT mode is off */
 	VCONFKEY_BT_DUT_MODE_OFF = 0x00,
-	/** DUT mode is ON */
-	VCONFKEY_BT_DUT_MODE_ON = 0x01
+		VCONFKEY_BT_DUT_MODE_ON = 0x01
 };
 
-/**
- * @brief Bluetooth Gear only connected status
- *
- * 0x00 : Gear only connected False \n
- * 0x01 : Gear only connected True \n
-*/
-#define VCONFKEY_BT_GEAR_ONLY "memory/bluetooth/gearonly"
+#define VCONFKEY_BT_FILE_VISIBLE_TIME  "file/private/libug-setting-bluetooth-efl/visibility_time"
+
+#define VCONFKEY_BT_OFF_DUE_TO_TIMEOUT  "file/private/bt-service/bt_off_due_to_timeout"
+
+#define VCONFKEY_BT_POWERSAVING_MODE_DEACTIVATED  "file/private/bt-core/powersaving_mode_deactivated"
+
+#define VCONFKEY_BT_FLIGHT_MODE_DEACTIVATED  "file/private/bt-core/flight_mode_deactivated"
+
+#define VCONFKEY_BT_STATUS  "db/bluetooth/status"
+
 enum {
-	/** Only Gear device connected FALSE */
-	VCONFKEY_BT_GEAR_ONLY_FALSE = 0x00,
-	/** Only Gear device connected TRUE */
-	VCONFKEY_BT_GEAR_ONLY_TRUE = 0x01
+	VCONFKEY_BT_STATUS_OFF = 0x0000,
+		VCONFKEY_BT_STATUS_ON = 0x0001,
+		VCONFKEY_BT_STATUS_BT_VISIBLE = 0x0002,
+		VCONFKEY_BT_STATUS_TRANSFER = 0x0004
 };
 
-/**
- * @}
- */
+#define VCONFKEY_BT_DEVICE  "memory/bluetooth/device"
 
-#endif	/* __VCONF_INTERNAL_BT_KEYS_H__ */
+enum {
+	VCONFKEY_BT_DEVICE_NONE = 0x00000,
+		VCONFKEY_BT_DEVICE_HEADSET_CONNECTED = 0x00001,
+		VCONFKEY_BT_DEVICE_A2DP_HEADSET_CONNECTED = 0x00002,
+		VCONFKEY_BT_DEVICE_HID_CONNECTED = 0x00004,
+		VCONFKEY_BT_DEVICE_PAN_CONNECTED = 0x00008,
+		VCONFKEY_BT_DEVICE_SAP_CONNECTED = 0x00010,
+		VCONFKEY_BT_DEVICE_PBAP_CONNECTED = 0x00020,
+		VCONFKEY_BT_DEVICE_HID_KEYBOARD_CONNECTED = 0x00040,
+		VCONFKEY_BT_DEVICE_HID_MOUSE_CONNECTED = 0x00080,
+		VCONFKEY_BT_DEVICE_AG_CONNECTED = 0x1000
+};
 
+enum {
+	VCONFKEY_BT_PLAYER_SELECT_SPEAKER = 0x00,
+		VCONFKEY_BT_PLAYER_SELECT_BLUETOOTH = 0x01,
+		VCONFKEY_BT_APP_SELECT_SPEAKER = 0x02,
+		VCONFKEY_BT_APP_SELECT_BLUETOOTH = 0x04
+};
+
+#endif /*   __VCONF_INTERNAL_BT_KEYS_H__    */

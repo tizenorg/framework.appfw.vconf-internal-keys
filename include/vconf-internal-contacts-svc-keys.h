@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Donghee Ye <donghee.ye@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,59 +21,20 @@
 
 #ifndef __VCONF_INTERNAL_CONTACTS_SVC_KEYS_H__
 #define __VCONF_INTERNAL_CONTACTS_SVC_KEYS_H__
+#define VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER  "db/contacts-svc/name_display_order"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-contacts-svc-keys.h
- * @defgroup    vconf_internal_contacts_svc_key Definitions of internal shared Keys for contacts service
- * @ingroup     vconf_internal_key
- * @author      donghee.ye@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for contacts service \n
- */
-
-/* ========================== Contacts Service Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_contacts_svc_key
- * @{
- * @brief Contacts Service Keys & Values\n
- *        Maintainer : donghee.ye@samsung.com
- */
-
-/**
- * @brief Display naming order
- *
- * 0: first last \n
- * 1: last first \n
- */
-#define VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER                 "db/contacts-svc/name_display_order"
 enum {
 	VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER_FIRSTLAST = 0,
-	VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER_LASTFIRST = 1
+		VCONFKEY_CONTACTS_SVC_NAME_DISPLAY_ORDER_LASTFIRST = 1
 };
 
-/**
- * @brief Sorting naming order
- *
- * 0: first last \n
- * 1: last first \n
- */
-#define VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER                 "db/contacts-svc/name_sorting_order"
+#define VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER  "db/contacts-svc/name_sorting_order"
+
 enum {
 	VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_FIRSTLAST = 0,
-	VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_LASTFIRST = 1
+		VCONFKEY_CONTACTS_SVC_NAME_SORTING_ORDER_LASTFIRST = 1
 };
 
-/**
- * @brief Phonenumber minimum match digit
- */
-#define VCONFKEY_CONTACTS_SVC_PHONENUMBER_MIN_MATCH_DIGIT            "db/contacts-svc/phonenumber_min_match_digit"
+#define VCONFKEY_CONTACTS_SVC_PHONENUMBER_MIN_MATCH_DIGIT  "db/contacts-svc/phonenumber_min_match_digit"
 
-/**
- * @}
- */
-
-#endif	/* __VCONF_INTERNAL_CONTACTS_SVC_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_CONTACTS_SVC_KEYS_H__    */

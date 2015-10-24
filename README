@@ -1,0 +1,44 @@
+XML base v-configuration tool
+=============================
+
+
+History
+-------
+
+0.1.0
+  - 2015.16.19 : add sort uption to make vconf-internal-keys.h
+
+
+사용법
+------
+1. make 이후 file을 생성
+2. git에 추가
+3. gbs build로 확인
+
+향후 할일
+---------
+vconf key간의 관계성을 분석하는 tool작성 필요
+
+
+how to change smack rule
+------------------------
+0. sudo apt-get install xmlstarlet 
+1. edit smackinput.txt
+2. run update_smacktest.sh smackinput.txt
+
+example)
+./update_smacktest.sh smackinput.txt
+
+check the result with 'git diff'
+
+
+
+how to check duplicacy of keys
+------------------------------
+
+example)
+./check_dup.sh > ~/test.txt
+cat ~/test.txt | sort > ~/test1.txt
+cat ~/test.txt | sort -u > ~/test2.txt
+vimdiff ~/test1.txt ~/test2.txt
+

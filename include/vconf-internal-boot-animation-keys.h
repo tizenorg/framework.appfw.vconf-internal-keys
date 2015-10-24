@@ -1,9 +1,9 @@
 /*
- * vconf-internal-boot-animation-keys
+ * vconf-internal-keys
  *
- * Copyright (c) 2000 - 2012 Samsung Electronics Co., Ltd. All rights reserved.
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, YoungSub Ko <ys4610.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,39 +21,6 @@
 
 #ifndef __VCONF_INTERNAL_BOOT_ANIMATION_KEYS_H__
 #define __VCONF_INTERNAL_BOOT_ANIMATION_KEYS_H__
+#define VCONFKEY_BOOT_ANIMATION_FINISHED  "memory/boot_animation/finished"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-boot-animation-keys.h
- * @defgroup    vconf_internal_boot-animation-key Definitions of internal shared Keys for boot_animation
- * @ingroup     vconf_internal_key
- * @author      Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, youngsub Ko <ys4610.ko@samsung.com>
- * @version     0.1
- * @brief       This file has the definitions of shared keys for boot_animation \n
- */
-
-/* ========================== boot_animation Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_boot_animation_key
- * @{
- * @brief boot_animation Keys & Values\n
- *        Maintainer : Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>, YoungSub Ko <ys4610.ko@samsung.com>
- */
-
-/**
- * @brief whether boot animation is finished
- *
- * type : int
-*/
-#define VCONFKEY_BOOT_ANIMATION_FINISHED	"memory/boot_animation/finished"
-
-/**
- * @brief trigger to restart boot animation
- *
- * type : string
-*/
-#define VCONFKEY_BOOT_ANIMATION_RESTART		"memory/boot_animation/restart"
-
-#endif	/* __VCONF_INTERNAL_BOOT_ANIMATION_KEYS_H__ */
+#endif /*   __VCONF_INTERNAL_BOOT_ANIMATION_KEYS_H__    */

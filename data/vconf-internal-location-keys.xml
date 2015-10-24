@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_LOCATION_KEYS_H__"/>
+  <vconfkey type="int" name="db/location/setting/Usemylocation" value="1" label="tizen::vconf::location::enable" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_USE_MY_LOCATION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/setting/GpsEnabled" value="1" label="tizen::vconf::location::enable" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_ENABLED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/setting/NetworkEnabled" value="1" label="tizen::vconf::location::enable" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NETWORK_ENABLED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/setting/GpsPopup" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LBS_SETTING_IS_SHOW_GPS_POPUP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/setting/WpsPopup" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LBS_SETTING_IS_SHOW_WPS_POPUP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/location/position/state" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_POSITION_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_LOCATION_POSITION_OFF</enumdata>
+      <enumdata>VCONFKEY_LOCATION_POSITION_SEARCHING</enumdata>
+      <enumdata>VCONFKEY_LOCATION_POSITION_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_LOCATION_POSITION_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/location/gps/state" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_GPS_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_LOCATION_GPS_OFF</enumdata>
+      <enumdata>VCONFKEY_LOCATION_GPS_SEARCHING</enumdata>
+      <enumdata>VCONFKEY_LOCATION_GPS_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_LOCATION_GPS_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/location/wps/state" value="0" label="tizen::vconf::public::r::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_WPS_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_LOCATION_WPS_OFF</enumdata>
+      <enumdata>VCONFKEY_LOCATION_WPS_SEARCHING</enumdata>
+      <enumdata>VCONFKEY_LOCATION_WPS_CONNECTED</enumdata>
+      <enumdata>VCONFKEY_LOCATION_WPS_STATE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/location/last/gps/Timestamp" value="0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_TIMESTAMP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/Latitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_LATITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/Longitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_LONGITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/Altitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_ALTITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/Speed" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_SPEED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/Direction" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_DIRECTION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/HorAccuracy" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_HOR_ACCURACY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/gps/VerAccuracy" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_VER_ACCURACY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/location/last/wps/Timestamp" value="0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_TIMESTAMP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/Latitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_LATITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/Longitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_LONGITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/Altitude" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_ALTITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/Speed" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_SPEED</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/Direction" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_DIRECTION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="memory/location/last/wps/HorAccuracy" value="0.0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_WPS_HOR_ACCURACY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/last/gps/LocTimestamp" value="0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NV_LAST_GPS_TIMESTAMP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/last/wps/LocTimestamp" value="0" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NV_LAST_WPS_TIMESTAMP</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/location/last/gps/Location" value="0.0;0.0;0.0;0.0;0.0;0.0;0.0;" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NV_LAST_GPS_LOCATION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/location/last/wps/Location" value="0.0;0.0;0.0;0.0;0.0;0.0;" label="tizen::vconf::location" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NV_LAST_WPS_LOCATION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/nmea/LoggingEnabled" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NMEA_LOGGING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/replay/ReplayEnabled" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_REPLAY_ENABLED</header>
+    <creator/>
+    <email/>
+    <comment>Initial value for device is difference from that of emulator. It's initial value is for device</comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/replay/ReplayMode" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_REPLAY_MODE</header>
+    <creator/>
+    <email/>
+    <comment>Initial value for device is difference from that of emulator. It's initial value is for device</comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_GPS_REPLAY_OFF</enumdata>
+      <enumdata>VCONFKEY_GPS_REPLAY_NMEA</enumdata>
+      <enumdata>VCONFKEY_GPS_REPLAY_MANAUL</enumdata>
+      <enumdata>VCONFKEY_GPS_REPLAY_MODE_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="string" name="db/location/replay/FileName" value="nmea_replay.log" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_NMEA_FILE_NAME</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="db/location/replay/ManualLatitude" value="0.0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_MANUAL_LATITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="db/location/replay/ManualLongitude" value="0.0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_MANUAL_LONGITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="db/location/replay/ManualAltitude" value="0.0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_MANUAL_ALTITUDE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="double" name="db/location/replay/ManualHAccuracy" value="0.0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_MANUAL_HORIZONTAL_ACCURACY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/gps/Operation" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_GPS_OPERATION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_GPS_OPERATION_STANDALONE</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_MS_BASED</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_MS_ASSISTED</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/gps/OperationTest" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_GPS_OPERATION_TEST</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_GPS_OPERATION_TEST_NORMAL</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_TEST_HW_SENSITIVITY</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_TEST_HW_CN0</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_TEST_HW_CW</enumdata>
+      <enumdata>VCONFKEY_GPS_OPERATION_TEST_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/gps/Starting" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_GPS_STARTING</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_GPS_STARTING_HOT</enumdata>
+      <enumdata>VCONFKEY_GPS_STARTING_COLD</enumdata>
+      <enumdata>VCONFKEY_GPS_STARTING_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/gps/Session" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_GPS_SESSION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_GPS_SESSION_SINGLE_FIX</enumdata>
+      <enumdata>VCONFKEY_GPS_SESSION_TRACKING</enumdata>
+      <enumdata>VCONFKEY_GPS_SESSION_MAX</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="double" name="db/location/gps/XtraDownloadTime" value="0.0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_LAST_GPS_XTRA_DOWNLOAD_TIME</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="string" name="db/location/supl/Server" value="" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_SUPL_SERVER</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/supl/Port" value="7275" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_SUPL_PORT</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/supl/SslEnabled" value="1" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_SUPL_SSL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/supl/FQDNType" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_SUPL_FQDNTYPE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_LOCATION_SUPL_FQDN_CUSTOM </enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_AUTO</enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_SPIRENT</enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_DOCOMO</enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_BUILD</enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_HERE</enumdata>
+      <enumdata>VCONFKEY_LOCATION_SUPL_FQDN_VFONE</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="db/location/supl/Version" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_LOCATION_SUPL_VERSION</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+</vconfkeylists>

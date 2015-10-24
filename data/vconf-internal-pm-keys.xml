@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vconfkeylists>
+  <filedef name="__VCONF_INTERNAL_PM_KEYS_H__"/>
+  <vconfkey type="int" name="memory/pm/state" value="0" label="tizen::vconf::public::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_STATE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[public vconf key (device)]]></comment>
+    <enumlist>
+      <enumdata val="1">VCONFKEY_PM_STATE_NORMAL</enumdata>
+      <enumdata>VCONFKEY_PM_STATE_LCDDIM</enumdata>
+      <enumdata>VCONFKEY_PM_STATE_LCDOFF</enumdata>
+      <enumdata>VCONFKEY_PM_STATE_SLEEP </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/custom_brightness_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_PM_CUSTOM_BRIGHTNESS_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_PM_CUSTOM_BRIGHTNESS_OFF</enumdata>
+      <enumdata>VCONFKEY_PM_CUSTOM_BRIGHTNESS_ON</enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/camera_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_CAMERA_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_PM_CAMERA_OFF</enumdata>
+      <enumdata>VCONFKEY_PM_CAMERA_ON </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/battery_timetoempty" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_BATTERY_TIMETOEMPTY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/battery_timetofull" value="-1" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_BATTERY_TIMETOFULL</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="bool" name="memory/pm/brt_changed_lpm" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_BRIGHTNESS_CHANGED_IN_LPM</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/lcdoff_source" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_LCDOFF_SOURCE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="1">VCONFKEY_PM_LCDOFF_BY_POWERKEY</enumdata>
+      <enumdata>VCONFKEY_PM_LCDOFF_BY_TIMEOUT </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/key_ignore" value="0" label="tizen::vconf::platform::r" gid="6514" uid="" private_spec="true">
+    <header>VCONFKEY_PM_KEY_IGNORE</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0x01">VCONFKEY_PM_KEY_LOCK   </enumdata>
+      <enumdata val="0x02">VCONFKEY_PM_KEY_STARTER</enumdata>
+      <enumdata val="0x04">VCONFKEY_PM_KEY_EXTRA1 </enumdata>
+      <enumdata val="0x08">VCONFKEY_PM_KEY_EXTRA2 </enumdata>
+    </enumlist>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/current_brt" value="60" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_PM_CURRENT_BRIGHTNESS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
+  <vconfkey type="int" name="memory/pm/sip_status" value="0" label="tizen::vconf::platform::rw" gid="6514" uid="">
+    <header>VCONFKEY_PM_SIP_STATUS</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+    <enumlist>
+      <enumdata val="0">VCONFKEY_PM_SIP_OFF</enumdata>
+      <enumdata>VCONFKEY_PM_SIP_ON </enumdata>
+    </enumlist>
+  </vconfkey>
+</vconfkeylists>

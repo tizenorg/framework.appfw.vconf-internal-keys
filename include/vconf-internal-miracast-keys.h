@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,53 +21,24 @@
 
 #ifndef __VCONF_INTERNAL_MIRACAST_KEYS_H__
 #define __VCONF_INTERNAL_MIRACAST_KEYS_H__
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_MIRACAST_WFD_SOURCE_STATUS  "memory/wifi/miracast/source_status"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-miracast-keys.h
- * @defgroup    vconf_internal_miracast_key Definitions of internal shared Keys for Miracast(WiFi Display)
- * @ingroup     vconf_internal_key
- * @author      hyunil46.park@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for miracast \n
- */
-
-/* ========================== Miracast Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_miracast_key
- * @{
- * @brief Miracast Keys & Values\n
- *        Maintainer : hyunil46.park@samsung.com
- */
-
-/**
- * @brief Miracast WFD(WiFi Display)Source status
- *
- * 0: WFD source is not launched \n
- * 1: WFD source is launched \n
-*/
-#define VCONFKEY_MIRACAST_WFD_SOURCE_STATUS "memory/wifi/miracast/source_status"
 enum {
 	VCONFKEY_MIRACAST_WFD_SOURCE_OFF,
-	VCONFKEY_MIRACAST_WFD_SOURCE_ON
+		VCONFKEY_MIRACAST_WFD_SOURCE_ON
 };
 
+#ifdef USE_NONCREATED_VCONF_KEY
+#warning using non-created vconf-key ----- please make sure this key is in use actually
+#endif
+#define VCONFKEY_WFD_WEB_VIDEO_PLAYER_STATE  "memory/wifi/miracast/web_video_player_state"
 
-
-/**
- * @brief wfd web video player state (int)
- *
- * 0 : Web video player stop
- * 1 : Web video player play
- *
- */
-#define VCONFKEY_WFD_WEB_VIDEO_PLAYER_STATE "memory/wifi/miracast/web_video_player_state"
 enum {
 	VCONFKEY_WFD_WEB_VIDEO_PLAYER_STOP = 0,
-	VCONFKEY_WFD_WEB_VIDEO_PLAYER_PLAY = 1
+		VCONFKEY_WFD_WEB_VIDEO_PLAYER_PLAY = 1
 };
 
-#endif	/* __VCONF_INTERNAL_MIRACAST_KEYS_H__ */
-
+#endif /*   __VCONF_INTERNAL_MIRACAST_KEYS_H__    */

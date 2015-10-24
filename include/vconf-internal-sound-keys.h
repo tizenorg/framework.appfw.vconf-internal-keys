@@ -1,9 +1,9 @@
 /*
- * vconf-internal-sound-keys
+ * vconf-internal-keys
  *
  * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
  *
- * Contact: Seungbae Shin <seungbae.shin@samsung.com>
+ * Contact: Hakjoo Ko <email at samsung.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,106 +21,30 @@
 
 #ifndef __VCONF_INTERNAL_SOUND_KEYS_H__
 #define __VCONF_INTERNAL_SOUND_KEYS_H__
+#define VCONFKEY_SOUND_STATUS  "memory/Sound/SoundStatus"
 
-/**
- * This file defines keys and values.
- *
- * @file        vconf-internal-sound-keys.h
- * @defgroup    vconf_internal_sound_key Definitions of internal shared Keys for sound
- * @ingroup     vconf_internal_key
- * @author      seungbae.shin@samsung.com, sc11.lee@samsung.com
- * @version     0.1
- * @brief       This file has the definitions of shared keys for sound \n
- */
+#define VCONFKEY_SOUND_VOLUME_TYPE_SYSTEM  "file/private/sound/volume/system"
 
-/* ========================== Sound Keys & Values ============================ */
-/**
- * @internal
- * @addtogroup vconf_internal_sound_key
- * @{
- * @brief Sound Keys & Values\n
- *        Maintainer : seungbae.shin@samsung.com, sc11.lee@samsung.com
- */
+#define VCONFKEY_SOUND_VOLUME_TYPE_NOTIFICATION  "file/private/sound/volume/notification"
 
-/**
- * @brief Sound status(int)
- *
- * STATUS_NONE                  = 0x00000000
- * STATUS_SHARE_MMPLAYER        = 0x00000001
- * STATUS_SHARE_MMCAMCORDER     = 0x00000002
- * STATUS_SHARE_MMSOUND         = 0x00000004
- * STATUS_SHARE_OPENAL          = 0x00000008
- * STATUS_SHARE_AVSYSTEM        = 0x00000010
- * STATUS_EXCLUSIVE_MMPLAYER    = 0x00000020
- * STATUS_EXCLUSIVE_MMCAMCORDER = 0x00000040
- * STATUS_EXCLUSIVE_MMSOUND     = 0x00000080
- * STATUS_EXCLUSIVE_OPENAL      = 0x00000100
- * STATUS_EXCLUSIVE_AVSYSTEM    = 0x00000200
- * STATUS_NOTIFY                = 0x00000400
- * STATUS_CALL                  = 0x10000000
- * STATUS_SHARE_FMRADIO         = 0x00000800
- * STATUS_EXCLUSIVE_FMRADIO     = 0x00001000
- * STATUS_EARJACK_UNPLUG        = 0x00002000
- * STATUS_ALARM                 = 0x00100000
- * STATUS_VIDEOCALL             = 0x20000000
- * STATUS_VOIP                  = 0x00010000
- * STATUS_MONITOR               = 0x80000000
- * STATUS_RICH_CALL             = 0x40000000
- * STATUS_EMERGENCY             = 0x00004000
- * STATUS_EXCLUSIVE_RESOURCE    = 0x00008000
- * STATUS_VOICE_RECOGNITION     = 0x00020000
- *
- * 0 : Sound is not in use (STATUS_NONE)\n
- * not 0 : Sound is in use (combination of above status)
- */
-#define VCONFKEY_SOUND_STATUS "memory/Sound/SoundStatus"
-enum {
-	VCONFKEY_SOUND_STATUS_AVRECORDING = 0x00000040
-};
+#define VCONFKEY_SOUND_VOLUME_TYPE_ALARM  "file/private/sound/volume/alarm"
 
-/**
- * @brief Accumulated time of media volume for safety volume pop-up(int)
- *
- * 0 : Media volume level has never gone over the predefined level after reset\n
- * Not 0 : Accumulated time in case the media volume level goes beyond the predefined level
- */
-#define VCONFKEY_SOUND_MEDIA_VOL_ACCUM_TIME "memory/Sound/SoundVolAccumTime"
+#define VCONFKEY_SOUND_VOLUME_TYPE_RINGTONE  "file/private/sound/volume/ringtone"
 
-/**
- * @brief Enable/Disable safety volume pop-up for earphone volume
- *
- * 0 : Disable\n
- * 1 : Enable
- */
-#define VCONFKEY_SOUND_ENABLE_SAFETY_VOL "memory/Sound/SoundEnableSafetyVol"
-enum {
-	VCONFKEY_SOUND_SAFETY_VOL_FW_MMPLAYER   = 0x00000001,
-	VCONFKEY_SOUND_SAFETY_VOL_APP_VIDEO     = 0x00000010,
-	VCONFKEY_SOUND_SAFETY_VOL_APP_MUSIC     = 0x00000020,
-	VCONFKEY_SOUND_SAFETY_VOL_APP_VOICE_REC = 0x00000040,
-	VCONFKEY_SOUND_SAFETY_VOL_APP_MTV       = 0x00000080,
-	VCONFKEY_SOUND_SAFETY_VOL_APP_GROUP_PLAY= 0x00000100
-};
+#define VCONFKEY_SOUND_VOLUME_TYPE_MEDIA  "file/private/sound/volume/media"
 
-/**
- * @brief Indicates whether sound capture is in use or not
- *
- * 0 : sound capture Not in use
- * 1 : sound capture in use
- */
-#define VCONFKEY_SOUND_CAPTURE_STATUS "memory/Sound/SoundCaptureStatus"
+#define VCONFKEY_SOUND_VOLUME_TYPE_CALL  "file/private/sound/volume/call"
 
-/**
- * @brief Indicates whether voice control is enabled or not
- *
- * 0 : voice control Not in use
- * 1 : voice control in use
- */
-#define VCONFKEY_SOUND_VOICE_CONTROL_STATUS "memory/private/Sound/VoiceControlOn"
+#define VCONFKEY_SOUND_VOLUME_TYPE_VOIP  "file/private/sound/volume/voip"
 
+#define VCONFKEY_SOUND_VOLUME_TYPE_VOICE  "file/private/sound/volume/voice"
 
-/**
- * @}
- */
+#define VCONFKEY_SOUND_PRIMARY_VOLUME_TYPE  "memory/private/sound/PrimaryVolumetype"
 
-#endif	/* __VCONF_INTERNAL_SOUND_KEYS_H__ */
+#define VCONFKEY_SOUND_PRIMARY_VOLUME_TYPE_FORCE  "memory/private/sound/PrimaryVolumetypeForce"
+
+#define VCONFKEY_SOUND_PCM_DUMP  "memory/private/sound/pcm_dump"
+
+#define VCONFKEY_SOUND_BOOT_SOUND  "memory/private/sound/booting"
+
+#endif /*   __VCONF_INTERNAL_SOUND_KEYS_H__    */
