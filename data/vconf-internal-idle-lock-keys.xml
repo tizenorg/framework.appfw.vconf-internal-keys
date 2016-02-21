@@ -18,4 +18,10 @@
       <enumdata>VCONFKEY_IDLE_LAUNCHING_LOCK</enumdata>
     </enumlist>
   </vconfkey>
+  <vconfkey type="int" name="memory/idle_lock/state_read_only" value="0" label="tizen::vconf::public::r" gid="6514" uid="">
+    <header>VCONFKEY_IDLE_LOCK_STATE_READ_ONLY</header>
+    <creator/>
+    <email/>
+    <comment><![CDATA[ ]]></comment>
+  </vconfkey>
 </vconfkeylists>
