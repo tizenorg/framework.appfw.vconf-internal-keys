@@ -43,7 +43,12 @@ rm -rf %{buildroot}
 
 mkdir -p %{buildroot}
 mkdir -p %{buildroot}/opt/usr
-install -m 755 scripts/*.sh %{buildroot}/opt/usr
+
+list=`find scripts -name "vconf-*.sh"`
+for fn in $list
+do
+install -m 755 $fn %{buildroot}/opt/usr
+done
 
 mkdir -p %{buildroot}/usr/include/vconf
 install -m 755 include/*.h %{buildroot}/usr/include/vconf
@@ -56,8 +61,6 @@ filelist=`find /opt/usr -name "vconf-*.sh"`
 for file in $filelist
 do
 chmod a+x  $file
-#/bin/sh $file
-echo "running ---------------------------------------------------- $file"
 . $file
 rm $file
 done

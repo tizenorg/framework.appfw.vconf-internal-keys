@@ -31,4 +31,6 @@ enum {
 		VCONFKEY_IDLE_LAUNCHING_LOCK
 };
 
+#define VCONFKEY_IDLE_LOCK_STATE_READ_ONLY  "memory/idle_lock/state_read_only"
+
 #endif /*   __VCONF_INTERNAL_IDLE_LOCK_KEYS_H__    */

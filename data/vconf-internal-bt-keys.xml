@@ -90,11 +90,5 @@
       <enumdata val="0x00080">VCONFKEY_BT_DEVICE_HID_MOUSE_CONNECTED</enumdata>
       <enumdata val="0x1000">VCONFKEY_BT_DEVICE_AG_CONNECTED</enumdata>
     </enumlist>
-    <enumlist>
-      <enumdata val="0x00">VCONFKEY_BT_PLAYER_SELECT_SPEAKER</enumdata>
-      <enumdata val="0x01">VCONFKEY_BT_PLAYER_SELECT_BLUETOOTH</enumdata>
-      <enumdata val="0x02">VCONFKEY_BT_APP_SELECT_SPEAKER</enumdata>
-      <enumdata val="0x04">VCONFKEY_BT_APP_SELECT_BLUETOOTH</enumdata>
-    </enumlist>
   </vconfkey>
 </vconfkeylists>
