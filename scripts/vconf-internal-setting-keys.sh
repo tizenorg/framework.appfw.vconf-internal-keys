@@ -14,7 +14,7 @@
 /usr/bin/vconftool set -t int "db/setting/automatic_brightness_level"  "50" -s "tizen::vconf::public::r::platform::rw"  -g 6514
 /usr/bin/vconftool set -t bool "db/setting/auto_display_adjustment"  "1" -s "tizen::vconf::public::r::platform::rw"  -g 6514
 # DO NOT GENERATE # /usr/bin/vconftool set -t  "db/setting/screen_mode"  "0" -s "tizen::vconf::headeronly" -i  -g 6514
-/usr/bin/vconftool set -t int "db/setting/lcd_backlight_normal"  "30" -s "tizen::vconf::setting::admin"  -g 6514
+/usr/bin/vconftool set -t int "db/setting/lcd_backlight_normal"  "600" -s "tizen::vconf::setting::admin"  -g 6514
 /usr/bin/vconftool set -t int "db/setting/sound/call/ringtone_sound_volume"  "11" -s "tizen::vconf::public::r::platform::rw"  -g 6514
 /usr/bin/vconftool set -t string "db/setting/sound/call/ringtone_path"  "/opt/usr/share/settings/Ringtones/Over_the_horizon.ogg" -s "tizen::vconf::setting"  -g 6514
 /usr/bin/vconftool set -t string "db/setting/sound/call/ringtone_path_with_time"  "" -s "tizen::vconf::public::r::platform::rw"  -g 6514

@@ -104,7 +104,7 @@
       <enumdata>SETTING_SCREEN_MODE_MAX</enumdata>
     </enumlist>
   </vconfkey>
-  <vconfkey type="int" name="db/setting/lcd_backlight_normal" value="30" label="tizen::vconf::setting::admin" gid="6514" uid="">
+  <vconfkey type="int" name="db/setting/lcd_backlight_normal" value="600" label="tizen::vconf::setting::admin" gid="6514" uid="">
     <header>VCONFKEY_SETAPPL_LCD_TIMEOUT_NORMAL</header>
     <creator> Myoungjune Park </creator>
     <email>mj2004.park@samsung.com</email>
